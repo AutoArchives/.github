@@ -1,0 +1,38 @@
+name: Add Repo to Archives
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Github repo ID to add'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: jbangdev/jbang-action@v0.109.0
+        with:
+          script: archiver.java
+          scriptargs: add -T=${{ secrets.AA_TOKEN }} -W=${{ secrets.AA_DISCORD }} ${{ github.event.inputs.repo }}
+        env:
+          JBANG_REPO: /root/.jbang/repository
+
+      - name: Check submodules
+        run: git submodule
+
+      - name: Can't bother fixing this issue
+        run: rm -f .git/COMMIT_EDITMSG
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Archived ${{ github.event.inputs.repo }}
