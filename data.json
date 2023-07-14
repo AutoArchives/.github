@@ -1,4 +1,7 @@
 {
   "repos" : {
+    "juanmuscaria-tesssst" : {
+      "upstreamName" : "juanmuscaria/tesssst"
+    }
   }
 }
