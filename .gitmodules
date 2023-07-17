@@ -100,3 +100,6 @@
 [submodule "archives/dvhaldane-forgerestrictor"]
 	path = archives/dvhaldane-forgerestrictor
 	url = https://github.com/AutoArchives/dvhaldane-forgerestrictor.git
+[submodule "archives/evernife-forgerestrictor"]
+	path = archives/evernife-forgerestrictor
+	url = https://github.com/AutoArchives/evernife-forgerestrictor.git
