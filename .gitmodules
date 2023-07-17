@@ -115,3 +115,6 @@
 [submodule "archives/shevchikunsupportedprojects-modfixng"]
 	path = archives/shevchikunsupportedprojects-modfixng
 	url = https://github.com/AutoArchives/shevchikunsupportedprojects-modfixng.git
+[submodule "archives/cyberdynecc-thermos-bukkit"]
+	path = archives/cyberdynecc-thermos-bukkit
+	url = https://github.com/AutoArchives/cyberdynecc-thermos-bukkit.git
