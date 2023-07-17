@@ -17,6 +17,9 @@
     },
     "games647-fastlogin" : {
       "upstreamName" : "games647/FastLogin"
+    },
+    "minecraftforge-srg2source" : {
+      "upstreamName" : "MinecraftForge/Srg2Source"
     }
   }
 }
