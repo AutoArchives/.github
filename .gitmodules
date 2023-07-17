@@ -46,3 +46,6 @@
 [submodule "archives/orionminecraft-orion"]
 	path = archives/orionminecraft-orion
 	url = https://github.com/AutoArchives/orionminecraft-orion.git
+[submodule "archives/mbax-vanishnopacket"]
+	path = archives/mbax-vanishnopacket
+	url = https://github.com/AutoArchives/mbax-vanishnopacket.git
