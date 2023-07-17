@@ -40,3 +40,6 @@
 [submodule "archives/domnian-paperdragon"]
 	path = archives/domnian-paperdragon
 	url = https://github.com/AutoArchives/domnian-paperdragon.git
+[submodule "archives/uraniummc-uranium"]
+	path = archives/uraniummc-uranium
+	url = https://github.com/AutoArchives/uraniummc-uranium.git
