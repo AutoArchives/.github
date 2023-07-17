@@ -20,6 +20,9 @@
     },
     "minecraftforge-srg2source" : {
       "upstreamName" : "MinecraftForge/Srg2Source"
+    },
+    "andreasdc-travertine" : {
+      "upstreamName" : "andreasdc/Travertine"
     }
   }
 }
