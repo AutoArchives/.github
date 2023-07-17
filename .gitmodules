@@ -109,3 +109,6 @@
 [submodule "archives/spark108-svarka"]
 	path = archives/spark108-svarka
 	url = https://github.com/AutoArchives/spark108-svarka.git
+[submodule "archives/kasperfranz-kaisrandomteleport"]
+	path = archives/kasperfranz-kaisrandomteleport
+	url = https://github.com/AutoArchives/kasperfranz-kaisrandomteleport.git
