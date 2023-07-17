@@ -94,3 +94,6 @@
 [submodule "archives/sidoh-reactor_simulator"]
 	path = archives/sidoh-reactor_simulator
 	url = https://github.com/AutoArchives/sidoh-reactor_simulator.git
+[submodule "archives/bogdan-g-ffokc"]
+	path = archives/bogdan-g-ffokc
+	url = https://github.com/AutoArchives/bogdan-g-ffokc.git
