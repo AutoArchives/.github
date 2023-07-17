@@ -142,3 +142,6 @@
 [submodule "archives/addstarmc-prism-bukkit"]
 	path = archives/addstarmc-prism-bukkit
 	url = https://github.com/AutoArchives/addstarmc-prism-bukkit.git
+[submodule "archives/intellectualsites-plotsquared"]
+	path = archives/intellectualsites-plotsquared
+	url = https://github.com/AutoArchives/intellectualsites-plotsquared.git
