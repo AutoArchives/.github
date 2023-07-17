@@ -28,3 +28,6 @@
 [submodule "archives/team-fruit-emojicord"]
 	path = archives/team-fruit-emojicord
 	url = https://github.com/AutoArchives/Emojicord.git
+[submodule "archives/juanmuscaria-magma"]
+	path = archives/juanmuscaria-magma
+	url = https://github.com/AutoArchives/Magma.git
