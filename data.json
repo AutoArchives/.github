@@ -29,6 +29,9 @@
     },
     "team-fruit-emojicord" : {
       "upstreamName" : "Team-Fruit/Emojicord"
+    },
+    "juanmuscaria-magma" : {
+      "upstreamName" : "juanmuscaria/Magma"
     }
   }
 }
