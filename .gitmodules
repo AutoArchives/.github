@@ -142,3 +142,6 @@
 [submodule "archives/juanmuscaria-lightbukkit"]
 	path = archives/juanmuscaria-lightbukkit
 	url = https://github.com/AutoArchives/juanmuscaria-lightbukkit.git
+[submodule "archives/dimensionaldevelopment-legacylauncher"]
+	path = archives/dimensionaldevelopment-legacylauncher
+	url = https://github.com/AutoArchives/dimensionaldevelopment-legacylauncher.git
