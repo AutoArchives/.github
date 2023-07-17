@@ -26,6 +26,9 @@
     },
     "technicpack-launcherv3" : {
       "upstreamName" : "TechnicPack/LauncherV3"
+    },
+    "team-fruit-emojicord" : {
+      "upstreamName" : "Team-Fruit/Emojicord"
     }
   }
 }
