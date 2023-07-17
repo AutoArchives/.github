@@ -33,12 +33,6 @@
     "juanmuscaria-magma" : {
       "upstreamName" : "juanmuscaria/Magma"
     },
-    "addstarmc-prism-bukkit" : {
-      "upstreamName" : "AddstarMC/Prism-Bukkit"
-    },
-    "intellectualsites-plotsquared" : {
-      "upstreamName" : "IntellectualSites/PlotSquared"
-    },
     "domnian-paperdragon" : {
       "upstreamName" : "domnian/PaperDragon"
     },
@@ -146,6 +140,12 @@
     },
     "dimensionaldevelopment-legacylauncher" : {
       "upstreamName" : "DimensionalDevelopment/LegacyLauncher"
+    },
+    "addstarmc-prism-bukkit" : {
+      "upstreamName" : "AddstarMC/Prism-Bukkit"
+    },
+    "intellectualsites-plotsquared" : {
+      "upstreamName" : "IntellectualSites/PlotSquared"
     }
   }
 }
