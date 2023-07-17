@@ -1,3 +1,6 @@
 [submodule "archives/juanmuscaria-tesssst"]
 	path = archives/juanmuscaria-tesssst
 	url = https://github.com/AutoArchives/tesssst.git
+[submodule "archives/yamakaja-runtimetransformer"]
+	path = archives/yamakaja-runtimetransformer
+	url = https://github.com/AutoArchives/RuntimeTransformer.git
