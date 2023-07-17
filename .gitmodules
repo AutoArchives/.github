@@ -49,3 +49,6 @@
 [submodule "archives/mbax-vanishnopacket"]
 	path = archives/mbax-vanishnopacket
 	url = https://github.com/AutoArchives/mbax-vanishnopacket.git
+[submodule "archives/xsun2001-applied-energistics-2-unofficial"]
+	path = archives/xsun2001-applied-energistics-2-unofficial
+	url = https://github.com/AutoArchives/xsun2001-applied-energistics-2-unofficial.git
