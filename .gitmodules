@@ -52,3 +52,6 @@
 [submodule "archives/xsun2001-applied-energistics-2-unofficial"]
 	path = archives/xsun2001-applied-energistics-2-unofficial
 	url = https://github.com/AutoArchives/xsun2001-applied-energistics-2-unofficial.git
+[submodule "archives/akullpp-awesome-java"]
+	path = archives/akullpp-awesome-java
+	url = https://github.com/AutoArchives/akullpp-awesome-java.git
