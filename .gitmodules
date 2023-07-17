@@ -4,3 +4,6 @@
 [submodule "archives/yamakaja-runtimetransformer"]
 	path = archives/yamakaja-runtimetransformer
 	url = https://github.com/AutoArchives/RuntimeTransformer.git
+[submodule "archives/milkbowl-vault"]
+	path = archives/milkbowl-vault
+	url = https://github.com/AutoArchives/Vault.git
