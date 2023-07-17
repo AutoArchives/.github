@@ -11,6 +11,9 @@
     },
     "fabiozumbi12-ultimatechat" : {
       "upstreamName" : "FabioZumbi12/UltimateChat"
+    },
+    "cruciblemc-crucible" : {
+      "upstreamName" : "CrucibleMC/Crucible"
     }
   }
 }
