@@ -124,3 +124,6 @@
 [submodule "archives/dvhaldane-bclforgelib"]
 	path = archives/dvhaldane-bclforgelib
 	url = https://github.com/AutoArchives/dvhaldane-bclforgelib.git
+[submodule "archives/juanmuscaria-elixr"]
+	path = archives/juanmuscaria-elixr
+	url = https://github.com/AutoArchives/juanmuscaria-elixr.git
