@@ -133,3 +133,6 @@
 [submodule "archives/minemine-minetickmod"]
 	path = archives/minemine-minetickmod
 	url = https://github.com/AutoArchives/minemine-minetickmod.git
+[submodule "archives/juanmuscaria-damask"]
+	path = archives/juanmuscaria-damask
+	url = https://github.com/AutoArchives/juanmuscaria-damask.git
