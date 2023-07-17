@@ -91,3 +91,6 @@
 [submodule "archives/techcatother-um_bukkit"]
 	path = archives/techcatother-um_bukkit
 	url = https://github.com/AutoArchives/techcatother-um_bukkit.git
+[submodule "archives/sidoh-reactor_simulator"]
+	path = archives/sidoh-reactor_simulator
+	url = https://github.com/AutoArchives/sidoh-reactor_simulator.git
