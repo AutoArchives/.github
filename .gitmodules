@@ -85,3 +85,6 @@
 [submodule "archives/magitechnetwork-magihandlers"]
 	path = archives/magitechnetwork-magihandlers
 	url = https://github.com/AutoArchives/magitechnetwork-magihandlers.git
+[submodule "archives/himmelt-sekka"]
+	path = archives/himmelt-sekka
+	url = https://github.com/AutoArchives/himmelt-sekka.git
