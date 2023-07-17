@@ -23,6 +23,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.jgit.api.CreateBranchCommand.SetupUpstreamMode;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.ListBranchCommand;
+import org.eclipse.jgit.api.ResetCommand;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.submodule.SubmoduleWalk;
 import org.eclipse.jgit.transport.RefSpec;
@@ -227,6 +228,9 @@ class archiver implements Runnable {
                 submodule.fetch().setRemote("upstream").call();
                 for (String branch : branches) {
                   if (upstreamBranches.containsKey(branch)) {
+                    // Ensure we are clean
+                    submodule.reset().setMode(ResetCommand.ResetType.HARD).call();
+
                     var checkout = submodule.checkout().setName(branch).setStartPoint("origin/" + branch).setForced(true);
                     // Ugh, I wish it was cleaner than doing this.
                     if (localBranches.contains(branch)) {
