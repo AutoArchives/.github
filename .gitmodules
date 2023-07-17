@@ -127,3 +127,6 @@
 [submodule "archives/juanmuscaria-elixr"]
 	path = archives/juanmuscaria-elixr
 	url = https://github.com/AutoArchives/juanmuscaria-elixr.git
+[submodule "archives/ctrlshiftesc-elixr"]
+	path = archives/ctrlshiftesc-elixr
+	url = https://github.com/AutoArchives/ctrlshiftesc-elixr.git
