@@ -136,3 +136,6 @@
 [submodule "archives/juanmuscaria-damask"]
 	path = archives/juanmuscaria-damask
 	url = https://github.com/AutoArchives/juanmuscaria-damask.git
+[submodule "archives/juanmuscaria-kimagine"]
+	path = archives/juanmuscaria-kimagine
+	url = https://github.com/AutoArchives/juanmuscaria-kimagine.git
