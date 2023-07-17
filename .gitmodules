@@ -70,3 +70,6 @@
 [submodule "archives/icosider-gecko"]
 	path = archives/icosider-gecko
 	url = https://github.com/AutoArchives/icosider-gecko.git
+[submodule "archives/crazy-crew-crazycrates"]
+	path = archives/crazy-crew-crazycrates
+	url = https://github.com/AutoArchives/crazy-crew-crazycrates.git
