@@ -5,6 +5,9 @@
     },
     "yamakaja-runtimetransformer" : {
       "upstreamName" : "Yamakaja/RuntimeTransformer"
+    },
+    "milkbowl-vault" : {
+      "upstreamName" : "MilkBowl/Vault"
     }
   }
 }
