@@ -67,3 +67,6 @@
 [submodule "archives/stepan14041999-cookie"]
 	path = archives/stepan14041999-cookie
 	url = https://github.com/AutoArchives/stepan14041999-cookie.git
+[submodule "archives/icosider-gecko"]
+	path = archives/icosider-gecko
+	url = https://github.com/AutoArchives/icosider-gecko.git
