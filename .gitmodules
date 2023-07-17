@@ -82,3 +82,6 @@
 [submodule "archives/gamerforea-eventhelper"]
 	path = archives/gamerforea-eventhelper
 	url = https://github.com/AutoArchives/gamerforea-eventhelper.git
+[submodule "archives/magitechnetwork-magihandlers"]
+	path = archives/magitechnetwork-magihandlers
+	url = https://github.com/AutoArchives/magitechnetwork-magihandlers.git
