@@ -139,3 +139,6 @@
 [submodule "archives/juanmuscaria-kimagine"]
 	path = archives/juanmuscaria-kimagine
 	url = https://github.com/AutoArchives/juanmuscaria-kimagine.git
+[submodule "archives/juanmuscaria-lightbukkit"]
+	path = archives/juanmuscaria-lightbukkit
+	url = https://github.com/AutoArchives/juanmuscaria-lightbukkit.git
