@@ -64,3 +64,6 @@
 [submodule "archives/hallowizer-fastcraftcoderpack"]
 	path = archives/hallowizer-fastcraftcoderpack
 	url = https://github.com/AutoArchives/hallowizer-fastcraftcoderpack.git
+[submodule "archives/stepan14041999-cookie"]
+	path = archives/stepan14041999-cookie
+	url = https://github.com/AutoArchives/stepan14041999-cookie.git
