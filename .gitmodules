@@ -76,3 +76,6 @@
 [submodule "archives/doubledoordevelopment-itemblacklist"]
 	path = archives/doubledoordevelopment-itemblacklist
 	url = https://github.com/AutoArchives/doubledoordevelopment-itemblacklist.git
+[submodule "archives/fabiozumbi12-pixelvip"]
+	path = archives/fabiozumbi12-pixelvip
+	url = https://github.com/AutoArchives/fabiozumbi12-pixelvip.git
