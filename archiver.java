@@ -365,6 +365,7 @@ class archiver implements Runnable {
           return 1;
         }
 
+        logger.info("Forking {}", ghRepoId);
         var originalGitHubRepo = github.getRepository(ghRepoId);
         var org = github.getOrganization(orgName);
         GHRepository fork;
@@ -376,6 +377,7 @@ class archiver implements Runnable {
           // No repo found, let's fork it!
           fork = originalGitHubRepo.forkTo(org);
           fork.renameTo(newId);
+          fork = github.getRepository(orgName + '/' + newId);
         }
 
         // When adding submodules, you *must* commit the added submodule, otherwise weird things happen....
