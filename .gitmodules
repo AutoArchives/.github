@@ -13,3 +13,6 @@
 [submodule "archives/cruciblemc-crucible"]
 	path = archives/cruciblemc-crucible
 	url = https://github.com/AutoArchives/Crucible.git
+[submodule "archives/games647-fastlogin"]
+	path = archives/games647-fastlogin
+	url = https://github.com/AutoArchives/FastLogin.git
