@@ -112,3 +112,6 @@
 [submodule "archives/kasperfranz-kaisrandomteleport"]
 	path = archives/kasperfranz-kaisrandomteleport
 	url = https://github.com/AutoArchives/kasperfranz-kaisrandomteleport.git
+[submodule "archives/shevchikunsupportedprojects-modfixng"]
+	path = archives/shevchikunsupportedprojects-modfixng
+	url = https://github.com/AutoArchives/shevchikunsupportedprojects-modfixng.git
