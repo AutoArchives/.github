@@ -8,6 +8,9 @@
     },
     "milkbowl-vault" : {
       "upstreamName" : "MilkBowl/Vault"
+    },
+    "fabiozumbi12-ultimatechat" : {
+      "upstreamName" : "FabioZumbi12/UltimateChat"
     }
   }
 }
