@@ -88,3 +88,6 @@
 [submodule "archives/himmelt-sekka"]
 	path = archives/himmelt-sekka
 	url = https://github.com/AutoArchives/himmelt-sekka.git
+[submodule "archives/techcatother-um_bukkit"]
+	path = archives/techcatother-um_bukkit
+	url = https://github.com/AutoArchives/techcatother-um_bukkit.git
