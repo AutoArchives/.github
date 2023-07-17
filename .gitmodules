@@ -55,3 +55,6 @@
 [submodule "archives/akullpp-awesome-java"]
 	path = archives/akullpp-awesome-java
 	url = https://github.com/AutoArchives/akullpp-awesome-java.git
+[submodule "archives/timtomtim7-chatmenuapi"]
+	path = archives/timtomtim7-chatmenuapi
+	url = https://github.com/AutoArchives/timtomtim7-chatmenuapi.git
