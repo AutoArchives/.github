@@ -7,3 +7,6 @@
 [submodule "archives/milkbowl-vault"]
 	path = archives/milkbowl-vault
 	url = https://github.com/AutoArchives/Vault.git
+[submodule "archives/fabiozumbi12-ultimatechat"]
+	path = archives/fabiozumbi12-ultimatechat
+	url = https://github.com/AutoArchives/UltimateChat.git
