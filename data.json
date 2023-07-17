@@ -32,6 +32,120 @@
     },
     "juanmuscaria-magma" : {
       "upstreamName" : "juanmuscaria/Magma"
+    },
+    "addstarmc-prism-bukkit" : {
+      "upstreamName" : "AddstarMC/Prism-Bukkit"
+    },
+    "intellectualsites-plotsquared" : {
+      "upstreamName" : "IntellectualSites/PlotSquared"
+    },
+    "domnian-paperdragon" : {
+      "upstreamName" : "domnian/PaperDragon"
+    },
+    "uraniummc-uranium" : {
+      "upstreamName" : "UraniumMC/Uranium"
+    },
+    "orionminecraft-orion" : {
+      "upstreamName" : "OrionMinecraft/Orion"
+    },
+    "mbax-vanishnopacket" : {
+      "upstreamName" : "mbax/VanishNoPacket"
+    },
+    "xsun2001-applied-energistics-2-unofficial" : {
+      "upstreamName" : "xsun2001/Applied-Energistics-2-Unofficial"
+    },
+    "akullpp-awesome-java" : {
+      "upstreamName" : "akullpp/awesome-java"
+    },
+    "timtomtim7-chatmenuapi" : {
+      "upstreamName" : "timtomtim7/ChatMenuAPI"
+    },
+    "sameer-extrautilities" : {
+      "upstreamName" : "sameer/ExtraUtilities"
+    },
+    "hallowizer-fastcraftcoderpack" : {
+      "upstreamName" : "Hallowizer/FastcraftCoderPack"
+    },
+    "stepan14041999-cookie" : {
+      "upstreamName" : "stepan14041999/Cookie"
+    },
+    "icosider-gecko" : {
+      "upstreamName" : "Icosider/Gecko"
+    },
+    "crazy-crew-crazycrates" : {
+      "upstreamName" : "Crazy-Crew/CrazyCrates"
+    },
+    "doubledoordevelopment-itemblacklist" : {
+      "upstreamName" : "DoubleDoorDevelopment/ItemBlacklist"
+    },
+    "fabiozumbi12-pixelvip" : {
+      "upstreamName" : "FabioZumbi12/PixelVip"
+    },
+    "gamerforea-eventhelper" : {
+      "upstreamName" : "gamerforEA/EventHelper"
+    },
+    "magitechnetwork-magihandlers" : {
+      "upstreamName" : "MagiTechNetwork/MagiHandlers"
+    },
+    "himmelt-sekka" : {
+      "upstreamName" : "Himmelt/Sekka"
+    },
+    "techcatother-um_bukkit" : {
+      "upstreamName" : "TechCatOther/um_bukkit"
+    },
+    "sidoh-reactor_simulator" : {
+      "upstreamName" : "sidoh/reactor_simulator"
+    },
+    "bogdan-g-ffokc" : {
+      "upstreamName" : "Bogdan-G/FFoKC"
+    },
+    "dvhaldane-forgerestrictor" : {
+      "upstreamName" : "dvhaldane/ForgeRestrictor"
+    },
+    "evernife-forgerestrictor" : {
+      "upstreamName" : "EverNife/ForgeRestrictor"
+    },
+    "cube-space-yamler" : {
+      "upstreamName" : "Cube-Space/Yamler"
+    },
+    "spark108-svarka" : {
+      "upstreamName" : "spark108/Svarka"
+    },
+    "kasperfranz-kaisrandomteleport" : {
+      "upstreamName" : "KasperFranz/KaisRandomTeleport"
+    },
+    "shevchikunsupportedprojects-modfixng" : {
+      "upstreamName" : "ShevchikUnsupportedProjects/ModFixNG"
+    },
+    "cyberdynecc-thermos-bukkit" : {
+      "upstreamName" : "CyberdyneCC/Thermos-Bukkit"
+    },
+    "kookykraftmc-betterchunkloader" : {
+      "upstreamName" : "KookykraftMC/BetterChunkLoader"
+    },
+    "dvhaldane-bclforgelib" : {
+      "upstreamName" : "dvhaldane/BCLForgeLib"
+    },
+    "juanmuscaria-elixr" : {
+      "upstreamName" : "juanmuscaria/elixr"
+    },
+    "ctrlshiftesc-elixr" : {
+      "upstreamName" : "CtrlShiftEsc/elixr"
+    },
+    "minemine-minetickmod" : {
+      "upstreamName" : "MineMine/MinetickMod"
+    },
+    "juanmuscaria-damask" : {
+      "upstreamName" : "juanmuscaria/Damask"
+    },
+    "juanmuscaria-kimagine" : {
+      "upstreamName" : "juanmuscaria/KImagine"
+    },
+    "juanmuscaria-lightbukkit" : {
+      "upstreamName" : "juanmuscaria/LightBukkit"
+    },
+    "dimensionaldevelopment-legacylauncher" : {
+      "upstreamName" : "DimensionalDevelopment/LegacyLauncher"
     }
   }
 }
