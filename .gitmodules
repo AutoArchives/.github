@@ -118,3 +118,6 @@
 [submodule "archives/cyberdynecc-thermos-bukkit"]
 	path = archives/cyberdynecc-thermos-bukkit
 	url = https://github.com/AutoArchives/cyberdynecc-thermos-bukkit.git
+[submodule "archives/kookykraftmc-betterchunkloader"]
+	path = archives/kookykraftmc-betterchunkloader
+	url = https://github.com/AutoArchives/kookykraftmc-betterchunkloader.git
