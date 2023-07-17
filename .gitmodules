@@ -1,33 +1,42 @@
 [submodule "archives/juanmuscaria-tesssst"]
 	path = archives/juanmuscaria-tesssst
-	url = https://github.com/AutoArchives/tesssst.git
+	url = https://github.com/AutoArchives/juanmuscaria-tesssst.git
 [submodule "archives/yamakaja-runtimetransformer"]
 	path = archives/yamakaja-runtimetransformer
-	url = https://github.com/AutoArchives/RuntimeTransformer.git
+	url = https://github.com/AutoArchives/yamakaja-runtimetransformer.git
 [submodule "archives/milkbowl-vault"]
 	path = archives/milkbowl-vault
-	url = https://github.com/AutoArchives/Vault.git
+	url = https://github.com/AutoArchives/milkbowl-vault.git
 [submodule "archives/fabiozumbi12-ultimatechat"]
 	path = archives/fabiozumbi12-ultimatechat
-	url = https://github.com/AutoArchives/UltimateChat.git
+	url = https://github.com/AutoArchives/fabiozumbi12-ultimatechat.git
 [submodule "archives/cruciblemc-crucible"]
 	path = archives/cruciblemc-crucible
-	url = https://github.com/AutoArchives/Crucible.git
+	url = https://github.com/AutoArchives/cruciblemc-crucible.git
 [submodule "archives/games647-fastlogin"]
 	path = archives/games647-fastlogin
-	url = https://github.com/AutoArchives/FastLogin.git
+	url = https://github.com/AutoArchives/games647-fastlogin.git
 [submodule "archives/minecraftforge-srg2source"]
 	path = archives/minecraftforge-srg2source
-	url = https://github.com/AutoArchives/Srg2Source.git
+	url = https://github.com/AutoArchives/minecraftforge-srg2source.git
 [submodule "archives/andreasdc-travertine"]
 	path = archives/andreasdc-travertine
-	url = https://github.com/AutoArchives/Travertine.git
+	url = https://github.com/AutoArchives/andreasdc-travertine.git
 [submodule "archives/technicpack-launcherv3"]
 	path = archives/technicpack-launcherv3
-	url = https://github.com/AutoArchives/LauncherV3.git
+	url = https://github.com/AutoArchives/technicpack-launcherv3.git
 [submodule "archives/team-fruit-emojicord"]
 	path = archives/team-fruit-emojicord
-	url = https://github.com/AutoArchives/Emojicord.git
+	url = https://github.com/AutoArchives/team-fruit-emojicord.git
 [submodule "archives/juanmuscaria-magma"]
 	path = archives/juanmuscaria-magma
-	url = https://github.com/AutoArchives/Magma.git
+	url = https://github.com/AutoArchives/juanmuscaria-magma.git
+[submodule "archives/addstarmc-prism-bukkit"]
+	path = archives/addstarmc-prism-bukkit
+	url = https://github.com/AutoArchives/addstarmc-prism-bukkit.git
+[submodule "archives/intellectualsites-plotsquared"]
+	path = archives/intellectualsites-plotsquared
+	url = https://github.com/AutoArchives/intellectualsites-plotsquared.git
+[submodule "archives/domnian-paperdragon"]
+	path = archives/domnian-paperdragon
+	url = https://github.com/AutoArchives/domnian-paperdragon.git
