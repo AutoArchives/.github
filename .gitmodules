@@ -79,3 +79,6 @@
 [submodule "archives/fabiozumbi12-pixelvip"]
 	path = archives/fabiozumbi12-pixelvip
 	url = https://github.com/AutoArchives/fabiozumbi12-pixelvip.git
+[submodule "archives/gamerforea-eventhelper"]
+	path = archives/gamerforea-eventhelper
+	url = https://github.com/AutoArchives/gamerforea-eventhelper.git
