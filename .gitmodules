@@ -97,3 +97,6 @@
 [submodule "archives/bogdan-g-ffokc"]
 	path = archives/bogdan-g-ffokc
 	url = https://github.com/AutoArchives/bogdan-g-ffokc.git
+[submodule "archives/dvhaldane-forgerestrictor"]
+	path = archives/dvhaldane-forgerestrictor
+	url = https://github.com/AutoArchives/dvhaldane-forgerestrictor.git
