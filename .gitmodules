@@ -25,3 +25,6 @@
 [submodule "archives/technicpack-launcherv3"]
 	path = archives/technicpack-launcherv3
 	url = https://github.com/AutoArchives/LauncherV3.git
+[submodule "archives/team-fruit-emojicord"]
+	path = archives/team-fruit-emojicord
+	url = https://github.com/AutoArchives/Emojicord.git
