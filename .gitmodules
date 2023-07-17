@@ -103,3 +103,6 @@
 [submodule "archives/evernife-forgerestrictor"]
 	path = archives/evernife-forgerestrictor
 	url = https://github.com/AutoArchives/evernife-forgerestrictor.git
+[submodule "archives/cube-space-yamler"]
+	path = archives/cube-space-yamler
+	url = https://github.com/AutoArchives/cube-space-yamler.git
