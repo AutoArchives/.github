@@ -58,3 +58,6 @@
 [submodule "archives/timtomtim7-chatmenuapi"]
 	path = archives/timtomtim7-chatmenuapi
 	url = https://github.com/AutoArchives/timtomtim7-chatmenuapi.git
+[submodule "archives/sameer-extrautilities"]
+	path = archives/sameer-extrautilities
+	url = https://github.com/AutoArchives/sameer-extrautilities.git
