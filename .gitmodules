@@ -130,3 +130,6 @@
 [submodule "archives/ctrlshiftesc-elixr"]
 	path = archives/ctrlshiftesc-elixr
 	url = https://github.com/AutoArchives/ctrlshiftesc-elixr.git
+[submodule "archives/minemine-minetickmod"]
+	path = archives/minemine-minetickmod
+	url = https://github.com/AutoArchives/minemine-minetickmod.git
