@@ -19,3 +19,6 @@
 [submodule "archives/minecraftforge-srg2source"]
 	path = archives/minecraftforge-srg2source
 	url = https://github.com/AutoArchives/Srg2Source.git
+[submodule "archives/andreasdc-travertine"]
+	path = archives/andreasdc-travertine
+	url = https://github.com/AutoArchives/Travertine.git
