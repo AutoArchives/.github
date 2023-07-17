@@ -61,3 +61,6 @@
 [submodule "archives/sameer-extrautilities"]
 	path = archives/sameer-extrautilities
 	url = https://github.com/AutoArchives/sameer-extrautilities.git
+[submodule "archives/hallowizer-fastcraftcoderpack"]
+	path = archives/hallowizer-fastcraftcoderpack
+	url = https://github.com/AutoArchives/hallowizer-fastcraftcoderpack.git
