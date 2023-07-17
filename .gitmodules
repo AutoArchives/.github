@@ -43,3 +43,6 @@
 [submodule "archives/uraniummc-uranium"]
 	path = archives/uraniummc-uranium
 	url = https://github.com/AutoArchives/uraniummc-uranium.git
+[submodule "archives/orionminecraft-orion"]
+	path = archives/orionminecraft-orion
+	url = https://github.com/AutoArchives/orionminecraft-orion.git
