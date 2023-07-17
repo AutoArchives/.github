@@ -73,3 +73,6 @@
 [submodule "archives/crazy-crew-crazycrates"]
 	path = archives/crazy-crew-crazycrates
 	url = https://github.com/AutoArchives/crazy-crew-crazycrates.git
+[submodule "archives/doubledoordevelopment-itemblacklist"]
+	path = archives/doubledoordevelopment-itemblacklist
+	url = https://github.com/AutoArchives/doubledoordevelopment-itemblacklist.git
