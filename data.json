@@ -2,6 +2,9 @@
   "repos" : {
     "juanmuscaria-tesssst" : {
       "upstreamName" : "juanmuscaria/tesssst"
+    },
+    "yamakaja-runtimetransformer" : {
+      "upstreamName" : "Yamakaja/RuntimeTransformer"
     }
   }
 }
