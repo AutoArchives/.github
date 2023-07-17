@@ -23,6 +23,9 @@
     },
     "andreasdc-travertine" : {
       "upstreamName" : "andreasdc/Travertine"
+    },
+    "technicpack-launcherv3" : {
+      "upstreamName" : "TechnicPack/LauncherV3"
     }
   }
 }
