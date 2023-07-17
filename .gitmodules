@@ -16,3 +16,6 @@
 [submodule "archives/games647-fastlogin"]
 	path = archives/games647-fastlogin
 	url = https://github.com/AutoArchives/FastLogin.git
+[submodule "archives/minecraftforge-srg2source"]
+	path = archives/minecraftforge-srg2source
+	url = https://github.com/AutoArchives/Srg2Source.git
