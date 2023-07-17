@@ -22,3 +22,6 @@
 [submodule "archives/andreasdc-travertine"]
 	path = archives/andreasdc-travertine
 	url = https://github.com/AutoArchives/Travertine.git
+[submodule "archives/technicpack-launcherv3"]
+	path = archives/technicpack-launcherv3
+	url = https://github.com/AutoArchives/LauncherV3.git
