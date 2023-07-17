@@ -31,12 +31,6 @@
 [submodule "archives/juanmuscaria-magma"]
 	path = archives/juanmuscaria-magma
 	url = https://github.com/AutoArchives/juanmuscaria-magma.git
-[submodule "archives/addstarmc-prism-bukkit"]
-	path = archives/addstarmc-prism-bukkit
-	url = https://github.com/AutoArchives/addstarmc-prism-bukkit.git
-[submodule "archives/intellectualsites-plotsquared"]
-	path = archives/intellectualsites-plotsquared
-	url = https://github.com/AutoArchives/intellectualsites-plotsquared.git
 [submodule "archives/domnian-paperdragon"]
 	path = archives/domnian-paperdragon
 	url = https://github.com/AutoArchives/domnian-paperdragon.git
@@ -145,3 +139,6 @@
 [submodule "archives/dimensionaldevelopment-legacylauncher"]
 	path = archives/dimensionaldevelopment-legacylauncher
 	url = https://github.com/AutoArchives/dimensionaldevelopment-legacylauncher.git
+[submodule "archives/addstarmc-prism-bukkit"]
+	path = archives/addstarmc-prism-bukkit
+	url = https://github.com/AutoArchives/addstarmc-prism-bukkit.git
