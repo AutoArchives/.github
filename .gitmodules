@@ -121,3 +121,6 @@
 [submodule "archives/kookykraftmc-betterchunkloader"]
 	path = archives/kookykraftmc-betterchunkloader
 	url = https://github.com/AutoArchives/kookykraftmc-betterchunkloader.git
+[submodule "archives/dvhaldane-bclforgelib"]
+	path = archives/dvhaldane-bclforgelib
+	url = https://github.com/AutoArchives/dvhaldane-bclforgelib.git
