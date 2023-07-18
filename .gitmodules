@@ -148,3 +148,6 @@
 [submodule "archives/anatawa12-forgegradle-1.2"]
 	path = archives/anatawa12-forgegradle-1.2
 	url = https://github.com/AutoArchives/anatawa12-forgegradle-1.2.git
+[submodule "archives/anatawa12-forgegradle-2.3"]
+	path = archives/anatawa12-forgegradle-2.3
+	url = https://github.com/AutoArchives/anatawa12-forgegradle-2.3.git
