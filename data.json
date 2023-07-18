@@ -195,6 +195,10 @@
     "intellectualsites-plotsquared" : {
       "upstreamName" : "IntellectualSites/PlotSquared",
       "upstreamGone" : false
+    },
+    "anatawa12-forgegradle-1.2" : {
+      "upstreamName" : "anatawa12/ForgeGradle-1.2",
+      "upstreamGone" : false
     }
   }
 }
