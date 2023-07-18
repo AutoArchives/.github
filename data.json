@@ -1,151 +1,200 @@
 {
   "repos" : {
     "juanmuscaria-tesssst" : {
-      "upstreamName" : "juanmuscaria/tesssst"
+      "upstreamName" : "juanmuscaria/tesssst",
+      "upstreamGone" : false
     },
     "yamakaja-runtimetransformer" : {
-      "upstreamName" : "Yamakaja/RuntimeTransformer"
+      "upstreamName" : "Yamakaja/RuntimeTransformer",
+      "upstreamGone" : false
     },
     "milkbowl-vault" : {
-      "upstreamName" : "MilkBowl/Vault"
+      "upstreamName" : "MilkBowl/Vault",
+      "upstreamGone" : false
     },
     "fabiozumbi12-ultimatechat" : {
-      "upstreamName" : "FabioZumbi12/UltimateChat"
+      "upstreamName" : "FabioZumbi12/UltimateChat",
+      "upstreamGone" : false
     },
     "cruciblemc-crucible" : {
-      "upstreamName" : "CrucibleMC/Crucible"
+      "upstreamName" : "CrucibleMC/Crucible",
+      "upstreamGone" : false
     },
     "games647-fastlogin" : {
-      "upstreamName" : "games647/FastLogin"
+      "upstreamName" : "games647/FastLogin",
+      "upstreamGone" : false
     },
     "minecraftforge-srg2source" : {
-      "upstreamName" : "MinecraftForge/Srg2Source"
+      "upstreamName" : "MinecraftForge/Srg2Source",
+      "upstreamGone" : false
     },
     "andreasdc-travertine" : {
-      "upstreamName" : "andreasdc/Travertine"
+      "upstreamName" : "andreasdc/Travertine",
+      "upstreamGone" : false
     },
     "technicpack-launcherv3" : {
-      "upstreamName" : "TechnicPack/LauncherV3"
+      "upstreamName" : "TechnicPack/LauncherV3",
+      "upstreamGone" : false
     },
     "team-fruit-emojicord" : {
-      "upstreamName" : "Team-Fruit/Emojicord"
+      "upstreamName" : "Team-Fruit/Emojicord",
+      "upstreamGone" : false
     },
     "juanmuscaria-magma" : {
-      "upstreamName" : "juanmuscaria/Magma"
+      "upstreamName" : "juanmuscaria/Magma",
+      "upstreamGone" : true
     },
     "domnian-paperdragon" : {
-      "upstreamName" : "domnian/PaperDragon"
+      "upstreamName" : "domnian/PaperDragon",
+      "upstreamGone" : false
     },
     "uraniummc-uranium" : {
-      "upstreamName" : "UraniumMC/Uranium"
+      "upstreamName" : "UraniumMC/Uranium",
+      "upstreamGone" : false
     },
     "orionminecraft-orion" : {
-      "upstreamName" : "OrionMinecraft/Orion"
+      "upstreamName" : "OrionMinecraft/Orion",
+      "upstreamGone" : false
     },
     "mbax-vanishnopacket" : {
-      "upstreamName" : "mbax/VanishNoPacket"
+      "upstreamName" : "mbax/VanishNoPacket",
+      "upstreamGone" : false
     },
     "xsun2001-applied-energistics-2-unofficial" : {
-      "upstreamName" : "xsun2001/Applied-Energistics-2-Unofficial"
+      "upstreamName" : "xsun2001/Applied-Energistics-2-Unofficial",
+      "upstreamGone" : false
     },
     "akullpp-awesome-java" : {
-      "upstreamName" : "akullpp/awesome-java"
+      "upstreamName" : "akullpp/awesome-java",
+      "upstreamGone" : false
     },
     "timtomtim7-chatmenuapi" : {
-      "upstreamName" : "timtomtim7/ChatMenuAPI"
+      "upstreamName" : "timtomtim7/ChatMenuAPI",
+      "upstreamGone" : false
     },
     "sameer-extrautilities" : {
-      "upstreamName" : "sameer/ExtraUtilities"
+      "upstreamName" : "sameer/ExtraUtilities",
+      "upstreamGone" : false
     },
     "hallowizer-fastcraftcoderpack" : {
-      "upstreamName" : "Hallowizer/FastcraftCoderPack"
+      "upstreamName" : "Hallowizer/FastcraftCoderPack",
+      "upstreamGone" : false
     },
     "stepan14041999-cookie" : {
-      "upstreamName" : "stepan14041999/Cookie"
+      "upstreamName" : "stepan14041999/Cookie",
+      "upstreamGone" : false
     },
     "icosider-gecko" : {
-      "upstreamName" : "Icosider/Gecko"
+      "upstreamName" : "Icosider/Gecko",
+      "upstreamGone" : false
     },
     "crazy-crew-crazycrates" : {
-      "upstreamName" : "Crazy-Crew/CrazyCrates"
+      "upstreamName" : "Crazy-Crew/CrazyCrates",
+      "upstreamGone" : false
     },
     "doubledoordevelopment-itemblacklist" : {
-      "upstreamName" : "DoubleDoorDevelopment/ItemBlacklist"
+      "upstreamName" : "DoubleDoorDevelopment/ItemBlacklist",
+      "upstreamGone" : false
     },
     "fabiozumbi12-pixelvip" : {
-      "upstreamName" : "FabioZumbi12/PixelVip"
+      "upstreamName" : "FabioZumbi12/PixelVip",
+      "upstreamGone" : false
     },
     "gamerforea-eventhelper" : {
-      "upstreamName" : "gamerforEA/EventHelper"
+      "upstreamName" : "gamerforEA/EventHelper",
+      "upstreamGone" : false
     },
     "magitechnetwork-magihandlers" : {
-      "upstreamName" : "MagiTechNetwork/MagiHandlers"
+      "upstreamName" : "MagiTechNetwork/MagiHandlers",
+      "upstreamGone" : false
     },
     "himmelt-sekka" : {
-      "upstreamName" : "Himmelt/Sekka"
+      "upstreamName" : "Himmelt/Sekka",
+      "upstreamGone" : false
     },
     "techcatother-um_bukkit" : {
-      "upstreamName" : "TechCatOther/um_bukkit"
+      "upstreamName" : "TechCatOther/um_bukkit",
+      "upstreamGone" : false
     },
     "sidoh-reactor_simulator" : {
-      "upstreamName" : "sidoh/reactor_simulator"
+      "upstreamName" : "sidoh/reactor_simulator",
+      "upstreamGone" : false
     },
     "bogdan-g-ffokc" : {
-      "upstreamName" : "Bogdan-G/FFoKC"
+      "upstreamName" : "Bogdan-G/FFoKC",
+      "upstreamGone" : false
     },
     "dvhaldane-forgerestrictor" : {
-      "upstreamName" : "dvhaldane/ForgeRestrictor"
+      "upstreamName" : "dvhaldane/ForgeRestrictor",
+      "upstreamGone" : false
     },
     "evernife-forgerestrictor" : {
-      "upstreamName" : "EverNife/ForgeRestrictor"
+      "upstreamName" : "EverNife/ForgeRestrictor",
+      "upstreamGone" : false
     },
     "cube-space-yamler" : {
-      "upstreamName" : "Cube-Space/Yamler"
+      "upstreamName" : "Cube-Space/Yamler",
+      "upstreamGone" : false
     },
     "spark108-svarka" : {
-      "upstreamName" : "spark108/Svarka"
+      "upstreamName" : "spark108/Svarka",
+      "upstreamGone" : false
     },
     "kasperfranz-kaisrandomteleport" : {
-      "upstreamName" : "KasperFranz/KaisRandomTeleport"
+      "upstreamName" : "KasperFranz/KaisRandomTeleport",
+      "upstreamGone" : false
     },
     "shevchikunsupportedprojects-modfixng" : {
-      "upstreamName" : "ShevchikUnsupportedProjects/ModFixNG"
+      "upstreamName" : "ShevchikUnsupportedProjects/ModFixNG",
+      "upstreamGone" : false
     },
     "cyberdynecc-thermos-bukkit" : {
-      "upstreamName" : "CyberdyneCC/Thermos-Bukkit"
+      "upstreamName" : "CyberdyneCC/Thermos-Bukkit",
+      "upstreamGone" : false
     },
     "kookykraftmc-betterchunkloader" : {
-      "upstreamName" : "KookykraftMC/BetterChunkLoader"
+      "upstreamName" : "KookykraftMC/BetterChunkLoader",
+      "upstreamGone" : false
     },
     "dvhaldane-bclforgelib" : {
-      "upstreamName" : "dvhaldane/BCLForgeLib"
+      "upstreamName" : "dvhaldane/BCLForgeLib",
+      "upstreamGone" : false
     },
     "juanmuscaria-elixr" : {
-      "upstreamName" : "juanmuscaria/elixr"
+      "upstreamName" : "juanmuscaria/elixr",
+      "upstreamGone" : true
     },
     "ctrlshiftesc-elixr" : {
-      "upstreamName" : "CtrlShiftEsc/elixr"
+      "upstreamName" : "CtrlShiftEsc/elixr",
+      "upstreamGone" : false
     },
     "minemine-minetickmod" : {
-      "upstreamName" : "MineMine/MinetickMod"
+      "upstreamName" : "MineMine/MinetickMod",
+      "upstreamGone" : false
     },
     "juanmuscaria-damask" : {
-      "upstreamName" : "juanmuscaria/Damask"
+      "upstreamName" : "juanmuscaria/Damask",
+      "upstreamGone" : true
     },
     "juanmuscaria-kimagine" : {
-      "upstreamName" : "juanmuscaria/KImagine"
+      "upstreamName" : "juanmuscaria/KImagine",
+      "upstreamGone" : true
     },
     "juanmuscaria-lightbukkit" : {
-      "upstreamName" : "juanmuscaria/LightBukkit"
+      "upstreamName" : "juanmuscaria/LightBukkit",
+      "upstreamGone" : true
     },
     "dimensionaldevelopment-legacylauncher" : {
-      "upstreamName" : "DimensionalDevelopment/LegacyLauncher"
+      "upstreamName" : "DimensionalDevelopment/LegacyLauncher",
+      "upstreamGone" : false
     },
     "addstarmc-prism-bukkit" : {
-      "upstreamName" : "AddstarMC/Prism-Bukkit"
+      "upstreamName" : "AddstarMC/Prism-Bukkit",
+      "upstreamGone" : false
     },
     "intellectualsites-plotsquared" : {
-      "upstreamName" : "IntellectualSites/PlotSquared"
+      "upstreamName" : "IntellectualSites/PlotSquared",
+      "upstreamGone" : false
     }
   }
 }
