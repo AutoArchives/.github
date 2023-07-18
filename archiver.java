@@ -20,6 +20,11 @@ import club.minnced.discord.webhook.send.WebhookEmbed;
 import club.minnced.discord.webhook.send.WebhookEmbedBuilder;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import lombok.Value;
+import lombok.extern.jackson.Jacksonized;
 import org.eclipse.jgit.api.CreateBranchCommand.SetupUpstreamMode;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.ListBranchCommand;
@@ -51,7 +56,7 @@ import java.util.stream.Collectors;
 import static picocli.CommandLine.Parameters.NULL_VALUE;
 
 @Command(name = "archiver", mixinStandardHelpOptions = true, description = "Archive management system", subcommands = {
-    archiver.CommandAdd.class, archiver.CommandSync.class
+    archiver.CommandAdd.class, archiver.CommandSync.class, archiver.CommandMod.class
 })
 class archiver implements Runnable {
   static final Path DATA_FILE = Path.of("data.json");
@@ -106,6 +111,36 @@ class archiver implements Runnable {
     log("@|green Type archiver --help for available commands.|@");
   }
 
+  @Command(name = "mod", description = "Modify an archived repo flags", mixinStandardHelpOptions = true)
+  static class CommandMod implements Callable<Integer> {
+    @Option(names = {"--upstreamGone", "-D"}, description = "Set if upstream is gone/deleted.", defaultValue = NULL_VALUE)
+    Boolean upstreamGone;
+    @Parameters(index = "0", description = "Repository name within the archives.", defaultValue = "")
+    private String id;
+
+    @Override
+    public Integer call() throws Exception {
+      id = id.toLowerCase(Locale.ROOT);
+      var data = getData();
+      var repo = data.repos().get(id);
+
+      if (repo == null) {
+        log("@|red Repository not found within the archives.|@");
+        return 1;
+      }
+
+      ArchivedRepo newRepo;
+      data.repos().put(id, newRepo = ArchivedRepo.builder()
+          .upstreamName(repo.getUpstreamName())
+          .upstreamGone(upstreamGone == null ? repo.isUpstreamGone() : upstreamGone)
+          .build());
+      saveData(data);
+
+      logger.info("Updated {} to {}", repo, newRepo);
+      return 0;
+    }
+  }
+
   @Command(name = "sync", description = "Syncs all archived repos with their upstream.", mixinStandardHelpOptions = true)
   static class CommandSync implements Callable<Integer> {
     @Option(names = {"--token", "-T"}, description = "GitHub token", defaultValue = "")
@@ -158,12 +193,19 @@ class archiver implements Runnable {
         var data = getData();
         List<String> changes = new ArrayList<>();
         var localRepo = localGit.getRepository();
+
         for (Map.Entry<String, ArchivedRepo> entry : data.repos().entrySet()) {
+          if (entry.getValue().isUpstreamGone()) {
+            // Nothing to update if there's no upstream to update from...
+            log("Skipping {}", entry.getKey());
+            continue;
+          }
+
           log("Updating {}", entry.getKey());
 
           try (var submodule = Git.wrap(SubmoduleWalk.getSubmoduleRepository(localRepo, "archives/" + entry.getKey()))) {
             // Used to fetch remote data directly from GitHub.
-            var upstream = github.getRepository(entry.getValue().upstreamName());
+            var upstream = github.getRepository(entry.getValue().getUpstreamName());
             var downstream = github.getRepository(orgName + '/' + entry.getKey());
 
             // Hack around submodule limited information and GitHub actions messing up auth...
@@ -397,7 +439,7 @@ class archiver implements Runnable {
         localGit.submoduleDeinit().setForce(true).addPath(submodulePath).call();
 
         // Everything went right (I think), we can now save the new archived repo and let auto commit handle the changed data.
-        data.repos().put(newId, new ArchivedRepo(originalGitHubRepo.getFullName()));
+        data.repos().put(newId, ArchivedRepo.builder().upstreamName(originalGitHubRepo.getFullName()).build());
         saveData(data);
 
         // Notify the discord server we have a new repo!
@@ -426,5 +468,13 @@ class archiver implements Runnable {
 record DataSchema(Map<String, ArchivedRepo> repos) {
 }
 
-record ArchivedRepo(String upstreamName) {
+// We may need fancy default values in the future, use lombok to make plain boring class less boring
+@Value
+@Builder
+@Jacksonized
+@ToString
+@EqualsAndHashCode
+class ArchivedRepo {
+  String upstreamName;
+  boolean upstreamGone; // Indicates that upstream is no longer existent and no attempts at updating should be made
 }
