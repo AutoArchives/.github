@@ -145,3 +145,6 @@
 [submodule "archives/intellectualsites-plotsquared"]
 	path = archives/intellectualsites-plotsquared
 	url = https://github.com/AutoArchives/intellectualsites-plotsquared.git
+[submodule "archives/anatawa12-forgegradle-1.2"]
+	path = archives/anatawa12-forgegradle-1.2
+	url = https://github.com/AutoArchives/anatawa12-forgegradle-1.2.git
