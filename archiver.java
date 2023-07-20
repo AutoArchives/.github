@@ -1,5 +1,5 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//JAVA 17+
+//JAVA 18+
 //DEPS ch.qos.logback:logback-core:1.4.8
 //DEPS ch.qos.logback:logback-classic:1.4.8
 //DEPS info.picocli:picocli:4.6.3
