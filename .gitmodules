@@ -151,3 +151,6 @@
 [submodule "archives/anatawa12-forgegradle-2.3"]
 	path = archives/anatawa12-forgegradle-2.3
 	url = https://github.com/AutoArchives/anatawa12-forgegradle-2.3.git
+[submodule "archives/ds58-panilla"]
+	path = archives/ds58-panilla
+	url = https://github.com/AutoArchives/ds58-panilla.git
