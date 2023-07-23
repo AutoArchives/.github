@@ -29,6 +29,7 @@ import org.eclipse.jgit.api.CreateBranchCommand.SetupUpstreamMode;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.ListBranchCommand;
 import org.eclipse.jgit.api.ResetCommand;
+import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.submodule.SubmoduleWalk;
 import org.eclipse.jgit.transport.RefSpec;
@@ -412,8 +413,8 @@ class archiver implements Runnable {
 
 
           if (data.repos().containsKey(newId)) {
-            log("@|red Repo is already archived!|@");
-            return 1;
+            log("@|red Repo %s is already archived!|@", newId);
+            continue;
           }
 
           logger.info("Forking {}", ghRepoIds[i]);
@@ -433,8 +434,17 @@ class archiver implements Runnable {
 
           // When adding submodules, you *must* commit the added submodule, otherwise weird things happen....
           var submodulePath = "archives/" + newId;
-          localGit.submoduleAdd().setPath(submodulePath).setURI(fork.getHttpTransportUrl())
-            .call().close();
+          try {
+            localGit.submoduleAdd().setPath(submodulePath).setURI(fork.getHttpTransportUrl())
+              .call().close();
+          } catch (JGitInternalException e) {
+            if (e.getMessage().endsWith(" already exists in the index")) {
+              logger.warn(e.getMessage());
+              Thread.sleep(500l);
+            } else {
+              throw e;
+            }
+          }
           localGit.add().addFilepattern(".gitmodules").addFilepattern(submodulePath).call();
 
           // Everything went right (I think), we can now save the new archived repo and let auto commit handle the changed data.
