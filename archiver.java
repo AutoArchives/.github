@@ -366,8 +366,8 @@ class archiver implements Runnable {
     String token;
     @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
     String webhook;
-    @Parameters(index = "0", description = "GitHub repository id (owner/repo) to add to the archives", defaultValue = NULL_VALUE)
-    private String ghRepoId;
+    @Parameters(description = "GitHub repository id (owner/repo) to add to the archives", defaultValue = "")
+    private String[] ghRepoIds;
 
     // Do let exceptions propagate, they should provide enough information about why they happened and this script is
     //  not meant to be executed by humans.
@@ -393,70 +393,81 @@ class archiver implements Runnable {
           return 1;
         }
 
-        if (ghRepoId == null) {
+        if (ghRepoIds.length == 0) {
           log("@|red Repository name must be provided!|@");
           return 1;
         } else {
-          ghRepoId = ghRepoId.toLowerCase(Locale.ROOT);
-          if (ghRepoId.startsWith(orgName.toLowerCase(Locale.ROOT))) {
-            log("@|red Cannot add an archiver repo to the archives!|@");
+          for (int i = 0; i < ghRepoIds.length; i++) {
+            ghRepoIds[i] = ghRepoIds[i].toLowerCase(Locale.ROOT);
+            if (ghRepoIds[i].startsWith(orgName.toLowerCase(Locale.ROOT))) {
+              log("@|red Cannot add an archiver repo to the archives!|@");
+              return 1;
+            }
+          }
+
+        }
+        var data = getData();
+        for (int i = 0; i < ghRepoIds.length; i++) {
+          var newId = ghRepoIds[i].replace('/', '-');
+
+
+          if (data.repos().containsKey(newId)) {
+            log("@|red Repo is already archived!|@");
             return 1;
           }
-        }
-        var newId = ghRepoId.toLowerCase().replace('/', '-');
-        var data = getData();
 
-        if (data.repos().containsKey(newId)) {
-          log("@|red Repo is already archived!|@");
-          return 1;
-        }
+          logger.info("Forking {}", ghRepoIds[i]);
+          var originalGitHubRepo = github.getRepository(ghRepoIds[i]);
+          var org = github.getOrganization(orgName);
+          GHRepository fork;
+          try {
+            // Maybe the script crashed during the brittle submodule handling
+            fork = github.getRepository(orgName + '/' + newId);
+            log("@|red Found archived fork with the same name... Data corruption? Using the already existing repo instead.|@");
+          } catch (Exception e) {
+            // No repo found, let's fork it!
+            fork = originalGitHubRepo.forkTo(org);
+            fork.renameTo(newId);
+            fork = github.getRepository(orgName + '/' + newId);
+          }
 
-        logger.info("Forking {}", ghRepoId);
-        var originalGitHubRepo = github.getRepository(ghRepoId);
-        var org = github.getOrganization(orgName);
-        GHRepository fork;
-        try {
-          // Maybe the script crashed during the brittle submodule handling
-          fork = github.getRepository(orgName + '/' + newId);
-          log("@|red Found archived fork with the same name... Data corruption? Using the already existing repo instead.|@");
-        } catch (Exception e) {
-          // No repo found, let's fork it!
-          fork = originalGitHubRepo.forkTo(org);
-          fork.renameTo(newId);
-          fork = github.getRepository(orgName + '/' + newId);
-        }
-
-        // When adding submodules, you *must* commit the added submodule, otherwise weird things happen....
-        var submodulePath = "archives/" + newId;
-        localGit.submoduleAdd().setPath(submodulePath).setURI(fork.getHttpTransportUrl())
+          // When adding submodules, you *must* commit the added submodule, otherwise weird things happen....
+          var submodulePath = "archives/" + newId;
+          localGit.submoduleAdd().setPath(submodulePath).setURI(fork.getHttpTransportUrl())
             .call().close();
-        localGit.add().addFilepattern(".gitmodules").addFilepattern(submodulePath).call();
-        localGit.commit().setAuthor(orgName, "").setMessage("Submodule created")
-            .setCommitter(orgName, "").setSign(false).setGpgConfig(new GpgConfig(new Config()))
-            .call();
+          localGit.add().addFilepattern(".gitmodules").addFilepattern(submodulePath).call();
 
-        // Maybe this is not needed? Better just deinit just to be on the safe side.
-        localGit.submoduleDeinit().setForce(true).addPath(submodulePath).call();
+          // Everything went right (I think), we can now save the new archived repo and let auto commit handle the changed data.
+          data.repos().put(newId, ArchivedRepo.builder().upstreamName(originalGitHubRepo.getFullName()).build());
 
-        // Everything went right (I think), we can now save the new archived repo and let auto commit handle the changed data.
-        data.repos().put(newId, ArchivedRepo.builder().upstreamName(originalGitHubRepo.getFullName()).build());
-        saveData(data);
-
-        // Notify the discord server we have a new repo!
-        if (!webhook.isBlank()) {
-          try (var client = WebhookClient.withUrl(webhook)) {
-            // Send and log (using embed)
-            WebhookEmbed embed = new WebhookEmbedBuilder()
+          // Notify the discord server we have a new repo!
+          if (!webhook.isBlank()) {
+            try (var client = WebhookClient.withUrl(webhook)) {
+              // Send and log (using embed)
+              WebhookEmbed embed = new WebhookEmbedBuilder()
                 .setColor(0xF69000) // Nice
                 .setTitle(new WebhookEmbed.EmbedTitle("New repository archived as " + newId, fork.getHtmlUrl().toString()))
                 .setDescription("Archived from [%s](%s)".formatted(originalGitHubRepo.getFullName(), originalGitHubRepo.getHtmlUrl().toString()))
                 .build();
 
-            client.send(embed).get();
-          } catch (Throwable e) {
-            logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
+              client.send(embed).get();
+            } catch (Throwable e) {
+              logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
+            }
           }
         }
+
+        localGit.commit().setAuthor(orgName, "").setMessage("Submodule created")
+          .setCommitter(orgName, "").setSign(false).setGpgConfig(new GpgConfig(new Config()))
+          .call();
+
+        for (String ghRepoId : ghRepoIds) {
+          var submodulePath = "archives/" + ghRepoId.replace('/', '-');
+          // Maybe this is not needed? Better just deinit just to be on the safe side.
+          localGit.submoduleDeinit().setForce(true).addPath(submodulePath).call();
+        }
+
+        saveData(data);
 
         return 0;
       }
