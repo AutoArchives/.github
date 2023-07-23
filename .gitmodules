@@ -163,3 +163,54 @@
 [submodule "archives/alexeygrishankov-ultramine"]
 	path = archives/alexeygrishankov-ultramine
 	url = https://github.com/AutoArchives/alexeygrishankov-ultramine.git
+[submodule "archives/cardboardpowered-cardboard"]
+	path = archives/cardboardpowered-cardboard
+	url = https://github.com/AutoArchives/cardboardpowered-cardboard.git
+[submodule "archives/yatopiamc-yatopia"]
+	path = archives/yatopiamc-yatopia
+	url = https://github.com/AutoArchives/yatopiamc-yatopia.git
+[submodule "archives/mcimaginarium-thermos"]
+	path = archives/mcimaginarium-thermos
+	url = https://github.com/AutoArchives/mcimaginarium-thermos.git
+[submodule "archives/starlis-emc-craftbukkit"]
+	path = archives/starlis-emc-craftbukkit
+	url = https://github.com/AutoArchives/starlis-emc-craftbukkit.git
+[submodule "archives/starlis-emc-bukkit"]
+	path = archives/starlis-emc-bukkit
+	url = https://github.com/AutoArchives/starlis-emc-bukkit.git
+[submodule "archives/tacospigot-tacospigot"]
+	path = archives/tacospigot-tacospigot
+	url = https://github.com/AutoArchives/tacospigot-tacospigot.git
+[submodule "archives/projecttestificate-spigot-mcp"]
+	path = archives/projecttestificate-spigot-mcp
+	url = https://github.com/AutoArchives/projecttestificate-spigot-mcp.git
+[submodule "archives/elytra-server-elytra"]
+	path = archives/elytra-server-elytra
+	url = https://github.com/AutoArchives/elytra-server-elytra.git
+[submodule "archives/uraniummc-uraniumplus"]
+	path = archives/uraniummc-uraniumplus
+	url = https://github.com/AutoArchives/uraniummc-uraniumplus.git
+[submodule "archives/magitechnetwork-foxfixer"]
+	path = archives/magitechnetwork-foxfixer
+	url = https://github.com/AutoArchives/magitechnetwork-foxfixer.git
+[submodule "archives/magitechnetwork-griefpreventionplus"]
+	path = archives/magitechnetwork-griefpreventionplus
+	url = https://github.com/AutoArchives/magitechnetwork-griefpreventionplus.git
+[submodule "archives/bigscary-griefprevention"]
+	path = archives/bigscary-griefprevention
+	url = https://github.com/AutoArchives/bigscary-griefprevention.git
+[submodule "archives/magitechnetwork-forgerestrictor"]
+	path = archives/magitechnetwork-forgerestrictor
+	url = https://github.com/AutoArchives/magitechnetwork-forgerestrictor.git
+[submodule "archives/magitechnetwork-naughtyplayerfixer"]
+	path = archives/magitechnetwork-naughtyplayerfixer
+	url = https://github.com/AutoArchives/magitechnetwork-naughtyplayerfixer.git
+[submodule "archives/magitechnetwork-universalcoinsserver"]
+	path = archives/magitechnetwork-universalcoinsserver
+	url = https://github.com/AutoArchives/magitechnetwork-universalcoinsserver.git
+[submodule "archives/magitechnetwork-mytown2"]
+	path = archives/magitechnetwork-mytown2
+	url = https://github.com/AutoArchives/magitechnetwork-mytown2.git
+[submodule "archives/magitechnetwork-magichat"]
+	path = archives/magitechnetwork-magichat
+	url = https://github.com/AutoArchives/magitechnetwork-magichat.git
