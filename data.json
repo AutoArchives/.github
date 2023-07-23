@@ -207,6 +207,10 @@
     "ds58-panilla" : {
       "upstreamName" : "ds58/Panilla",
       "upstreamGone" : false
+    },
+    "electroid-sportpaper" : {
+      "upstreamName" : "Electroid/SportPaper",
+      "upstreamGone" : false
     }
   }
 }
