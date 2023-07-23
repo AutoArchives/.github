@@ -154,3 +154,6 @@
 [submodule "archives/ds58-panilla"]
 	path = archives/ds58-panilla
 	url = https://github.com/AutoArchives/ds58-panilla.git
+[submodule "archives/electroid-sportpaper"]
+	path = archives/electroid-sportpaper
+	url = https://github.com/AutoArchives/electroid-sportpaper.git
