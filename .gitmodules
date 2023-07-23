@@ -157,3 +157,9 @@
 [submodule "archives/electroid-sportpaper"]
 	path = archives/electroid-sportpaper
 	url = https://github.com/AutoArchives/electroid-sportpaper.git
+[submodule "archives/izzelaliz-arclight"]
+	path = archives/izzelaliz-arclight
+	url = https://github.com/AutoArchives/izzelaliz-arclight.git
+[submodule "archives/alexeygrishankov-ultramine"]
+	path = archives/alexeygrishankov-ultramine
+	url = https://github.com/AutoArchives/alexeygrishankov-ultramine.git
