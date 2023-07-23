@@ -203,6 +203,10 @@
     "anatawa12-forgegradle-2.3" : {
       "upstreamName" : "anatawa12/ForgeGradle-2.3",
       "upstreamGone" : false
+    },
+    "ds58-panilla" : {
+      "upstreamName" : "ds58/Panilla",
+      "upstreamGone" : false
     }
   }
 }
