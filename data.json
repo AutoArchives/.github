@@ -211,6 +211,82 @@
     "electroid-sportpaper" : {
       "upstreamName" : "Electroid/SportPaper",
       "upstreamGone" : false
+    },
+    "izzelaliz-arclight" : {
+      "upstreamName" : "IzzelAliz/Arclight",
+      "upstreamGone" : false
+    },
+    "alexeygrishankov-ultramine" : {
+      "upstreamName" : "AlexeyGrishankov/UltraMine",
+      "upstreamGone" : false
+    },
+    "cardboardpowered-cardboard" : {
+      "upstreamName" : "CardboardPowered/cardboard",
+      "upstreamGone" : false
+    },
+    "yatopiamc-yatopia" : {
+      "upstreamName" : "YatopiaMC/Yatopia",
+      "upstreamGone" : false
+    },
+    "mcimaginarium-thermos" : {
+      "upstreamName" : "MCImaginarium/Thermos",
+      "upstreamGone" : false
+    },
+    "starlis-emc-craftbukkit" : {
+      "upstreamName" : "starlis/EMC-CraftBukkit",
+      "upstreamGone" : false
+    },
+    "starlis-emc-bukkit" : {
+      "upstreamName" : "starlis/EMC-Bukkit",
+      "upstreamGone" : false
+    },
+    "tacospigot-tacospigot" : {
+      "upstreamName" : "TacoSpigot/TacoSpigot",
+      "upstreamGone" : false
+    },
+    "projecttestificate-spigot-mcp" : {
+      "upstreamName" : "ProjectTestificate/Spigot-MCP",
+      "upstreamGone" : false
+    },
+    "elytra-server-elytra" : {
+      "upstreamName" : "Elytra-Server/Elytra",
+      "upstreamGone" : false
+    },
+    "uraniummc-uraniumplus" : {
+      "upstreamName" : "UraniumMC/UraniumPlus",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-foxfixer" : {
+      "upstreamName" : "MagiTechNetwork/FoxFixer",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-griefpreventionplus" : {
+      "upstreamName" : "MagiTechNetwork/GriefPreventionPlus",
+      "upstreamGone" : false
+    },
+    "bigscary-griefprevention" : {
+      "upstreamName" : "BigScary/GriefPrevention",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-forgerestrictor" : {
+      "upstreamName" : "MagiTechNetwork/ForgeRestrictor",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-naughtyplayerfixer" : {
+      "upstreamName" : "MagiTechNetwork/NaughtyPlayerFixer",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-universalcoinsserver" : {
+      "upstreamName" : "MagiTechNetwork/UniversalCoinsServer",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-mytown2" : {
+      "upstreamName" : "MagiTechNetwork/MyTown2",
+      "upstreamGone" : false
+    },
+    "magitechnetwork-magichat" : {
+      "upstreamName" : "MagiTechNetwork/MagiChat",
+      "upstreamGone" : false
     }
   }
 }
