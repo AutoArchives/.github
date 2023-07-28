@@ -287,6 +287,10 @@
     "magitechnetwork-magichat" : {
       "upstreamName" : "MagiTechNetwork/MagiChat",
       "upstreamGone" : false
+    },
+    "n1nt4nd0-xenobyte" : {
+      "upstreamName" : "N1nt4nd0/Xenobyte",
+      "upstreamGone" : false
     }
   }
 }
