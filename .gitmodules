@@ -214,3 +214,6 @@
 [submodule "archives/magitechnetwork-magichat"]
 	path = archives/magitechnetwork-magichat
 	url = https://github.com/AutoArchives/magitechnetwork-magichat.git
+[submodule "archives/n1nt4nd0-xenobyte"]
+	path = archives/n1nt4nd0-xenobyte
+	url = https://github.com/AutoArchives/n1nt4nd0-xenobyte.git
