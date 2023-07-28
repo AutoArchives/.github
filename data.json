@@ -291,6 +291,10 @@
     "n1nt4nd0-xenobyte" : {
       "upstreamName" : "N1nt4nd0/Xenobyte",
       "upstreamGone" : false
+    },
+    "mithion-arsmagica2" : {
+      "upstreamName" : "Mithion/ArsMagica2",
+      "upstreamGone" : false
     }
   }
 }
