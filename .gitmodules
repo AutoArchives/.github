@@ -226,3 +226,6 @@
 [submodule "archives/azanor-thaumcraft-api"]
 	path = archives/azanor-thaumcraft-api
 	url = https://github.com/AutoArchives/azanor-thaumcraft-api.git
+[submodule "archives/tclproject-arsmagica2-5"]
+	path = archives/tclproject-arsmagica2-5
+	url = https://github.com/AutoArchives/tclproject-arsmagica2-5.git
