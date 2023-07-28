@@ -303,6 +303,10 @@
     "azanor-thaumcraft-api" : {
       "upstreamName" : "Azanor/thaumcraft-api",
       "upstreamGone" : false
+    },
+    "tclproject-arsmagica2-5" : {
+      "upstreamName" : "TCLProject/ArsMagica2-5",
+      "upstreamGone" : false
     }
   }
 }
