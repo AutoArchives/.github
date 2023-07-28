@@ -220,3 +220,6 @@
 [submodule "archives/mithion-arsmagica2"]
 	path = archives/mithion-arsmagica2
 	url = https://github.com/AutoArchives/mithion-arsmagica2.git
+[submodule "archives/azanor-baubles"]
+	path = archives/azanor-baubles
+	url = https://github.com/AutoArchives/azanor-baubles.git
