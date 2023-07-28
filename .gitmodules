@@ -217,3 +217,6 @@
 [submodule "archives/n1nt4nd0-xenobyte"]
 	path = archives/n1nt4nd0-xenobyte
 	url = https://github.com/AutoArchives/n1nt4nd0-xenobyte.git
+[submodule "archives/mithion-arsmagica2"]
+	path = archives/mithion-arsmagica2
+	url = https://github.com/AutoArchives/mithion-arsmagica2.git
