@@ -299,6 +299,10 @@
     "azanor-baubles" : {
       "upstreamName" : "Azanor/Baubles",
       "upstreamGone" : false
+    },
+    "azanor-thaumcraft-api" : {
+      "upstreamName" : "Azanor/thaumcraft-api",
+      "upstreamGone" : false
     }
   }
 }
