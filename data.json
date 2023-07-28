@@ -295,6 +295,10 @@
     "mithion-arsmagica2" : {
       "upstreamName" : "Mithion/ArsMagica2",
       "upstreamGone" : false
+    },
+    "azanor-baubles" : {
+      "upstreamName" : "Azanor/Baubles",
+      "upstreamGone" : false
     }
   }
 }
