@@ -223,3 +223,6 @@
 [submodule "archives/azanor-baubles"]
 	path = archives/azanor-baubles
 	url = https://github.com/AutoArchives/azanor-baubles.git
+[submodule "archives/azanor-thaumcraft-api"]
+	path = archives/azanor-thaumcraft-api
+	url = https://github.com/AutoArchives/azanor-thaumcraft-api.git
