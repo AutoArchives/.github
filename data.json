@@ -311,6 +311,10 @@
     "terrafirmacraft-the-final-frontier-filedirector" : {
       "upstreamName" : "TerraFirmaCraft-The-Final-Frontier/FileDirector",
       "upstreamGone" : false
+    },
+    "hrudyplayz-mcinstanceloader" : {
+      "upstreamName" : "HRudyPlayZ/MCInstanceLoader",
+      "upstreamGone" : false
     }
   }
 }
