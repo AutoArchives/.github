@@ -229,3 +229,6 @@
 [submodule "archives/tclproject-arsmagica2-5"]
 	path = archives/tclproject-arsmagica2-5
 	url = https://github.com/AutoArchives/tclproject-arsmagica2-5.git
+[submodule "archives/terrafirmacraft-the-final-frontier-filedirector"]
+	path = archives/terrafirmacraft-the-final-frontier-filedirector
+	url = https://github.com/AutoArchives/terrafirmacraft-the-final-frontier-filedirector.git
