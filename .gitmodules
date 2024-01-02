@@ -232,3 +232,6 @@
 [submodule "archives/terrafirmacraft-the-final-frontier-filedirector"]
 	path = archives/terrafirmacraft-the-final-frontier-filedirector
 	url = https://github.com/AutoArchives/terrafirmacraft-the-final-frontier-filedirector.git
+[submodule "archives/hrudyplayz-mcinstanceloader"]
+	path = archives/hrudyplayz-mcinstanceloader
+	url = https://github.com/AutoArchives/hrudyplayz-mcinstanceloader.git
