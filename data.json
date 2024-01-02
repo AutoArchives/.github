@@ -307,6 +307,10 @@
     "tclproject-arsmagica2-5" : {
       "upstreamName" : "TCLProject/ArsMagica2-5",
       "upstreamGone" : false
+    },
+    "terrafirmacraft-the-final-frontier-filedirector" : {
+      "upstreamName" : "TerraFirmaCraft-The-Final-Frontier/FileDirector",
+      "upstreamGone" : false
     }
   }
 }
