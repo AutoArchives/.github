@@ -403,6 +403,74 @@
     "mohistmc-mohistwiki" : {
       "upstreamName" : "MohistMC/MohistWiki",
       "upstreamGone" : false
+    },
+    "mohistmc-api-china" : {
+      "upstreamName" : "MohistMC/API-CHINA",
+      "upstreamGone" : false
+    },
+    "mohistmc-i18n" : {
+      "upstreamName" : "MohistMC/i18n",
+      "upstreamGone" : false
+    },
+    "mohistmc-bon3" : {
+      "upstreamName" : "MohistMC/BON3",
+      "upstreamGone" : false
+    },
+    "mohistmc-easystorage" : {
+      "upstreamName" : "MohistMC/EasyStorage",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistplugin" : {
+      "upstreamName" : "MohistMC/MohistPlugin",
+      "upstreamGone" : false
+    },
+    "mohistmc-bannerplugin" : {
+      "upstreamName" : "MohistMC/BannerPlugin",
+      "upstreamGone" : false
+    },
+    "mohistmc-exoticgardenreborn" : {
+      "upstreamName" : "MohistMC/ExoticGardenReborn",
+      "upstreamGone" : false
+    },
+    "mohistmc-minecraftmetajavaapi" : {
+      "upstreamName" : "MohistMC/MinecraftMetaJavaApi",
+      "upstreamGone" : false
+    },
+    "mohistmc-thor" : {
+      "upstreamName" : "MohistMC/Thor",
+      "upstreamGone" : false
+    },
+    "mohistmc-plotsquared" : {
+      "upstreamName" : "MohistMC/PlotSquared",
+      "upstreamGone" : false
+    },
+    "mohistmc-fastasyncworldedit-1.12.2" : {
+      "upstreamName" : "MohistMC/FastAsyncWorldedit-1.12.2",
+      "upstreamGone" : false
+    },
+    "mohistmc-makezoomzoom" : {
+      "upstreamName" : "MohistMC/MakeZoomZoom",
+      "upstreamGone" : false
+    },
+    "mohistmc-sodionauthdiscuz" : {
+      "upstreamName" : "MohistMC/SodionAuthDiscuz",
+      "upstreamGone" : false
+    },
+    "mohistmc-muskyblock" : {
+      "upstreamName" : "MohistMC/MuSkyBlock",
+      "upstreamGone" : false
+    },
+    "mohistmc-libsdisguises" : {
+      "upstreamName" : "MohistMC/LibsDisguises",
+      "upstreamGone" : false
+    },
+    "mohistmc-dynamicenum" : {
+      "upstreamName" : "MohistMC/DynamicEnum",
+      "upstreamGone" : false
+    },
+    "mohistmc-json" : {
+      "upstreamName" : "MohistMC/json",
+      "upstreamGone" : false
     }
   }
 }
