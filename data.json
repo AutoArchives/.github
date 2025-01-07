@@ -319,6 +319,66 @@
     "mohistmc-mohist" : {
       "upstreamName" : "MohistMC/Mohist",
       "upstreamGone" : false
+    },
+    "mohistmc-banner" : {
+      "upstreamName" : "MohistMC/Banner",
+      "upstreamGone" : false
+    },
+    "mohistmc-youer" : {
+      "upstreamName" : "MohistMC/Youer",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistmc-frontend" : {
+      "upstreamName" : "MohistMC/mohistmc-frontend",
+      "upstreamGone" : false
+    },
+    "mohistmc-fforgeapi" : {
+      "upstreamName" : "MohistMC/FForgeAPI",
+      "upstreamGone" : false
+    },
+    "mohistmc-tools" : {
+      "upstreamName" : "MohistMC/Tools",
+      "upstreamGone" : false
+    },
+    "mohistmc-defaultlibraries" : {
+      "upstreamName" : "MohistMC/DefaultLibraries",
+      "upstreamGone" : false
+    },
+    "mohistmc-securemodules" : {
+      "upstreamName" : "MohistMC/SecureModules",
+      "upstreamGone" : false
+    },
+    "mohistmc-librariesvault" : {
+      "upstreamName" : "MohistMC/LibrariesVault",
+      "upstreamGone" : false
+    },
+    "mohistmc-minecraftmappings" : {
+      "upstreamName" : "MohistMC/MinecraftMappings",
+      "upstreamGone" : false
+    },
+    "mohistmc-banner-gradle-plugin" : {
+      "upstreamName" : "MohistMC/banner-gradle-plugin",
+      "upstreamGone" : false
+    },
+    "mohistmc-modlauncher" : {
+      "upstreamName" : "MohistMC/modlauncher",
+      "upstreamGone" : false
+    },
+    "mohistmc-securejarhandler" : {
+      "upstreamName" : "MohistMC/securejarhandler",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistremapper" : {
+      "upstreamName" : "MohistMC/MohistRemapper",
+      "upstreamGone" : false
+    },
+    "mohistmc-yarnbone" : {
+      "upstreamName" : "MohistMC/YarnBone",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistfg" : {
+      "upstreamName" : "MohistMC/MohistFG",
+      "upstreamGone" : false
     }
   }
 }
