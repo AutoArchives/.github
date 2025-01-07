@@ -379,6 +379,30 @@
     "mohistmc-mohistfg" : {
       "upstreamName" : "MohistMC/MohistFG",
       "upstreamGone" : false
+    },
+    "mohistmc-maven" : {
+      "upstreamName" : "MohistMC/maven",
+      "upstreamGone" : false
+    },
+    "mohistmc-academycraft" : {
+      "upstreamName" : "MohistMC/AcademyCraft",
+      "upstreamGone" : false
+    },
+    "mohistmc-bosomlang" : {
+      "upstreamName" : "MohistMC/BosomLang",
+      "upstreamGone" : false
+    },
+    "mohistmc-luyten" : {
+      "upstreamName" : "MohistMC/Luyten",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistmc-backend" : {
+      "upstreamName" : "MohistMC/mohistmc-backend",
+      "upstreamGone" : false
+    },
+    "mohistmc-mohistwiki" : {
+      "upstreamName" : "MohistMC/MohistWiki",
+      "upstreamGone" : false
     }
   }
 }
