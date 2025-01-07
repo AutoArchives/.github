@@ -283,3 +283,21 @@
 [submodule "archives/mohistmc-mohistfg"]
 	path = archives/mohistmc-mohistfg
 	url = https://github.com/AutoArchives/mohistmc-mohistfg.git
+[submodule "archives/mohistmc-maven"]
+	path = archives/mohistmc-maven
+	url = https://github.com/AutoArchives/mohistmc-maven.git
+[submodule "archives/mohistmc-academycraft"]
+	path = archives/mohistmc-academycraft
+	url = https://github.com/AutoArchives/mohistmc-academycraft.git
+[submodule "archives/mohistmc-bosomlang"]
+	path = archives/mohistmc-bosomlang
+	url = https://github.com/AutoArchives/mohistmc-bosomlang.git
+[submodule "archives/mohistmc-luyten"]
+	path = archives/mohistmc-luyten
+	url = https://github.com/AutoArchives/mohistmc-luyten.git
+[submodule "archives/mohistmc-mohistmc-backend"]
+	path = archives/mohistmc-mohistmc-backend
+	url = https://github.com/AutoArchives/mohistmc-mohistmc-backend.git
+[submodule "archives/mohistmc-mohistwiki"]
+	path = archives/mohistmc-mohistwiki
+	url = https://github.com/AutoArchives/mohistmc-mohistwiki.git
