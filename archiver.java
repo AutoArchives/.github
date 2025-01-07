@@ -428,7 +428,19 @@ class archiver implements Runnable {
           } catch (Exception e) {
             // No repo found, let's fork it!
             fork = originalGitHubRepo.forkTo(org);
-            fork.renameTo(newId);
+            int attempt = 0;
+            while (true) {
+              try {
+                Thread.sleep(1000);
+                fork.renameTo(newId);
+                break;
+              } catch (Exception ex) {
+                attempt++;
+                if (attempt > 3) {
+                  throw ex;
+                }
+              }
+            }
             fork = github.getRepository(orgName + '/' + newId);
           }
 
