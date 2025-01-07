@@ -315,6 +315,10 @@
     "hrudyplayz-mcinstanceloader" : {
       "upstreamName" : "HRudyPlayZ/MCInstanceLoader",
       "upstreamGone" : false
+    },
+    "mohistmc-mohist" : {
+      "upstreamName" : "MohistMC/Mohist",
+      "upstreamGone" : false
     }
   }
 }
