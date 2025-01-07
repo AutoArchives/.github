@@ -301,3 +301,54 @@
 [submodule "archives/mohistmc-mohistwiki"]
 	path = archives/mohistmc-mohistwiki
 	url = https://github.com/AutoArchives/mohistmc-mohistwiki.git
+[submodule "archives/mohistmc-api-china"]
+	path = archives/mohistmc-api-china
+	url = https://github.com/AutoArchives/mohistmc-api-china.git
+[submodule "archives/mohistmc-i18n"]
+	path = archives/mohistmc-i18n
+	url = https://github.com/AutoArchives/mohistmc-i18n.git
+[submodule "archives/mohistmc-bon3"]
+	path = archives/mohistmc-bon3
+	url = https://github.com/AutoArchives/mohistmc-bon3.git
+[submodule "archives/mohistmc-easystorage"]
+	path = archives/mohistmc-easystorage
+	url = https://github.com/AutoArchives/mohistmc-easystorage.git
+[submodule "archives/mohistmc-mohistplugin"]
+	path = archives/mohistmc-mohistplugin
+	url = https://github.com/AutoArchives/mohistmc-mohistplugin.git
+[submodule "archives/mohistmc-bannerplugin"]
+	path = archives/mohistmc-bannerplugin
+	url = https://github.com/AutoArchives/mohistmc-bannerplugin.git
+[submodule "archives/mohistmc-exoticgardenreborn"]
+	path = archives/mohistmc-exoticgardenreborn
+	url = https://github.com/AutoArchives/mohistmc-exoticgardenreborn.git
+[submodule "archives/mohistmc-minecraftmetajavaapi"]
+	path = archives/mohistmc-minecraftmetajavaapi
+	url = https://github.com/AutoArchives/mohistmc-minecraftmetajavaapi.git
+[submodule "archives/mohistmc-thor"]
+	path = archives/mohistmc-thor
+	url = https://github.com/AutoArchives/mohistmc-thor.git
+[submodule "archives/mohistmc-plotsquared"]
+	path = archives/mohistmc-plotsquared
+	url = https://github.com/AutoArchives/mohistmc-plotsquared.git
+[submodule "archives/mohistmc-fastasyncworldedit-1.12.2"]
+	path = archives/mohistmc-fastasyncworldedit-1.12.2
+	url = https://github.com/AutoArchives/mohistmc-fastasyncworldedit-1.12.2.git
+[submodule "archives/mohistmc-makezoomzoom"]
+	path = archives/mohistmc-makezoomzoom
+	url = https://github.com/AutoArchives/mohistmc-makezoomzoom.git
+[submodule "archives/mohistmc-sodionauthdiscuz"]
+	path = archives/mohistmc-sodionauthdiscuz
+	url = https://github.com/AutoArchives/mohistmc-sodionauthdiscuz.git
+[submodule "archives/mohistmc-muskyblock"]
+	path = archives/mohistmc-muskyblock
+	url = https://github.com/AutoArchives/mohistmc-muskyblock.git
+[submodule "archives/mohistmc-libsdisguises"]
+	path = archives/mohistmc-libsdisguises
+	url = https://github.com/AutoArchives/mohistmc-libsdisguises.git
+[submodule "archives/mohistmc-dynamicenum"]
+	path = archives/mohistmc-dynamicenum
+	url = https://github.com/AutoArchives/mohistmc-dynamicenum.git
+[submodule "archives/mohistmc-json"]
+	path = archives/mohistmc-json
+	url = https://github.com/AutoArchives/mohistmc-json.git
