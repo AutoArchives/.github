@@ -238,3 +238,48 @@
 [submodule "archives/mohistmc-mohist"]
 	path = archives/mohistmc-mohist
 	url = https://github.com/AutoArchives/mohistmc-mohist.git
+[submodule "archives/mohistmc-banner"]
+	path = archives/mohistmc-banner
+	url = https://github.com/AutoArchives/mohistmc-banner.git
+[submodule "archives/mohistmc-youer"]
+	path = archives/mohistmc-youer
+	url = https://github.com/AutoArchives/mohistmc-youer.git
+[submodule "archives/mohistmc-mohistmc-frontend"]
+	path = archives/mohistmc-mohistmc-frontend
+	url = https://github.com/AutoArchives/mohistmc-mohistmc-frontend.git
+[submodule "archives/mohistmc-fforgeapi"]
+	path = archives/mohistmc-fforgeapi
+	url = https://github.com/AutoArchives/mohistmc-fforgeapi.git
+[submodule "archives/mohistmc-tools"]
+	path = archives/mohistmc-tools
+	url = https://github.com/AutoArchives/mohistmc-tools.git
+[submodule "archives/mohistmc-defaultlibraries"]
+	path = archives/mohistmc-defaultlibraries
+	url = https://github.com/AutoArchives/mohistmc-defaultlibraries.git
+[submodule "archives/mohistmc-securemodules"]
+	path = archives/mohistmc-securemodules
+	url = https://github.com/AutoArchives/mohistmc-securemodules.git
+[submodule "archives/mohistmc-librariesvault"]
+	path = archives/mohistmc-librariesvault
+	url = https://github.com/AutoArchives/mohistmc-librariesvault.git
+[submodule "archives/mohistmc-minecraftmappings"]
+	path = archives/mohistmc-minecraftmappings
+	url = https://github.com/AutoArchives/mohistmc-minecraftmappings.git
+[submodule "archives/mohistmc-banner-gradle-plugin"]
+	path = archives/mohistmc-banner-gradle-plugin
+	url = https://github.com/AutoArchives/mohistmc-banner-gradle-plugin.git
+[submodule "archives/mohistmc-modlauncher"]
+	path = archives/mohistmc-modlauncher
+	url = https://github.com/AutoArchives/mohistmc-modlauncher.git
+[submodule "archives/mohistmc-securejarhandler"]
+	path = archives/mohistmc-securejarhandler
+	url = https://github.com/AutoArchives/mohistmc-securejarhandler.git
+[submodule "archives/mohistmc-mohistremapper"]
+	path = archives/mohistmc-mohistremapper
+	url = https://github.com/AutoArchives/mohistmc-mohistremapper.git
+[submodule "archives/mohistmc-yarnbone"]
+	path = archives/mohistmc-yarnbone
+	url = https://github.com/AutoArchives/mohistmc-yarnbone.git
+[submodule "archives/mohistmc-mohistfg"]
+	path = archives/mohistmc-mohistfg
+	url = https://github.com/AutoArchives/mohistmc-mohistfg.git
