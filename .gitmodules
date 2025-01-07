@@ -235,3 +235,6 @@
 [submodule "archives/hrudyplayz-mcinstanceloader"]
 	path = archives/hrudyplayz-mcinstanceloader
 	url = https://github.com/AutoArchives/hrudyplayz-mcinstanceloader.git
+[submodule "archives/mohistmc-mohist"]
+	path = archives/mohistmc-mohist
+	url = https://github.com/AutoArchives/mohistmc-mohist.git
