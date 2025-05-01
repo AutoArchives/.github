@@ -334,7 +334,7 @@
     },
     "mohistmc-fforgeapi" : {
       "upstreamName" : "MohistMC/FForgeAPI",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-tools" : {
       "upstreamName" : "MohistMC/Tools",
@@ -342,7 +342,7 @@
     },
     "mohistmc-defaultlibraries" : {
       "upstreamName" : "MohistMC/DefaultLibraries",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-securemodules" : {
       "upstreamName" : "MohistMC/SecureModules",
