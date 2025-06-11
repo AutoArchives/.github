@@ -86,7 +86,7 @@
     },
     "icosider-gecko" : {
       "upstreamName" : "Icosider/Gecko",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "crazy-crew-crazycrates" : {
       "upstreamName" : "Crazy-Crew/CrazyCrates",
