@@ -358,7 +358,7 @@
     },
     "mohistmc-banner-gradle-plugin" : {
       "upstreamName" : "MohistMC/banner-gradle-plugin",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-modlauncher" : {
       "upstreamName" : "MohistMC/modlauncher",
@@ -390,7 +390,7 @@
     },
     "mohistmc-bosomlang" : {
       "upstreamName" : "MohistMC/BosomLang",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-luyten" : {
       "upstreamName" : "MohistMC/Luyten",
@@ -406,7 +406,7 @@
     },
     "mohistmc-api-china" : {
       "upstreamName" : "MohistMC/API-CHINA",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-i18n" : {
       "upstreamName" : "MohistMC/i18n",
@@ -426,7 +426,7 @@
     },
     "mohistmc-bannerplugin" : {
       "upstreamName" : "MohistMC/BannerPlugin",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-exoticgardenreborn" : {
       "upstreamName" : "MohistMC/ExoticGardenReborn",
