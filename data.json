@@ -322,7 +322,7 @@
     },
     "mohistmc-banner" : {
       "upstreamName" : "MohistMC/Banner",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-youer" : {
       "upstreamName" : "MohistMC/Youer",
