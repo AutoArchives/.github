@@ -471,6 +471,30 @@
     "mohistmc-json" : {
       "upstreamName" : "MohistMC/json",
       "upstreamGone" : false
+    },
+    "magmafoundation-magma-forge" : {
+      "upstreamName" : "magmafoundation/Magma-Forge",
+      "upstreamGone" : false
+    },
+    "magmafoundation-magma-neo" : {
+      "upstreamName" : "magmafoundation/Magma-Neo",
+      "upstreamGone" : false
+    },
+    "magmafoundation-magma-site" : {
+      "upstreamName" : "magmafoundation/magma-site",
+      "upstreamGone" : false
+    },
+    "magmafoundation-spigottoneoforgelibs" : {
+      "upstreamName" : "magmafoundation/SpigotToNeoForgeLibs",
+      "upstreamGone" : false
+    },
+    "magmafoundation-magmaneogradle" : {
+      "upstreamName" : "magmafoundation/MagmaNeoGradle",
+      "upstreamGone" : false
+    },
+    "magmafoundation-magma-blog" : {
+      "upstreamName" : "magmafoundation/Magma-Blog",
+      "upstreamGone" : false
     }
   }
 }
