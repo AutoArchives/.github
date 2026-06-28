@@ -1,5 +1,5 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//JAVA 18+
+//JAVA 21+
 //DEPS ch.qos.logback:logback-core:1.4.8
 //DEPS ch.qos.logback:logback-classic:1.4.8
 //DEPS info.picocli:picocli:4.6.3
@@ -7,8 +7,6 @@
 //DEPS org.kohsuke:github-api:1.315
 //DEPS com.fasterxml.jackson.core:jackson-core:2.15.2
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.15.2
-//DEPS org.projectlombok:lombok:1.18.28
-//DEPS org.eclipse.jgit:org.eclipse.jgit:6.6.0.202305301015-r
 //DEPS club.minnced:discord-webhooks:0.8.2
 
 import ch.qos.logback.classic.LoggerContext;
@@ -20,23 +18,7 @@ import club.minnced.discord.webhook.send.WebhookEmbed;
 import club.minnced.discord.webhook.send.WebhookEmbedBuilder;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
-import lombok.Value;
-import lombok.extern.jackson.Jacksonized;
-import org.eclipse.jgit.api.CreateBranchCommand.SetupUpstreamMode;
-import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.ListBranchCommand;
-import org.eclipse.jgit.api.ResetCommand;
-import org.eclipse.jgit.api.errors.JGitInternalException;
-import org.eclipse.jgit.lib.*;
-import org.eclipse.jgit.submodule.SubmoduleWalk;
-import org.eclipse.jgit.transport.RefSpec;
-import org.eclipse.jgit.transport.URIish;
-import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
-import org.kohsuke.github.GHRepository;
-import org.kohsuke.github.GitHubBuilder;
+import org.kohsuke.github.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
@@ -50,464 +32,628 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Instant;
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 import static picocli.CommandLine.Parameters.NULL_VALUE;
 
+sealed interface SyncAction permits
+    SyncAction.CreateBranch, SyncAction.UpdateBranch, SyncAction.ArchiveOrphanBranch,
+    SyncAction.CreateTag, SyncAction.ReportTagMoved {
+    record CreateBranch(String branch, String sha) implements SyncAction {
+    }
+    record UpdateBranch(String branch, String oldSha, String newSha) implements SyncAction {
+    }
+    // branch is gone from upstream, preserve its tip as an archived/* tag then delete
+    // it so the fork stays an exact mirror (also clears any name clash for new branches)
+    record ArchiveOrphanBranch(String branch, String sha) implements SyncAction {
+    }
+    record CreateTag(String tag, String sha) implements SyncAction {
+    }
+    record ReportTagMoved(String tag, String oldSha, String newSha) implements SyncAction {
+    }
+}
+
+// The few ref mutations the executor needs, abstracted away so the conflict
+// logic can be unit-tested without touching GitHub.
+interface RefOps {
+    void updateBranch(String branch, String sha, boolean force) throws IOException;
+
+    void createBranch(String branch, String sha) throws IOException;
+
+    void createArchivedTag(String tagName, String commitSha, String message) throws IOException;
+
+    void createTag(String tag, String sha) throws IOException;
+
+    void deleteBranch(String branch) throws IOException;
+
+    void setDefaultBranch(String branch) throws IOException;
+}
+
 @Command(name = "archiver", mixinStandardHelpOptions = true, description = "Archive management system", subcommands = {
     archiver.CommandAdd.class, archiver.CommandSync.class, archiver.CommandMod.class
 })
 class archiver implements Runnable {
-  static final Path DATA_FILE = Path.of("data.json");
-  static final Path SETTINGS_FILE = Path.of("settings.properties");
-  static final Path GIT_PATH = Path.of(".");
-  static final Logger logger = LoggerFactory.getLogger("Archiver");
-  static final ObjectMapper mapper = new ObjectMapper();
+    static final Path DATA_FILE = Path.of("data.json");
+    static final Path STATE_FILE = Path.of("state.json");
+    static final Path SETTINGS_FILE = Path.of("settings.properties");
+    static final Logger logger = LoggerFactory.getLogger("Archiver");
+    static final ObjectMapper mapper = new ObjectMapper();
 
-  static Properties getSettings() throws IOException {
-    var properties = new Properties();
-    properties.load(Files.newBufferedReader(SETTINGS_FILE));
-    return properties;
-  }
-
-  static DataSchema getData() throws IOException {
-    if (Files.isRegularFile(DATA_FILE)) {
-      return mapper.readValue(Files.newBufferedReader(DATA_FILE, StandardCharsets.UTF_8), DataSchema.class);
-    } else {
-      return new DataSchema(new HashMap<>());
+    static Properties getSettings() throws IOException {
+        var properties = new Properties();
+        properties.load(Files.newBufferedReader(SETTINGS_FILE));
+        return properties;
     }
-  }
 
-  static void saveData(DataSchema data) throws IOException {
-    Files.writeString(DATA_FILE, mapper.writerWithDefaultPrettyPrinter().writeValueAsString(data), StandardCharsets.UTF_8);
-  }
-
-  public static void main(String... args) {
-    // Initialize fancy logging, kinda overkill for a CLI app but helps with debugging issues from JGIT.
-    LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-    try {
-      JoranConfigurator configurator = new JoranConfigurator();
-      configurator.setContext(context);
-      context.reset();
-      configurator.doConfigure("logback.xml");
-    } catch (JoranException ignored) {
-      // StatusPrinter will handle this
-    }
-    StatusPrinter.printInCaseOfErrorsOrWarnings(context);
-
-    // Let picocli do the POSIX compliant cli interpretation
-    int exitCode = new CommandLine(new archiver()).execute(args);
-    System.exit(exitCode);
-  }
-
-  static void log(String markupText, Object... params) {
-    logger.info(Ansi.AUTO.string(markupText), params);
-  }
-
-  @Override
-  public void run() {
-    // No subcommand provided
-    log("@|green Type archiver --help for available commands.|@");
-  }
-
-  @Command(name = "mod", description = "Modify an archived repo flags", mixinStandardHelpOptions = true)
-  static class CommandMod implements Callable<Integer> {
-    @Option(names = {"--upstreamGone", "-D"}, description = "Set if upstream is gone/deleted.", defaultValue = NULL_VALUE)
-    Boolean upstreamGone;
-    @Parameters(index = "0", description = "Repository name within the archives.", defaultValue = "")
-    private String id;
-
-    @Override
-    public Integer call() throws Exception {
-      id = id.toLowerCase(Locale.ROOT);
-      var data = getData();
-      var repo = data.repos().get(id);
-
-      if (repo == null) {
-        log("@|red Repository not found within the archives.|@");
-        return 1;
-      }
-
-      ArchivedRepo newRepo;
-      data.repos().put(id, newRepo = ArchivedRepo.builder()
-          .upstreamName(repo.getUpstreamName())
-          .upstreamGone(upstreamGone == null ? repo.isUpstreamGone() : upstreamGone)
-          .build());
-      saveData(data);
-
-      logger.info("Updated {} to {}", repo, newRepo);
-      return 0;
-    }
-  }
-
-  @Command(name = "sync", description = "Syncs all archived repos with their upstream.", mixinStandardHelpOptions = true)
-  static class CommandSync implements Callable<Integer> {
-    @Option(names = {"--token", "-T"}, description = "GitHub token", defaultValue = "")
-    String token;
-    @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
-    String webhook;
-    @Option(names = {"--debug", "-D"}, description = "Print changes to console")
-    boolean debug;
-
-    @Override
-    public Integer call() throws Exception {
-      try (var localGit = Git.open(GIT_PATH.toAbsolutePath().toFile())) {
-        var settings = getSettings();
-        var orgName = settings.getProperty("archiver.org");
-
-        var token = System.getProperty("archiver.github.token", System.getenv("GITHUB_TOKEN"));
-        if (token == null || token.isBlank()) {
-          token = this.token;
-        }
-
-        var webhook = System.getProperty("archiver.webhook", System.getenv("DISCORD_WEBHOOK"));
-        if (webhook == null || webhook.isBlank()) {
-          webhook = this.webhook;
-        }
-
-        var github = new GitHubBuilder().withOAuthToken(token).build();
-        if (!github.isCredentialValid() || github.isAnonymous()) {
-          log("@|red GitHub credentials missing from environment!|@");
-          return 1;
-        }
-
-        log("Attempting to update forks...");
-        // We need to authenticate jgit for pull&push.
-        var creds = new UsernamePasswordCredentialsProvider(token, "");
-
-        /*
-         Error handling here is a little bit weird,
-         here we have two types of error to watch out, expected and unexpected ones.
-         Unexpected errors when updating an archive should be added to this map,
-         it will make the script return as error state
-         and fail the action without failing the entire script.
-         Downstream repositories will hopefully be updated
-         even though the archiver repo submodules will be outdated,
-         they will be corrected next successful run.
-         Expected errors
-         (not really expected, but things we can safely catch and report as change instead)
-         are reported as changes instead and allows the script to run "successfully".
-        */
-        var errors = new HashMap<String, Exception>();
-        var data = getData();
-        List<String> changes = new ArrayList<>();
-        var localRepo = localGit.getRepository();
-
-        for (Map.Entry<String, ArchivedRepo> entry : data.repos().entrySet()) {
-          if (entry.getValue().isUpstreamGone()) {
-            // Nothing to update if there's no upstream to update from...
-            log("Skipping {}", entry.getKey());
-            continue;
-          }
-
-          log("Updating {}", entry.getKey());
-
-          try (var submodule = Git.wrap(SubmoduleWalk.getSubmoduleRepository(localRepo, "archives/" + entry.getKey()))) {
-            // Used to fetch remote data directly from GitHub.
-            var upstream = github.getRepository(entry.getValue().getUpstreamName());
-            var downstream = github.getRepository(orgName + '/' + entry.getKey());
-
-            // Hack around submodule limited information and GitHub actions messing up auth...
-            submodule.getRepository().getConfig().unset("http", "https://github.com/", "extraheader");
-            submodule.remoteSetUrl().setRemoteName("origin").setRemoteUri(new URIish(downstream.getHttpTransportUrl())).call();
-            submodule.fetch().setRemote("origin").call();
-
-            // Get downstream branches.
-            var branches = submodule.branchList().setListMode(ListBranchCommand.ListMode.REMOTE).call()
-                .stream().map(Ref::getName).filter(name -> name.startsWith("refs/remotes/origin/") && !name.equals("refs/remotes/origin/HEAD"))
-                .map(Repository::shortenRefName).map(s -> s.replace("origin/", "")).collect(Collectors.toSet());
-            // And local branches to avoid creating new branches.
-            var localBranches = submodule.branchList().call()
-                .stream().map(Ref::getName).map(Repository::shortenRefName).filter(name -> !name.equals("HEAD"))
-                .collect(Collectors.toSet());
-
-            var upstreamBranches = upstream.getBranches();
-            var mainBranch = downstream.getDefaultBranch(); // Should we sync with upstream default branch?
-
-            // Base starting point, the submodule HEAD should always point to the main branch Ref
-            submodule.checkout().setName(mainBranch).setForced(true).call();
-            submodule.remoteAdd().setName("upstream").setUri(new URIish(upstream.getHttpTransportUrl())).call();
-
-            try {
-              // Check for new branches to fetch in and push to downstream.
-              {
-                var newBranches = new HashSet<>(upstreamBranches.keySet());
-                newBranches.removeAll(branches);
-                if (!newBranches.isEmpty()) {
-                  changes.add("[%s] New branches present on upstream: %s".formatted(entry.getKey(),
-                      String.join(", ", newBranches)));
-                  for (String newBranch : newBranches) {
-                    // RefSpecs, fetch refs/heads/<branch> reference from remote into refs/remotes/upstream/<branch> locally
-                    submodule.fetch().setRemote("upstream").setRefSpecs("refs/heads/%1$s:refs/remotes/upstream/%1$s"
-                        .formatted(newBranch)).call();
-
-                    // Create new branch locally
-                    submodule.checkout().setCreateBranch(true).setName(newBranch)
-                        .setStartPoint("upstream/" + newBranch)
-                        .setUpstreamMode(SetupUpstreamMode.TRACK).call();
-
-                    // Attempt to push changes without crashing out if it fails...
-                    try {
-                      // RefSpecs, use +<branch name> to create branch on remote.
-                      submodule.push().setRemote("origin").setRefSpecs(new RefSpec("+" + newBranch))
-                          .setCredentialsProvider(creds).call();
-                      branches.add(newBranch);
-                      localBranches.add(newBranch);
-                    } catch (Exception e) {
-                      changes.add("[%s] Error pushing new branch %s: %s".formatted(entry.getKey(),
-                          newBranch, e.getMessage()));
-                      logger.warn("Unable to push new {} to {}", newBranch, entry.getKey());
-                      logger.warn("Due to", e);
-                    }
-                  }
-                }
-              }
-
-              // Update branches with upstream.
-              {
-                // Fetch *all* upstream refs.
-                submodule.fetch().setRemote("upstream").call();
-                for (String branch : branches) {
-                  if (upstreamBranches.containsKey(branch)) {
-                    // Ensure we are clean
-                    submodule.reset().setMode(ResetCommand.ResetType.HARD).call();
-
-                    var checkout = submodule.checkout().setName(branch).setStartPoint("origin/" + branch).setForced(true);
-                    // Ugh, I wish it was cleaner than doing this.
-                    if (localBranches.contains(branch)) {
-                      checkout.setForceRefUpdate(true).call();
-                    } else {
-                      checkout.setCreateBranch(true).call();
-                    }
-
-                    var repo = submodule.getRepository();
-                    var head = repo.resolve(Constants.HEAD).getName();
-                    var remoteHead = upstreamBranches.get(branch).getSHA1();
-                    logger.debug("local '{}', remote '{}'", head, remoteHead);
-                    // HEADS differ,
-                    // either we have new commits or the branch now contains an entirely new commit history.
-                    if (!head.equals(remoteHead)) {
-                      try {
-                        logger.info("{}-{} remote updated! HEAD now at {}", entry.getKey(), branch, remoteHead);
-                        changes.add("[%s] Remote branch '%s' changed! Remote HEAD '%s'".formatted(entry.getKey(), branch, remoteHead));
-
-                        // Pull the changes...
-                        submodule.pull().setRemote("upstream").setRemoteBranchName(branch)
-                            .setCredentialsProvider(creds).call();
-
-                        // And push to our fork.
-                        submodule.push().setRemote("origin").setRefSpecs(new RefSpec(branch + ":refs/heads/" + branch))
-                            .setCredentialsProvider(creds).call();
-                      } catch (Exception e) {
-                        // Perhaps the history was rewritten? Manual intervention is required to avoid data loss.
-                        changes.add("[%s] Error updating branch %s: %s".formatted(entry.getKey(),
-                            branch, e.getMessage()));
-                        logger.warn("Unable to push {} to {}", branch, entry.getKey());
-                        logger.warn("Due to", e);
-                      }
-                    }
-                  } else {
-                    // Deleted branch? Renamed branch due to upstream rewriting the history? Keep it as it.
-                    logger.warn("Upstream missing branch {}", branch);
-                  }
-                }
-              }
-            } finally {
-              // Set the submodule back to the main branch and restore a common state.
-              submodule.checkout().setName(mainBranch).setForced(true).call();
-            }
-
-          } catch (Exception e) {
-            changes.add("[%s] Fatal error: %s".formatted(entry.getKey(), e.getMessage()));
-            errors.put(entry.getKey(), e);
-          }
-        }
-
-        logger.info("Forks updated, now reporting changes.");
-
-        // Gotta be on the safe side...
-        String finalToken = token;
-        changes = changes.stream().map(s -> s.replaceAll(finalToken, "<TOKEN>"))
-            .collect(Collectors.toList());
-
-        if (debug && !changes.isEmpty()) {
-          logger.info("Changes to report via Discord webhook:");
-          changes.forEach(logger::info);
-        }
-
-        // Notify the discord server we have changes.
-        if (!webhook.isBlank() && !changes.isEmpty()) {
-          try (var client = WebhookClient.withUrl(webhook)) {
-            var message = new WebhookMessageBuilder().setContent("Archive changes:")
-                .addFile("changes.log", new ByteArrayInputStream(String.join("\n", changes)
-                    .getBytes(StandardCharsets.UTF_8))).build();
-            client.send(message).get();
-          } catch (Throwable e) {
-            logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
-          }
-        }
-
-        if (!errors.isEmpty()) {
-          logger.warn("Errors occurred while syncing:");
-          for (Map.Entry<String, Exception> entry : errors.entrySet()) {
-            logger.error("Unable to sync " + entry.getKey(), entry.getValue());
-          }
-          return 1; // Mark it as failed and spam my emails.
-        }
-      }
-      return 0;
-    }
-  }
-
-  @Command(name = "add", description = "Adds a new GitHub repository to the arquives.", mixinStandardHelpOptions = true)
-  static class CommandAdd implements Callable<Integer> {
-    @Option(names = {"--token", "-T"}, description = "GitHub token", defaultValue = "")
-    String token;
-    @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
-    String webhook;
-    @Parameters(description = "GitHub repository id (owner/repo) to add to the archives", defaultValue = "")
-    private String[] ghRepoIds;
-
-    // Do let exceptions propagate, they should provide enough information about why they happened and this script is
-    //  not meant to be executed by humans.
-    @Override
-    public Integer call() throws Exception {
-      try (var localGit = Git.open(GIT_PATH.toAbsolutePath().toFile())) {
-        var settings = getSettings();
-        var token = System.getProperty("archiver.github.token", System.getenv("GITHUB_TOKEN"));
-        if (token == null || token.isBlank()) {
-          token = this.token;
-        }
-
-        var webhook = System.getProperty("archiver.webhook", System.getenv("DISCORD_WEBHOOK"));
-        if (webhook == null || webhook.isBlank()) {
-          webhook = this.webhook;
-        }
-
-        var orgName = settings.getProperty("archiver.org");
-
-        var github = new GitHubBuilder().withOAuthToken(token).build();
-        if (!github.isCredentialValid() || github.isAnonymous()) {
-          log("@|red GitHub credentials missing from environment!|@");
-          return 1;
-        }
-
-        if (ghRepoIds.length == 0) {
-          log("@|red Repository name must be provided!|@");
-          return 1;
+    static DataSchema getData() throws IOException {
+        if (Files.isRegularFile(DATA_FILE)) {
+            return mapper.readValue(Files.newBufferedReader(DATA_FILE, StandardCharsets.UTF_8), DataSchema.class);
         } else {
-          for (int i = 0; i < ghRepoIds.length; i++) {
-            ghRepoIds[i] = ghRepoIds[i].toLowerCase(Locale.ROOT);
-            if (ghRepoIds[i].startsWith(orgName.toLowerCase(Locale.ROOT))) {
-              log("@|red Cannot add an archiver repo to the archives!|@");
-              return 1;
-            }
-          }
-
+            return new DataSchema(new HashMap<>());
         }
-        var data = getData();
-        for (int i = 0; i < ghRepoIds.length; i++) {
-          var newId = ghRepoIds[i].replace('/', '-');
-
-
-          if (data.repos().containsKey(newId)) {
-            log("@|red Repo %s is already archived!|@", newId);
-            continue;
-          }
-
-          logger.info("Forking {}", ghRepoIds[i]);
-          var originalGitHubRepo = github.getRepository(ghRepoIds[i]);
-          var org = github.getOrganization(orgName);
-          GHRepository fork;
-          try {
-            // Maybe the script crashed during the brittle submodule handling
-            fork = github.getRepository(orgName + '/' + newId);
-            log("@|red Found archived fork with the same name... Data corruption? Using the already existing repo instead.|@");
-          } catch (Exception e) {
-            // No repo found, let's fork it!
-            fork = originalGitHubRepo.forkTo(org);
-            int attempt = 0;
-            while (true) {
-              try {
-                Thread.sleep(1000);
-                fork.renameTo(newId);
-                break;
-              } catch (Exception ex) {
-                attempt++;
-                if (attempt > 3) {
-                  throw ex;
-                }
-              }
-            }
-            fork = github.getRepository(orgName + '/' + newId);
-          }
-
-          // When adding submodules, you *must* commit the added submodule, otherwise weird things happen....
-          var submodulePath = "archives/" + newId;
-          try {
-            localGit.submoduleAdd().setPath(submodulePath).setURI(fork.getHttpTransportUrl())
-              .call().close();
-          } catch (JGitInternalException e) {
-            if (e.getMessage().endsWith(" already exists in the index")) {
-              logger.warn(e.getMessage());
-              Thread.sleep(500l);
-            } else {
-              throw e;
-            }
-          }
-          localGit.add().addFilepattern(".gitmodules").addFilepattern(submodulePath).call();
-
-          // Everything went right (I think), we can now save the new archived repo and let auto commit handle the changed data.
-          data.repos().put(newId, ArchivedRepo.builder().upstreamName(originalGitHubRepo.getFullName()).build());
-
-          // Notify the discord server we have a new repo!
-          if (!webhook.isBlank()) {
-            try (var client = WebhookClient.withUrl(webhook)) {
-              // Send and log (using embed)
-              WebhookEmbed embed = new WebhookEmbedBuilder()
-                .setColor(0xF69000) // Nice
-                .setTitle(new WebhookEmbed.EmbedTitle("New repository archived as " + newId, fork.getHtmlUrl().toString()))
-                .setDescription("Archived from [%s](%s)".formatted(originalGitHubRepo.getFullName(), originalGitHubRepo.getHtmlUrl().toString()))
-                .build();
-
-              client.send(embed).get();
-            } catch (Throwable e) {
-              logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
-            }
-          }
-        }
-
-        localGit.commit().setAuthor(orgName, "").setMessage("Submodule created")
-          .setCommitter(orgName, "").setSign(false).setGpgConfig(new GpgConfig(new Config()))
-          .call();
-
-        for (String ghRepoId : ghRepoIds) {
-          var submodulePath = "archives/" + ghRepoId.replace('/', '-');
-          // Maybe this is not needed? Better just deinit just to be on the safe side.
-          localGit.submoduleDeinit().setForce(true).addPath(submodulePath).call();
-        }
-
-        saveData(data);
-
-        return 0;
-      }
     }
-  }
+
+    static void saveData(DataSchema data) throws IOException {
+        Files.writeString(DATA_FILE, mapper.writerWithDefaultPrettyPrinter().writeValueAsString(data), StandardCharsets.UTF_8);
+    }
+
+    static StateSchema getState() throws IOException {
+        if (Files.isRegularFile(STATE_FILE)) {
+            return mapper.readValue(Files.newBufferedReader(STATE_FILE, StandardCharsets.UTF_8), StateSchema.class);
+        }
+        return new StateSchema(null, new TreeMap<>());
+    }
+
+    static void saveState(StateSchema state) throws IOException {
+        Files.writeString(STATE_FILE, mapper.writerWithDefaultPrettyPrinter().writeValueAsString(state),
+            StandardCharsets.UTF_8);
+    }
+
+    // Read a repo's refs of one type ("heads" or "tags") as name to sha, sorted.
+    // nothing gets transferred, just the ref list
+    static Map<String, String> listRefs(GHRepository repo, String refType) throws IOException {
+        var out = new TreeMap<String, String>();
+        int strip = ("refs/" + refType + "/").length();
+        try {
+            for (GHRef ref : repo.getRefs(refType)) {
+                var full = ref.getRef();
+                if (full.length() > strip) {
+                    out.put(full.substring(strip), ref.getObject().getSha());
+                }
+            }
+        } catch (GHFileNotFoundException e) {
+            // repo has no refs of this type (like no tags), treat as empty
+        }
+        return out;
+    }
+
+    // Project the fork's post-sync ref state from what it had plus what we just
+    // did, so we can record state.json without re-listing.
+    static RepoState computePostState(String defaultBranch, Map<String, String> forkHeads,
+                                      Map<String, String> forkTags, List<SyncAction> actions, String now) {
+        var branches = new TreeMap<>(forkHeads);
+        var tags = new TreeMap<>(forkTags);
+        for (SyncAction a : actions) {
+            if (a instanceof SyncAction.CreateBranch cb) {
+                branches.put(cb.branch(), cb.sha());
+            } else if (a instanceof SyncAction.UpdateBranch ub) {
+                branches.put(ub.branch(), ub.newSha());
+            } else if (a instanceof SyncAction.ArchiveOrphanBranch ob) {
+                // archived as a tag and deleted; the tag shows up next sync
+                branches.remove(ob.branch());
+            } else if (a instanceof SyncAction.CreateTag ct) {
+                tags.put(ct.tag(), ct.sha());
+            }
+            // ReportTagMoved: we don't move tags, so the fork keeps its value.
+        }
+        return new RepoState(defaultBranch, now, branches, tags);
+    }
+
+    static String shortSha(String sha) {
+        return sha != null && sha.length() > 7 ? sha.substring(0, 7) : sha;
+    }
+
+    // A ref write that 404s almost always means the token is missing the 'workflow'
+    // scope, github blocks creating or updating refs whose commits touch
+    // .github/workflows unless the token has it, and unhelpfully reports it as a
+    // plain 404 instead of saying so
+    static String workflowScopeHint(Throwable e) {
+        var msg = String.valueOf(e.getMessage());
+        var is404 = e instanceof GHFileNotFoundException
+            || (e instanceof HttpException h && h.getResponseCode() == 404);
+        if (is404 && msg.contains("/git/refs")) {
+            return " (likely the token is missing the 'workflow' scope, needed when an upstream"
+                + " commit changes .github/workflows files)";
+        }
+        return "";
+    }
+
+    // Diff upstream against the fork and decide what to do. Sorted so the action
+    // list (and therefore the change report) is deterministic.
+    static List<SyncAction> classify(Map<String, String> upstreamHeads, Map<String, String> forkHeads,
+                                     Map<String, String> upstreamTags, Map<String, String> forkTags) {
+        var actions = new ArrayList<SyncAction>();
+        // Orphans first, archiving + deleting them keeps the fork an exact mirror and
+        // clears any path a new upstream branch needs (refs/heads/dev vs dev/26.1).
+        for (var b : new TreeSet<>(forkHeads.keySet())) {
+            if (!upstreamHeads.containsKey(b)) {
+                actions.add(new SyncAction.ArchiveOrphanBranch(b, forkHeads.get(b)));
+            }
+        }
+        for (var b : new TreeSet<>(upstreamHeads.keySet())) {
+            var up = upstreamHeads.get(b);
+            var fork = forkHeads.get(b);
+            if (fork == null) {
+                actions.add(new SyncAction.CreateBranch(b, up));
+            } else if (!fork.equals(up)) {
+                actions.add(new SyncAction.UpdateBranch(b, fork, up));
+            }
+        }
+        for (var t : new TreeSet<>(upstreamTags.keySet())) {
+            var up = upstreamTags.get(t);
+            var fork = forkTags.get(t);
+            if (fork == null) {
+                actions.add(new SyncAction.CreateTag(t, up));
+            } else if (!fork.equals(up)) {
+                actions.add(new SyncAction.ReportTagMoved(t, fork, up));
+            }
+        }
+        return actions;
+    }
+
+    public static void main(String... args) {
+        // Initialize fancy logging, kinda overkill for a CLI app but gives us nice structured output for the picocli bits.
+        LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
+        try {
+            JoranConfigurator configurator = new JoranConfigurator();
+            configurator.setContext(context);
+            context.reset();
+            configurator.doConfigure("logback.xml");
+        } catch (JoranException ignored) {
+            // StatusPrinter will handle this
+        }
+        StatusPrinter.printInCaseOfErrorsOrWarnings(context);
+
+        // Let picocli do the POSIX compliant cli interpretation
+        int exitCode = new CommandLine(new archiver()).execute(args);
+        System.exit(exitCode);
+    }
+
+    static void log(String markupText, Object... params) {
+        logger.info(Ansi.AUTO.string(markupText), params);
+    }
+
+    // Move a mirror branch onto its upstream tip. Try a fast-forward first; the
+    // 422 GitHub returns when that isn't possible, that means force-push/history-reset
+    // When that happens we stash the old tip under an annotated archived/*
+    // tag *before* forcing the branch, so nothing is ever lost.
+    static BranchOutcome applyBranchUpdate(RefOps ops, String branch, String oldSha, String newSha) throws IOException {
+        try {
+            ops.updateBranch(branch, newSha, false);
+            return BranchOutcome.FAST_FORWARD;
+        } catch (HttpException e) {
+            if (e.getResponseCode() != 422) {
+                throw e; // something other than a rejected fast-forward; let the caller deal with it
+            }
+            var tag = "archived/" + branch + "/" + shortSha(oldSha);
+            ops.createArchivedTag(tag, oldSha, "Preserved before upstream rewrite on " + Instant.now());
+            ops.updateBranch(branch, newSha, true);
+            return BranchOutcome.REWRITE_PRESERVED;
+        }
+    }
+
+    // Archive a branch's tip as a tag then delete it, preserving history before
+    // removing the branch.
+    private static void archiveOrphan(String repoId, SyncAction.ArchiveOrphanBranch ob, RefOps ops,
+                                      boolean dryRun, List<String> changes) throws IOException {
+        var tag = "archived/" + ob.branch() + "/" + shortSha(ob.sha());
+        if (dryRun) {
+            changes.add("[%s] Would archive orphan branch '%s' as tag '%s' and delete it"
+                .formatted(repoId, ob.branch(), tag));
+        } else {
+            // preserve the tip before deleting, so the history is never lost
+            ops.createArchivedTag(tag, ob.sha(), "Preserved orphaned branch on " + Instant.now());
+            ops.deleteBranch(ob.branch());
+            changes.add("[%s] Branch '%s' gone from upstream; preserved as tag '%s' and deleted"
+                .formatted(repoId, ob.branch(), tag));
+        }
+    }
+
+    // Applies an action list against one repo and return human-readable change lines for the report.
+    // Dry run describes what would happen and touches nothing.
+    //
+    // Order matters here so drop non-default orphans first (clears name clashes for new branches),
+    // then create/update upstream branches, then point the fork's default at upstream's (it exists here now),
+    // and only then drop the old default orphan, github won't let us delete a branch while it's the default.
+    static List<String> applyActions(String repoId, List<SyncAction> actions, RefOps ops, boolean dryRun,
+                                     String upstreamDefault, String forkDefault) throws IOException {
+        var changes = new ArrayList<String>();
+
+        // orphans that aren't the current default
+        for (SyncAction a : actions) {
+            if (a instanceof SyncAction.ArchiveOrphanBranch ob && !ob.branch().equals(forkDefault)) {
+                archiveOrphan(repoId, ob, ops, dryRun, changes);
+            }
+        }
+
+        // create new upstream branches and update changed ones
+        for (SyncAction a : actions) {
+            if (a instanceof SyncAction.CreateBranch cb) {
+                if (dryRun) {
+                    changes.add("[%s] Would create branch '%s' -> %s".formatted(repoId, cb.branch(), shortSha(cb.sha())));
+                } else {
+                    ops.createBranch(cb.branch(), cb.sha());
+                    changes.add("[%s] New branch '%s' -> %s".formatted(repoId, cb.branch(), shortSha(cb.sha())));
+                }
+            } else if (a instanceof SyncAction.UpdateBranch ub) {
+                if (dryRun) {
+                    changes.add("[%s] Would update branch '%s' %s -> %s"
+                        .formatted(repoId, ub.branch(), shortSha(ub.oldSha()), shortSha(ub.newSha())));
+                } else {
+                    var outcome = applyBranchUpdate(ops, ub.branch(), ub.oldSha(), ub.newSha());
+                    if (outcome == BranchOutcome.FAST_FORWARD) {
+                        changes.add("[%s] Branch '%s' updated -> %s".formatted(repoId, ub.branch(), shortSha(ub.newSha())));
+                    } else {
+                        changes.add("[%s] Branch '%s' history rewritten; preserved %s as tag 'archived/%s/%s', reset -> %s"
+                            .formatted(repoId, ub.branch(), shortSha(ub.oldSha()), ub.branch(), shortSha(ub.oldSha()),
+                                shortSha(ub.newSha())));
+                    }
+                }
+            }
+        }
+
+        // match upstream's default branch (now that it exists in the fork)
+        if (upstreamDefault != null && !upstreamDefault.equals(forkDefault)) {
+            if (dryRun) {
+                changes.add("[%s] Would set default branch to '%s'".formatted(repoId, upstreamDefault));
+            } else {
+                ops.setDefaultBranch(upstreamDefault);
+                changes.add("[%s] Default branch set to '%s'".formatted(repoId, upstreamDefault));
+            }
+        }
+
+        // the old default orphan can be removed now that it isn't the default
+        for (SyncAction a : actions) {
+            if (a instanceof SyncAction.ArchiveOrphanBranch ob && ob.branch().equals(forkDefault)) {
+                archiveOrphan(repoId, ob, ops, dryRun, changes);
+            }
+        }
+
+        // do tags
+        for (SyncAction a : actions) {
+            if (a instanceof SyncAction.CreateTag ct) {
+                if (dryRun) {
+                    changes.add("[%s] Would create tag '%s' -> %s".formatted(repoId, ct.tag(), shortSha(ct.sha())));
+                } else {
+                    ops.createTag(ct.tag(), ct.sha());
+                    changes.add("[%s] New tag '%s' -> %s".formatted(repoId, ct.tag(), shortSha(ct.sha())));
+                }
+            } else if (a instanceof SyncAction.ReportTagMoved rt) {
+                // log only, we don't move tags so this never converges, putting it in
+                // `changes` would re-ping Discord on every run forever
+                logger.info("[{}] Upstream moved tag '{}' {} -> {} (left as-is)",
+                    repoId, rt.tag(), shortSha(rt.oldSha()), shortSha(rt.newSha()));
+            }
+        }
+        return changes;
+    }
+
+    @Override
+    public void run() {
+        // No subcommand provided
+        log("@|green Type archiver --help for available commands.|@");
+    }
+
+    enum BranchOutcome {FAST_FORWARD, REWRITE_PRESERVED}
+
+    @Command(name = "mod", description = "Modify an archived repo flags", mixinStandardHelpOptions = true)
+    static class CommandMod implements Callable<Integer> {
+        @Option(names = {"--upstreamGone", "-D"}, description = "Set if upstream is gone/deleted.", defaultValue = NULL_VALUE)
+        Boolean upstreamGone;
+        @Parameters(index = "0", description = "Repository name within the archives.", defaultValue = "")
+        private String id;
+
+        @Override
+        public Integer call() throws Exception {
+            id = id.toLowerCase(Locale.ROOT);
+            var data = getData();
+            var repo = data.repos().get(id);
+
+            if (repo == null) {
+                log("@|red Repository not found within the archives.|@");
+                return 1;
+            }
+
+            var newRepo = new ArchivedRepo(repo.upstreamName(),
+                upstreamGone == null ? repo.upstreamGone() : upstreamGone);
+            data.repos().put(id, newRepo);
+            saveData(data);
+
+            logger.info("Updated {} to {}", repo, newRepo);
+            return 0;
+        }
+    }
+
+    @Command(name = "sync", description = "Refreshes all archived repos from upstream via the GitHub API.", mixinStandardHelpOptions = true)
+    static class CommandSync implements Callable<Integer> {
+        @Option(names = {"--token", "-T"}, description = "GitHub token", defaultValue = "")
+        String token;
+        @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
+        String webhook;
+        @Option(names = {"--debug", "-D"}, description = "Print changes to console")
+        boolean debug;
+        @Option(names = {"--dry-run", "-n"}, description = "Print planned actions without mutating any repository")
+        boolean dryRun;
+
+        @Override
+        public Integer call() throws Exception {
+            var settings = getSettings();
+            var orgName = settings.getProperty("archiver.org");
+
+            var token = System.getProperty("archiver.github.token", System.getenv("GITHUB_TOKEN"));
+            if (token == null || token.isBlank()) {
+                token = this.token;
+            }
+            var webhook = System.getProperty("archiver.webhook", System.getenv("DISCORD_WEBHOOK"));
+            if (webhook == null || webhook.isBlank()) {
+                webhook = this.webhook;
+            }
+
+            var github = new GitHubBuilder().withOAuthToken(token).build();
+            if (!github.isCredentialValid() || github.isAnonymous()) {
+                log("@|red GitHub credentials missing from environment!|@");
+                return 1;
+            }
+
+            log(dryRun ? "Planning archive refresh (dry run)..." : "Refreshing archives via the GitHub API...");
+
+            // Same error split as before: unexpected failures go in `errors` and fail
+            // the run (so I get an email) without aborting the rest; everything else is
+            // reported as a change.
+            var errors = new HashMap<String, Exception>();
+            var data = getData();
+            var state = getState();
+            var newState = new TreeMap<String, RepoState>();
+            var changes = new ArrayList<String>();
+            var now = Instant.now().toString();
+
+            for (Map.Entry<String, ArchivedRepo> entry : data.repos().entrySet()) {
+                var id = entry.getKey();
+                if (entry.getValue().upstreamGone()) {
+                    log("Skipping {}", id);
+                    var prev = state.repos().get(id);
+                    if (prev != null) {
+                        newState.put(id, prev); // nothing to refresh, keep the last known state
+                    }
+                    continue;
+                }
+
+                log("Checking {}", id);
+                try {
+                    var upstream = github.getRepository(entry.getValue().upstreamName());
+                    var fork = github.getRepository(orgName + '/' + id);
+
+                    var upstreamHeads = listRefs(upstream, "heads");
+                    var forkHeads = listRefs(fork, "heads");
+                    var upstreamTags = listRefs(upstream, "tags");
+                    var forkTags = listRefs(fork, "tags");
+
+                    var actions = classify(upstreamHeads, forkHeads, upstreamTags, forkTags);
+                    var upstreamDefault = upstream.getDefaultBranch();
+                    var forkDefault = fork.getDefaultBranch();
+                    changes.addAll(applyActions(id, actions, new GitHubRefOps(fork), dryRun, upstreamDefault, forkDefault));
+
+                    // record the post-sync default (we point it at upstreams unless this is a dry run)
+                    var newDefault = !dryRun && upstreamDefault != null && !upstreamDefault.equals(forkDefault)
+                        ? upstreamDefault : forkDefault;
+                    newState.put(id, computePostState(newDefault, forkHeads, forkTags,
+                        dryRun ? List.of() : actions, now));
+                } catch (Exception e) {
+                    changes.add("[%s] Fatal error: %s%s".formatted(id, e.getMessage(), workflowScopeHint(e)));
+                    errors.put(id, e);
+                    var prev = state.repos().get(id);
+                    if (prev != null) {
+                        newState.put(id, prev); // couldn't refresh; don't drop its state
+                    }
+                }
+            }
+
+            logger.info("Archives checked, now reporting changes.");
+
+            // Gotta be on the safe side and never leak the token into the report.
+            var finalToken = token;
+            changes = changes.stream().map(s -> s.replace(finalToken, "<TOKEN>"))
+                .collect(Collectors.toCollection(ArrayList::new));
+
+            if (debug && !changes.isEmpty()) {
+                logger.info("Changes to report:");
+                changes.forEach(logger::info);
+            }
+
+            if (!dryRun) {
+                saveState(new StateSchema(now, newState));
+            }
+
+            if (!dryRun && !webhook.isBlank() && !changes.isEmpty()) {
+                try (var client = WebhookClient.withUrl(webhook)) {
+                    var message = new WebhookMessageBuilder().setContent("Archive changes:")
+                        .addFile("changes.log", new ByteArrayInputStream(String.join("\n", changes)
+                            .getBytes(StandardCharsets.UTF_8))).build();
+                    client.send(message).get();
+                } catch (Throwable e) {
+                    logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
+                }
+            }
+
+            if (!errors.isEmpty()) {
+                logger.warn("Errors occurred while syncing:");
+                for (Map.Entry<String, Exception> en : errors.entrySet()) {
+                    logger.error("Unable to sync {}", en.getKey(), en.getValue());
+                }
+                return 1; // Mark it as failed and spam my emails.
+            }
+            return 0;
+        }
+    }
+
+    @Command(name = "add", description = "Adds a new GitHub repository to the arquives.", mixinStandardHelpOptions = true)
+    static class CommandAdd implements Callable<Integer> {
+        @Option(names = {"--token", "-T"}, description = "GitHub token", defaultValue = "")
+        String token;
+        @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
+        String webhook;
+        @Parameters(description = "GitHub repository id (owner/repo) to add to the archives", defaultValue = "")
+        private String[] ghRepoIds;
+
+        // Do let exceptions propagate, they should provide enough information about why they happened and this script is
+        //  not meant to be executed by humans.
+        @Override
+        public Integer call() throws Exception {
+            var settings = getSettings();
+            var token = System.getProperty("archiver.github.token", System.getenv("GITHUB_TOKEN"));
+            if (token == null || token.isBlank()) {
+                token = this.token;
+            }
+            var webhook = System.getProperty("archiver.webhook", System.getenv("DISCORD_WEBHOOK"));
+            if (webhook == null || webhook.isBlank()) {
+                webhook = this.webhook;
+            }
+
+            var orgName = settings.getProperty("archiver.org");
+            var github = new GitHubBuilder().withOAuthToken(token).build();
+            if (!github.isCredentialValid() || github.isAnonymous()) {
+                log("@|red GitHub credentials missing from environment!|@");
+                return 1;
+            }
+
+            if (ghRepoIds.length == 0) {
+                log("@|red Repository name must be provided!|@");
+                return 1;
+            }
+            for (int i = 0; i < ghRepoIds.length; i++) {
+                ghRepoIds[i] = ghRepoIds[i].toLowerCase(Locale.ROOT);
+                if (ghRepoIds[i].startsWith(orgName.toLowerCase(Locale.ROOT))) {
+                    log("@|red Cannot add an archiver repo to the archives!|@");
+                    return 1;
+                }
+            }
+
+            var data = getData();
+            for (String ghRepoId : ghRepoIds) {
+                var newId = ghRepoId.replace('/', '-');
+                if (data.repos().containsKey(newId)) {
+                    log("@|red Repo %s is already archived!|@", newId);
+                    continue;
+                }
+
+                logger.info("Forking {}", ghRepoId);
+                var originalGitHubRepo = github.getRepository(ghRepoId);
+                var org = github.getOrganization(orgName);
+                GHRepository fork;
+                try {
+                    // Maybe a previous run already forked it; reuse rather than duplicate.
+                    fork = github.getRepository(orgName + '/' + newId);
+                    log("@|red Found an existing fork with the same name... using it instead.|@");
+                } catch (Exception e) {
+                    fork = originalGitHubRepo.forkTo(org);
+                    int attempt = 0;
+                    while (true) {
+                        try {
+                            //noinspection BusyWait
+                            Thread.sleep(1000);
+                            fork.renameTo(newId);
+                            break;
+                        } catch (Exception ex) {
+                            if (++attempt > 3) {
+                                throw ex;
+                            }
+                        }
+                    }
+                    fork = github.getRepository(orgName + '/' + newId);
+                }
+
+                // The fork is the archive now; just record it and let the workflow commit data.json.
+                data.repos().put(newId, new ArchivedRepo(originalGitHubRepo.getFullName(), false));
+
+                if (!webhook.isBlank()) {
+                    try (var client = WebhookClient.withUrl(webhook)) {
+                        WebhookEmbed embed = new WebhookEmbedBuilder()
+                            .setColor(0xF69000) // Nice
+                            .setTitle(new WebhookEmbed.EmbedTitle("New repository archived as " + newId, fork.getHtmlUrl().toString()))
+                            .setDescription("Archived from [%s](%s)".formatted(originalGitHubRepo.getFullName(),
+                                originalGitHubRepo.getHtmlUrl().toString()))
+                            .build();
+                        client.send(embed).get();
+                    } catch (Throwable e) {
+                        logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
+                    }
+                }
+            }
+
+            saveData(data);
+            return 0;
+        }
+    }
 }
 
 // Overkill typed json
 record DataSchema(Map<String, ArchivedRepo> repos) {
 }
 
-// We may need fancy default values in the future, use lombok to make plain boring class less boring
-@Value
-@Builder
-@Jacksonized
-@ToString
-@EqualsAndHashCode
-class ArchivedRepo {
-  String upstreamName;
-  boolean upstreamGone; // Indicates that upstream is no longer existent and no attempts at updating should be made
+// upstreamGone marks a repo whose upstream is gone for good, so sync leaves it alone.
+record ArchivedRepo(String upstreamName, boolean upstreamGone) {
+}
+
+// Generated each sync. The git diff of state.json is the archive's changelog.
+record StateSchema(String generated, Map<String, RepoState> repos) {
+}
+
+record RepoState(String defaultBranch, String lastSynced,
+                 Map<String, String> branches, Map<String, String> tags) {
+}
+
+// Real RefOps. Works purely over the GitHub API: because a fork shares an
+// object network with its parent, repointing a branch ref to an upstream SHA
+// moves no objects.
+final class GitHubRefOps implements RefOps {
+    private final GHRepository fork;
+
+    GitHubRefOps(GHRepository fork) {
+        this.fork = fork;
+    }
+
+    public void updateBranch(String branch, String sha, boolean force) throws IOException {
+        fork.getRef("refs/heads/" + branch).updateTo(sha, force);
+    }
+
+    public void createBranch(String branch, String sha) throws IOException {
+        fork.createRef("refs/heads/" + branch, sha);
+    }
+
+    public void createArchivedTag(String tagName, String commitSha, String message) throws IOException {
+        GHTagObject tag = fork.createTag(tagName, message, commitSha, "commit");
+        try {
+            fork.createRef("refs/tags/" + tagName, tag.getSha());
+        } catch (HttpException e) {
+            // 422 means the ref already exists, probably a previous run made the tag but
+            // died before the force-push, the old tip is already preserved under it so we
+            // can just carry on
+            if (e.getResponseCode() != 422) throw e;
+        }
+    }
+
+    public void createTag(String tag, String sha) throws IOException {
+        fork.createRef("refs/tags/" + tag, sha);
+    }
+
+    public void deleteBranch(String branch) throws IOException {
+        fork.getRef("refs/heads/" + branch).delete();
+    }
+
+    public void setDefaultBranch(String branch) throws IOException {
+        fork.setDefaultBranch(branch);
+    }
 }

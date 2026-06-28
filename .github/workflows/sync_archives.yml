@@ -5,7 +5,6 @@ on:
     - cron: '48 2,14 * * *'
   workflow_dispatch:
 
-
 permissions:
   contents: write
 
@@ -14,11 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          submodules: true
+      - uses: actions/checkout@v4
 
       - uses: jbangdev/jbang-action@v0.109.0
         with:
@@ -27,9 +22,7 @@ jobs:
         env:
           JBANG_REPO: /root/.jbang/repository
 
-      - name: Can't bother fixing this issue
-        run: rm -f .git/COMMIT_EDITMSG
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Synced archives with upstream.
+          file_pattern: 'state.json data.json'
