@@ -603,6 +603,154 @@
     "minecraftforge-gradlejarsigner" : {
       "upstreamName" : "MinecraftForge/GradleJarSigner",
       "upstreamGone" : false
+    },
+    "minecraftforge-gradleutils" : {
+      "upstreamName" : "MinecraftForge/GradleUtils",
+      "upstreamGone" : false
+    },
+    "minecraftforge-groovydslimprover" : {
+      "upstreamName" : "MinecraftForge/GroovyDSLImprover",
+      "upstreamGone" : false
+    },
+    "minecraftforge-installer" : {
+      "upstreamName" : "MinecraftForge/Installer",
+      "upstreamGone" : false
+    },
+    "minecraftforge-installerrewriter" : {
+      "upstreamName" : "MinecraftForge/InstallerRewriter",
+      "upstreamGone" : false
+    },
+    "minecraftforge-installertools" : {
+      "upstreamName" : "MinecraftForge/InstallerTools",
+      "upstreamGone" : false
+    },
+    "minecraftforge-jar-stubify" : {
+      "upstreamName" : "MinecraftForge/jar-stubify",
+      "upstreamGone" : false
+    },
+    "minecraftforge-jarcompatibilitychecker" : {
+      "upstreamName" : "MinecraftForge/JarCompatibilityChecker",
+      "upstreamGone" : false
+    },
+    "minecraftforge-jarjar" : {
+      "upstreamName" : "MinecraftForge/JarJar",
+      "upstreamGone" : false
+    },
+    "minecraftforge-jarsplitter" : {
+      "upstreamName" : "MinecraftForge/JarSplitter",
+      "upstreamGone" : false
+    },
+    "minecraftforge-javaprovisioner" : {
+      "upstreamName" : "MinecraftForge/JavaProvisioner",
+      "upstreamGone" : false
+    },
+    "minecraftforge-javawrapper" : {
+      "upstreamName" : "MinecraftForge/JavaWrapper",
+      "upstreamGone" : false
+    },
+    "minecraftforge-legacydev" : {
+      "upstreamName" : "MinecraftForge/LegacyDev",
+      "upstreamGone" : false
+    },
+    "minecraftforge-legacyjavafixer" : {
+      "upstreamName" : "MinecraftForge/LegacyJavaFixer",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mappingverifier" : {
+      "upstreamName" : "MinecraftForge/MappingVerifier",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mcpcleanup" : {
+      "upstreamName" : "MinecraftForge/MCPCleanup",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mcpconfig" : {
+      "upstreamName" : "MinecraftForge/MCPConfig",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mdkexamples" : {
+      "upstreamName" : "MinecraftForge/MDKExamples",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mercurius" : {
+      "upstreamName" : "MinecraftForge/Mercurius",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mercuriusupdater" : {
+      "upstreamName" : "MinecraftForge/MercuriusUpdater",
+      "upstreamGone" : false
+    },
+    "minecraftforge-mergetool" : {
+      "upstreamName" : "MinecraftForge/MergeTool",
+      "upstreamGone" : false
+    },
+    "minecraftforge-minecraftforge" : {
+      "upstreamName" : "MinecraftForge/MinecraftForge",
+      "upstreamGone" : false
+    },
+    "minecraftforge-minecraftmavenizer" : {
+      "upstreamName" : "MinecraftForge/MinecraftMavenizer",
+      "upstreamGone" : false
+    },
+    "minecraftforge-modlauncher" : {
+      "upstreamName" : "MinecraftForge/ModLauncher",
+      "upstreamGone" : false
+    },
+    "minecraftforge-multireleasegradle" : {
+      "upstreamName" : "MinecraftForge/MultiReleaseGradle",
+      "upstreamGone" : false
+    },
+    "minecraftforge-paulscode" : {
+      "upstreamName" : "MinecraftForge/paulscode",
+      "upstreamGone" : false
+    },
+    "minecraftforge-remapper" : {
+      "upstreamName" : "MinecraftForge/Remapper",
+      "upstreamGone" : false
+    },
+    "minecraftforge-renamer" : {
+      "upstreamName" : "MinecraftForge/renamer",
+      "upstreamGone" : false
+    },
+    "minecraftforge-roimfs" : {
+      "upstreamName" : "MinecraftForge/roimfs",
+      "upstreamGone" : false
+    },
+    "minecraftforge-scorge" : {
+      "upstreamName" : "MinecraftForge/Scorge",
+      "upstreamGone" : false
+    },
+    "minecraftforge-securemodules" : {
+      "upstreamName" : "MinecraftForge/SecureModules",
+      "upstreamGone" : false
+    },
+    "minecraftforge-sharedactions" : {
+      "upstreamName" : "MinecraftForge/SharedActions",
+      "upstreamGone" : false
+    },
+    "minecraftforge-slimelauncher" : {
+      "upstreamName" : "MinecraftForge/SlimeLauncher",
+      "upstreamGone" : false
+    },
+    "minecraftforge-snowblower" : {
+      "upstreamName" : "MinecraftForge/Snowblower",
+      "upstreamGone" : false
+    },
+    "minecraftforge-srgutils" : {
+      "upstreamName" : "MinecraftForge/SrgUtils",
+      "upstreamGone" : false
+    },
+    "minecraftforge-unsafe" : {
+      "upstreamName" : "MinecraftForge/Unsafe",
+      "upstreamGone" : false
+    },
+    "minecraftforge-utils" : {
+      "upstreamName" : "MinecraftForge/Utils",
+      "upstreamGone" : false
+    },
+    "minecraftforge-web" : {
+      "upstreamName" : "MinecraftForge/Web",
+      "upstreamGone" : false
     }
   }
 }
