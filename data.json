@@ -1719,6 +1719,86 @@
     "quiltmc-yarn" : {
       "upstreamName" : "QuiltMC/yarn",
       "upstreamGone" : false
+    },
+    "techcatother-aps-php-runtime" : {
+      "upstreamName" : "TechCatOther/aps-php-runtime",
+      "upstreamGone" : false
+    },
+    "techcatother-aur-packages" : {
+      "upstreamName" : "TechCatOther/aur-packages",
+      "upstreamGone" : false
+    },
+    "techcatother-barodrama-ru" : {
+      "upstreamName" : "TechCatOther/Barodrama-RU",
+      "upstreamGone" : false
+    },
+    "techcatother-europaslostsuitsru" : {
+      "upstreamName" : "TechCatOther/EuropasLostSuitsRU",
+      "upstreamGone" : false
+    },
+    "techcatother-huskmodmissionsru" : {
+      "upstreamName" : "TechCatOther/HuskModMissionsRU",
+      "upstreamGone" : false
+    },
+    "techcatother-minecraft_gtnewhorizon" : {
+      "upstreamName" : "TechCatOther/minecraft_gtnewhorizon",
+      "upstreamGone" : false
+    },
+    "techcatother-modernrussianweaponsru" : {
+      "upstreamName" : "TechCatOther/ModernRussianWeaponsRU",
+      "upstreamGone" : false
+    },
+    "techcatother-needsru" : {
+      "upstreamName" : "TechCatOther/NeedsRU",
+      "upstreamGone" : false
+    },
+    "techcatother-selectelclo" : {
+      "upstreamName" : "TechCatOther/selectelclo",
+      "upstreamGone" : false
+    },
+    "techcatother-thediverjobru" : {
+      "upstreamName" : "TechCatOther/TheDiverJobRU",
+      "upstreamGone" : false
+    },
+    "techcatother-ultramine_core" : {
+      "upstreamName" : "TechCatOther/ultramine_core",
+      "upstreamGone" : false
+    },
+    "techcatother-umscripting" : {
+      "upstreamName" : "TechCatOther/umscripting",
+      "upstreamGone" : false
+    },
+    "techcatother-um_anticheat" : {
+      "upstreamName" : "TechCatOther/um_anticheat",
+      "upstreamGone" : false
+    },
+    "techcatother-um_basicprotect" : {
+      "upstreamName" : "TechCatOther/um_basicprotect",
+      "upstreamGone" : false
+    },
+    "techcatother-um_clean_forge" : {
+      "upstreamName" : "TechCatOther/um_clean_forge",
+      "upstreamGone" : false
+    },
+    "techcatother-um_commands" : {
+      "upstreamName" : "TechCatOther/um_commands",
+      "upstreamGone" : false
+    },
+    "techcatother-um_economy" : {
+      "upstreamName" : "TechCatOther/um_economy",
+      "upstreamGone" : false
+    },
+    "techcatother-um_launchwrapper" : {
+      "upstreamName" : "TechCatOther/um_launchwrapper",
+      "upstreamGone" : false
+    },
+    "techcatother-um_private_regions" : {
+      "upstreamName" : "TechCatOther/um_private_regions",
+      "upstreamGone" : false
+    },
+    "techcatother-vimsettings" : {
+      "upstreamName" : "TechCatOther/vimsettings",
+      "upstreamGone" : false
     }
   }
 }
