@@ -2263,6 +2263,30 @@
     "spigotmc-xenfororesourcemanagerapi" : {
       "upstreamName" : "SpigotMC/XenforoResourceManagerAPI",
       "upstreamGone" : false
+    },
+    "cyberdynecc-mobiuscoreth" : {
+      "upstreamName" : "CyberdyneCC/MobiusCoreTH",
+      "upstreamGone" : false
+    },
+    "cyberdynecc-thermos" : {
+      "upstreamName" : "CyberdyneCC/Thermos",
+      "upstreamGone" : false
+    },
+    "cyberdynecc-thermosicongenerators" : {
+      "upstreamName" : "CyberdyneCC/ThermosIconGenerators",
+      "upstreamGone" : false
+    },
+    "cyberdynecc-thermosrebased" : {
+      "upstreamName" : "CyberdyneCC/ThermosRebased",
+      "upstreamGone" : false
+    },
+    "cyberdynecc-thermosserver" : {
+      "upstreamName" : "CyberdyneCC/ThermosServer",
+      "upstreamGone" : false
+    },
+    "cyberdynecc-twilightforest" : {
+      "upstreamName" : "CyberdyneCC/TwilightForest",
+      "upstreamGone" : false
     }
   }
 }
