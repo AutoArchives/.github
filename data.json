@@ -1119,6 +1119,122 @@
     "papermc-paper-1.7" : {
       "upstreamName" : "PaperMC/Paper-1.7",
       "upstreamGone" : false
+    },
+    "papermc-paper-archive" : {
+      "upstreamName" : "PaperMC/Paper-archive",
+      "upstreamGone" : false
+    },
+    "papermc-paper-trail" : {
+      "upstreamName" : "PaperMC/paper-trail",
+      "upstreamGone" : false
+    },
+    "papermc-paperclip" : {
+      "upstreamName" : "PaperMC/Paperclip",
+      "upstreamGone" : false
+    },
+    "papermc-paperclipmavenplugin" : {
+      "upstreamName" : "PaperMC/PaperclipMavenPlugin",
+      "upstreamGone" : false
+    },
+    "papermc-paperd" : {
+      "upstreamName" : "PaperMC/paperd",
+      "upstreamGone" : false
+    },
+    "papermc-paperdocs" : {
+      "upstreamName" : "PaperMC/PaperDocs",
+      "upstreamGone" : false
+    },
+    "papermc-paperlib" : {
+      "upstreamName" : "PaperMC/PaperLib",
+      "upstreamGone" : false
+    },
+    "papermc-papermc.io" : {
+      "upstreamName" : "PaperMC/papermc.io",
+      "upstreamGone" : false
+    },
+    "papermc-papertestserver" : {
+      "upstreamName" : "PaperMC/PaperTestServer",
+      "upstreamGone" : false
+    },
+    "papermc-paperweight" : {
+      "upstreamName" : "PaperMC/paperweight",
+      "upstreamGone" : false
+    },
+    "papermc-paperweight-examples" : {
+      "upstreamName" : "PaperMC/paperweight-examples",
+      "upstreamGone" : false
+    },
+    "papermc-paperweight-test-plugin" : {
+      "upstreamName" : "PaperMC/paperweight-test-plugin",
+      "upstreamGone" : false
+    },
+    "papermc-parchment" : {
+      "upstreamName" : "PaperMC/Parchment",
+      "upstreamGone" : false
+    },
+    "papermc-patch-roulette" : {
+      "upstreamName" : "PaperMC/patch-roulette",
+      "upstreamGone" : false
+    },
+    "papermc-patched-spigot-fernflower" : {
+      "upstreamName" : "PaperMC/patched-spigot-fernflower",
+      "upstreamGone" : false
+    },
+    "papermc-proofreader" : {
+      "upstreamName" : "PaperMC/ProofReader",
+      "upstreamGone" : false
+    },
+    "papermc-restamp" : {
+      "upstreamName" : "PaperMC/restamp",
+      "upstreamGone" : false
+    },
+    "papermc-sculptor" : {
+      "upstreamName" : "PaperMC/sculptor",
+      "upstreamGone" : false
+    },
+    "papermc-sectortool" : {
+      "upstreamName" : "PaperMC/SectorTool",
+      "upstreamGone" : false
+    },
+    "papermc-starlight" : {
+      "upstreamName" : "PaperMC/Starlight",
+      "upstreamGone" : false
+    },
+    "papermc-testing" : {
+      "upstreamName" : "PaperMC/testing",
+      "upstreamGone" : false
+    },
+    "papermc-travertine" : {
+      "upstreamName" : "PaperMC/Travertine",
+      "upstreamGone" : false
+    },
+    "papermc-typewriter" : {
+      "upstreamName" : "PaperMC/typewriter",
+      "upstreamGone" : false
+    },
+    "papermc-unpick-definitions" : {
+      "upstreamName" : "PaperMC/unpick-definitions",
+      "upstreamGone" : false
+    },
+    "papermc-update-projects-action" : {
+      "upstreamName" : "PaperMC/update-projects-action",
+      "upstreamGone" : false
+    },
+    "papermc-velocity" : {
+      "upstreamName" : "PaperMC/Velocity",
+      "upstreamGone" : false
+    },
+    "papermc-velocitypowered.com" : {
+      "upstreamName" : "PaperMC/velocitypowered.com",
+      "upstreamGone" : false
+    },
+    "papermc-waterfall" : {
+      "upstreamName" : "PaperMC/Waterfall",
+      "upstreamGone" : false
+    },
+    "papermc-website" : {
+      "upstreamName" : "PaperMC/website",
+      "upstreamGone" : false
     }
   }
 }
