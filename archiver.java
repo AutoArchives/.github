@@ -156,6 +156,14 @@ class archiver implements Runnable {
         return sha != null && sha.length() > 7 ? sha.substring(0, 7) : sha;
     }
 
+    // Keep only the repos worth mirroring and drop forks and anything private.
+    static List<String> selectArchivable(List<RepoCandidate> candidates) {
+        return candidates.stream()
+            .filter(c -> !c.fork() && !c.privateRepo())
+            .map(RepoCandidate::fullName)
+            .collect(Collectors.toList());
+    }
+
     // A ref write that 404s almost always means the token is missing the 'workflow'
     // scope, github blocks creating or updating refs whose commits touch
     // .github/workflows unless the token has it, and unhelpfully reports it as a
@@ -505,11 +513,11 @@ class archiver implements Runnable {
         String token;
         @Option(names = {"--webhook", "-W"}, description = "Discord Webhook", defaultValue = "")
         String webhook;
-        @Parameters(description = "GitHub repository id (owner/repo) to add to the archives", defaultValue = "")
+        @Option(names = {"--dry-run", "-n"}, description = "List what would be archived without forking anything")
+        boolean dryRun;
+        @Parameters(description = "GitHub repository id (owner/repo), or a bare owner/org to bulk-add", defaultValue = "")
         private String[] ghRepoIds;
 
-        // Do let exceptions propagate, they should provide enough information about why they happened and this script is
-        //  not meant to be executed by humans.
         @Override
         public Integer call() throws Exception {
             var settings = getSettings();
@@ -533,19 +541,49 @@ class archiver implements Runnable {
                 log("@|red Repository name must be provided!|@");
                 return 1;
             }
-            for (int i = 0; i < ghRepoIds.length; i++) {
-                ghRepoIds[i] = ghRepoIds[i].toLowerCase(Locale.ROOT);
-                if (ghRepoIds[i].startsWith(orgName.toLowerCase(Locale.ROOT))) {
+
+            // Resolve the inputs into concrete owner/repo targets.
+            // Anything with a '/' is taken as-is and a bare owner gets expanded into its public,
+            // non-fork repos so you can hand it a whole user or org and let it figure out the rest.
+            var orgLower = orgName.toLowerCase(Locale.ROOT);
+            var targets = new ArrayList<String>();
+            for (String input : ghRepoIds) {
+                if (input.toLowerCase(Locale.ROOT).startsWith(orgLower)) {
                     log("@|red Cannot add an archiver repo to the archives!|@");
                     return 1;
+                }
+                if (input.contains("/")) {
+                    targets.add(input);
+                } else {
+                    try {
+                        var expanded = expandOwner(github, input);
+                        if (expanded.isEmpty()) {
+                            log("@|yellow No archivable repos found for {}.|@", input);
+                        }
+                        targets.addAll(expanded);
+                    } catch (GHFileNotFoundException e) {
+                        // bail out early; nothing's been forked yet so we lose no progress
+                        log("@|red Owner '%s' not found.|@", input);
+                        return 1;
+                    }
                 }
             }
 
             var data = getData();
-            for (String ghRepoId : ghRepoIds) {
+            int added = 0;
+            int skipped = 0;
+            for (String target : targets) {
+                var ghRepoId = target.toLowerCase(Locale.ROOT);
                 var newId = ghRepoId.replace('/', '-');
                 if (data.repos().containsKey(newId)) {
-                    log("@|red Repo %s is already archived!|@", newId);
+                    log("@|yellow Already archived: {}}|@", newId);
+                    skipped++;
+                    continue;
+                }
+
+                if (dryRun) {
+                    log("Would archive {} as {}", target, newId);
+                    added++;
                     continue;
                 }
 
@@ -575,8 +613,11 @@ class archiver implements Runnable {
                     fork = github.getRepository(orgName + '/' + newId);
                 }
 
-                // The fork is the archive now; just record it and let the workflow commit data.json.
+                // The fork is the archive now; record it right away and save, so if a later
+                // repo in a bulk run blows up we don't throw away the ones already forked.
                 data.repos().put(newId, new ArchivedRepo(originalGitHubRepo.getFullName(), false));
+                saveData(data);
+                added++;
 
                 if (!webhook.isBlank()) {
                     try (var client = WebhookClient.withUrl(webhook)) {
@@ -593,8 +634,21 @@ class archiver implements Runnable {
                 }
             }
 
-            saveData(data);
+            if (dryRun) {
+                log("Dry run: {} to add, {} already archived.", added, skipped);
+            }
             return 0;
+        }
+
+        // List an owner's (user or org) public repos worth archiving.
+        // github.getUser works for both since it just hits /users/{login}/repos,
+        // and PagedIterable walks the pages for us; selectArchivable drops the forks and private ones.
+        private static List<String> expandOwner(GitHub github, String owner) throws IOException {
+            var candidates = new ArrayList<RepoCandidate>();
+            for (GHRepository repo : github.getUser(owner).listRepositories()) {
+                candidates.add(new RepoCandidate(repo.getFullName(), repo.isFork(), repo.isPrivate()));
+            }
+            return selectArchivable(candidates);
         }
     }
 }
@@ -605,6 +659,10 @@ record DataSchema(Map<String, ArchivedRepo> repos) {
 
 // upstreamGone marks a repo whose upstream is gone for good, so sync leaves it alone.
 record ArchivedRepo(String upstreamName, boolean upstreamGone) {
+}
+
+// A repo spotted while expanding an owner; just the bits the archivable filter cares about.
+record RepoCandidate(String fullName, boolean fork, boolean privateRepo) {
 }
 
 // Generated each sync. The git diff of state.json is the archive's changelog.
