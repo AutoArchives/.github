@@ -1799,6 +1799,26 @@
     "techcatother-vimsettings" : {
       "upstreamName" : "TechCatOther/vimsettings",
       "upstreamGone" : false
+    },
+    "yatopiamc-api.yatopiamc.org" : {
+      "upstreamName" : "YatopiaMC/api.yatopiamc.org",
+      "upstreamGone" : false
+    },
+    "yatopiamc-yatopia-bot" : {
+      "upstreamName" : "YatopiaMC/Yatopia-Bot",
+      "upstreamGone" : false
+    },
+    "yatopiamc-yatopia-egg" : {
+      "upstreamName" : "YatopiaMC/yatopia-egg",
+      "upstreamGone" : false
+    },
+    "yatopiamc-yatopia-quantum" : {
+      "upstreamName" : "YatopiaMC/Yatopia-Quantum",
+      "upstreamGone" : false
+    },
+    "yatopiamc-yatopiamc.github.io" : {
+      "upstreamName" : "YatopiaMC/yatopiamc.github.io",
+      "upstreamGone" : false
     }
   }
 }
