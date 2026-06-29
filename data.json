@@ -2287,6 +2287,14 @@
     "cyberdynecc-twilightforest" : {
       "upstreamName" : "CyberdyneCC/TwilightForest",
       "upstreamGone" : false
+    },
+    "uraniummc-kbootstrapx" : {
+      "upstreamName" : "UraniumMC/KBootstrapX",
+      "upstreamGone" : false
+    },
+    "uraniummc-kcauldron-bukkit" : {
+      "upstreamName" : "UraniumMC/KCauldron-Bukkit",
+      "upstreamGone" : false
     }
   }
 }
