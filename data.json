@@ -520,10 +520,6 @@
       "upstreamName" : "MinecraftForge/Actionable",
       "upstreamGone" : false
     },
-    "minecraftforge-.github" : {
-      "upstreamName" : "MinecraftForge/.github",
-      "upstreamGone" : false
-    },
     "minecraftforge-aggregatetest" : {
       "upstreamName" : "MinecraftForge/AggregateTest",
       "upstreamGone" : false
