@@ -519,6 +519,90 @@
     "minecraftforge-actionable" : {
       "upstreamName" : "MinecraftForge/Actionable",
       "upstreamGone" : false
+    },
+    "minecraftforge-.github" : {
+      "upstreamName" : "MinecraftForge/.github",
+      "upstreamGone" : false
+    },
+    "minecraftforge-aggregatetest" : {
+      "upstreamName" : "MinecraftForge/AggregateTest",
+      "upstreamGone" : false
+    },
+    "minecraftforge-binarypatcher" : {
+      "upstreamName" : "MinecraftForge/BinaryPatcher",
+      "upstreamGone" : false
+    },
+    "minecraftforge-blog" : {
+      "upstreamName" : "MinecraftForge/blog",
+      "upstreamGone" : false
+    },
+    "minecraftforge-bootstrap" : {
+      "upstreamName" : "MinecraftForge/Bootstrap",
+      "upstreamGone" : false
+    },
+    "minecraftforge-coremods" : {
+      "upstreamName" : "MinecraftForge/coremods",
+      "upstreamGone" : false
+    },
+    "minecraftforge-depigifier" : {
+      "upstreamName" : "MinecraftForge/DePigifier",
+      "upstreamGone" : false
+    },
+    "minecraftforge-documentation" : {
+      "upstreamName" : "MinecraftForge/Documentation",
+      "upstreamGone" : false
+    },
+    "minecraftforge-eventbus" : {
+      "upstreamName" : "MinecraftForge/EventBus",
+      "upstreamGone" : false
+    },
+    "minecraftforge-facade" : {
+      "upstreamName" : "MinecraftForge/facade",
+      "upstreamGone" : false
+    },
+    "minecraftforge-fernflower" : {
+      "upstreamName" : "MinecraftForge/FernFlower",
+      "upstreamGone" : false
+    },
+    "minecraftforge-fernflowerlegacy" : {
+      "upstreamName" : "MinecraftForge/FernFlowerLegacy",
+      "upstreamGone" : false
+    },
+    "minecraftforge-fml" : {
+      "upstreamName" : "MinecraftForge/FML",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgedevplugin" : {
+      "upstreamName" : "MinecraftForge/ForgeDevPlugin",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgeflower" : {
+      "upstreamName" : "MinecraftForge/ForgeFlower",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgegradle" : {
+      "upstreamName" : "MinecraftForge/ForgeGradle",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgesharedlibrary" : {
+      "upstreamName" : "MinecraftForge/forgesharedlibrary",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgespi" : {
+      "upstreamName" : "MinecraftForge/ForgeSPI",
+      "upstreamGone" : false
+    },
+    "minecraftforge-forgeutils" : {
+      "upstreamName" : "MinecraftForge/ForgeUtils",
+      "upstreamGone" : false
+    },
+    "minecraftforge-gitversion" : {
+      "upstreamName" : "MinecraftForge/GitVersion",
+      "upstreamGone" : false
+    },
+    "minecraftforge-gradlejarsigner" : {
+      "upstreamName" : "MinecraftForge/GradleJarSigner",
+      "upstreamGone" : false
     }
   }
 }
