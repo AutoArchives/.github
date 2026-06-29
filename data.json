@@ -2295,6 +2295,86 @@
     "uraniummc-kcauldron-bukkit" : {
       "upstreamName" : "UraniumMC/KCauldron-Bukkit",
       "upstreamGone" : false
+    },
+    "aagrishankov-ultramine" : {
+      "upstreamName" : "aagrishankov/UltraMine",
+      "upstreamGone" : false
+    },
+    "minestom-arena" : {
+      "upstreamName" : "Minestom/Arena",
+      "upstreamGone" : false
+    },
+    "minestom-ccf" : {
+      "upstreamName" : "Minestom/CCF",
+      "upstreamGone" : false
+    },
+    "minestom-dependencygetter" : {
+      "upstreamName" : "Minestom/DependencyGetter",
+      "upstreamGone" : false
+    },
+    "minestom-discussions-worker" : {
+      "upstreamName" : "Minestom/discussions-worker",
+      "upstreamGone" : false
+    },
+    "minestom-game-jam-template" : {
+      "upstreamName" : "Minestom/game-jam-template",
+      "upstreamGone" : false
+    },
+    "minestom-hephaistos" : {
+      "upstreamName" : "Minestom/Hephaistos",
+      "upstreamGone" : false
+    },
+    "minestom-lwjgl-example" : {
+      "upstreamName" : "Minestom/LWJGL-Example",
+      "upstreamGone" : false
+    },
+    "minestom-lwjglmapextension" : {
+      "upstreamName" : "Minestom/LWJGLMapExtension",
+      "upstreamGone" : false
+    },
+    "minestom-minestom" : {
+      "upstreamName" : "Minestom/Minestom",
+      "upstreamGone" : false
+    },
+    "minestom-minestom.net" : {
+      "upstreamName" : "Minestom/minestom.net",
+      "upstreamGone" : false
+    },
+    "minestom-minestomdatagenerator" : {
+      "upstreamName" : "Minestom/MinestomDataGenerator",
+      "upstreamGone" : false
+    },
+    "minestom-minestomui" : {
+      "upstreamName" : "Minestom/MinestomUI",
+      "upstreamGone" : false
+    },
+    "minestom-paxy-velocity" : {
+      "upstreamName" : "Minestom/Paxy-Velocity",
+      "upstreamGone" : false
+    },
+    "minestom-template-server" : {
+      "upstreamName" : "Minestom/template-server",
+      "upstreamGone" : false
+    },
+    "minestom-ui" : {
+      "upstreamName" : "Minestom/ui",
+      "upstreamGone" : false
+    },
+    "minestom-vanillareimplementation" : {
+      "upstreamName" : "Minestom/VanillaReimplementation",
+      "upstreamGone" : false
+    },
+    "minestom-wiki" : {
+      "upstreamName" : "Minestom/wiki",
+      "upstreamGone" : false
+    },
+    "minestom-worldconverter" : {
+      "upstreamName" : "Minestom/WorldConverter",
+      "upstreamGone" : false
+    },
+    "poweruser-minetickmod" : {
+      "upstreamName" : "Poweruser/MinetickMod",
+      "upstreamGone" : false
     }
   }
 }
