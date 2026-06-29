@@ -1819,6 +1819,122 @@
     "yatopiamc-yatopiamc.github.io" : {
       "upstreamName" : "YatopiaMC/yatopiamc.github.io",
       "upstreamGone" : false
+    },
+    "spoutdev-aquaduct" : {
+      "upstreamName" : "spoutdev/Aquaduct",
+      "upstreamGone" : false
+    },
+    "spoutdev-bukkitbridge" : {
+      "upstreamName" : "spoutdev/BukkitBridge",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletask" : {
+      "upstreamName" : "spoutdev/DropletAsk",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletborder" : {
+      "upstreamName" : "spoutdev/DropletBorder",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletbroadcast" : {
+      "upstreamName" : "spoutdev/DropletBroadcast",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletcomponent" : {
+      "upstreamName" : "spoutdev/DropletComponent",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletconfig" : {
+      "upstreamName" : "spoutdev/DropletConfig",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletcooldown" : {
+      "upstreamName" : "spoutdev/DropletCooldown",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletexample" : {
+      "upstreamName" : "spoutdev/DropletExample",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletlift" : {
+      "upstreamName" : "spoutdev/DropletLift",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletmeeting" : {
+      "upstreamName" : "spoutdev/DropletMeeting",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletplayerdata" : {
+      "upstreamName" : "spoutdev/DropletPlayerData",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletprotect" : {
+      "upstreamName" : "spoutdev/DropletProtect",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletraffle" : {
+      "upstreamName" : "spoutdev/DropletRaffle",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletrestrict" : {
+      "upstreamName" : "spoutdev/DropletRestrict",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletrules" : {
+      "upstreamName" : "spoutdev/DropletRules",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletseat" : {
+      "upstreamName" : "spoutdev/DropletSeat",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletserviceuser" : {
+      "upstreamName" : "spoutdev/DropletServiceUser",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletsponsor" : {
+      "upstreamName" : "spoutdev/DropletSponsor",
+      "upstreamGone" : false
+    },
+    "spoutdev-dropletvanillacommands" : {
+      "upstreamName" : "spoutdev/DropletVanillaCommands",
+      "upstreamGone" : false
+    },
+    "spoutdev-hammer" : {
+      "upstreamName" : "spoutdev/Hammer",
+      "upstreamGone" : false
+    },
+    "spoutdev-hub" : {
+      "upstreamName" : "spoutdev/Hub",
+      "upstreamGone" : false
+    },
+    "spoutdev-infiniteobjects" : {
+      "upstreamName" : "spoutdev/InfiniteObjects",
+      "upstreamGone" : false
+    },
+    "spoutdev-shared-parent" : {
+      "upstreamName" : "spoutdev/shared-parent",
+      "upstreamGone" : false
+    },
+    "spoutdev-spout" : {
+      "upstreamName" : "spoutdev/Spout",
+      "upstreamGone" : false
+    },
+    "spoutdev-sprout" : {
+      "upstreamName" : "spoutdev/sprout",
+      "upstreamGone" : false
+    },
+    "spoutdev-streamland" : {
+      "upstreamName" : "spoutdev/Streamland",
+      "upstreamGone" : false
+    },
+    "spoutdev-travis-ci-resources" : {
+      "upstreamName" : "spoutdev/travis-ci-resources",
+      "upstreamGone" : false
+    },
+    "spoutdev-vanilla" : {
+      "upstreamName" : "spoutdev/Vanilla",
+      "upstreamGone" : false
     }
   }
 }
