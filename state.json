@@ -1,9 +1,9 @@
 {
-  "generated" : "2026-06-29T15:57:03.999757725Z",
+  "generated" : "2026-06-29T17:22:03.042705457Z",
   "repos" : {
     "addstarmc-prism-bukkit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.1.6" : "44dde21fc93fce2ab1b2bc84da4c3d4bd79240b5",
         "2.1.7" : "336ac183482809ad89d9255d649a10726d6656f9",
@@ -104,7 +104,7 @@
     },
     "akullpp-awesome-java" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "add-kuml" : "8a8dbe5148c7fa1972c671e92fa2bc21d69867de",
         "master" : "0ca583fb5e9087788ceca367fc50ec2792a8dfa7",
@@ -116,7 +116,7 @@
     },
     "alexeygrishankov-ultramine" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "9b80111a6ad168b94d56a58901661028c6e4356b"
       },
@@ -124,7 +124,7 @@
     },
     "anatawa12-forgegradle-1.2" : {
       "defaultBranch" : "FG_1.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FG_1.2" : "3f5f0d6b86926a1bf30fbb8c9782fa0a329f623f",
         "FG_1.2-1.0" : "09e55e1c51c021df651cfd2e01747e2b0412c762",
@@ -170,7 +170,7 @@
     },
     "anatawa12-forgegradle-2.3" : {
       "defaultBranch" : "FG_2.3",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FG_2.3" : "837fb50e5d1e5f13c28fa773deee7ed3620ae106",
         "dependabot/gradle/com.github.tony19-named-regexp-0.2.8" : "fd0208b691302f5a4c03bf0cba143836a230e070",
@@ -205,7 +205,7 @@
     },
     "andreasdc-travertine" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "1d1f5f1b2c94566dbd4a399fa097893824fd9ca5"
       },
@@ -213,7 +213,7 @@
     },
     "azanor-baubles" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10.2" : "44959469c0dcbb842e5630f6de0900137a26a0f5",
         "1.11" : "ba726e39782a98620746f8672298c455f480d552",
@@ -226,7 +226,7 @@
     },
     "azanor-thaumcraft-api" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10.2" : "f4f1caf0847681d8978c16692d24853e5fbc366b",
         "1.7.10" : "ced30ed35097d53cdb2a843d705477e52896e54b",
@@ -237,7 +237,7 @@
     },
     "bigscary-griefprevention" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "9e929a3eb28c8f31123539847af6b77ae9006aaf"
       },
@@ -245,7 +245,7 @@
     },
     "bogdan-g-ffokc" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "af84f12b3dfa1cbb41a6f7558f80930aaa50e426"
       },
@@ -259,7 +259,7 @@
     },
     "cardboardpowered-cardboard" : {
       "defaultBranch" : "ver/26.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "devtest" : "fae134d52d525f8c6424fa5a9bc4cf0b5c8b3985",
         "ver/1.16.5" : "02fe305e77fc0c6073b9c1674789414014802dac",
@@ -282,7 +282,7 @@
     },
     "cardboardpowered-cardboardpowered.github.io" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "252c9ec1948ce40883250013a2f3d8006475e8f7"
       },
@@ -290,7 +290,7 @@
     },
     "cardboardpowered-icommon" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "25dc5ec3dfd1592735a0c355d5718ef99365d0fa"
       },
@@ -298,7 +298,7 @@
     },
     "cardboardpowered-icommonlib" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.16-backup" : "f4b46848481fa8d207de32f23c094b56a2bb19e1",
         "master" : "b58add39a8f731fa14da8686c2865a1807879a9a",
@@ -308,7 +308,7 @@
     },
     "cardboardpowered-paperapi-releases" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "eca41589ae1d1861df48a4a4e50708291530bf9d"
       },
@@ -322,7 +322,7 @@
     },
     "cardboardpowered-worldedit-adapters" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "42571eda5187edc4527bd8acb10ab5205fa07b23"
       },
@@ -332,7 +332,7 @@
     },
     "crazy-crew-crazycrates" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev/26.1" : "a275b80c6568b35741cd5f25e4e6191188b94554",
         "feat/gui-rework" : "571b594dc2afa72ab4d018873d742c691ebd1daa",
@@ -617,7 +617,7 @@
     },
     "cruciblemc-crucible" : {
       "defaultBranch" : "staging",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "all-patches-rebased" : "e27dae1d4ca9010972188b87ea953fde67c2f14d",
         "feature/backport-some-bukkitworld-api" : "bcde836122d6841441addd2bbf9064d0c9f1a1e0",
@@ -697,7 +697,7 @@
     },
     "ctrlshiftesc-elixr" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "19ba52d3c798ee67c2169f0249bd9a09076ce675",
         "patch-1" : "ae3d2dcd3b763bf86a2af2e649216d583c868fc6"
@@ -706,7 +706,7 @@
     },
     "cube-space-yamler" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "dd1214fe914d6fe263223cbd01e989030ac71863"
       },
@@ -714,7 +714,7 @@
     },
     "cyberdynecc-thermos-bukkit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ad9519650b6c3a0cf346b9a78d783221e62d99f9"
       },
@@ -722,7 +722,7 @@
     },
     "dimensionaldevelopment-legacylauncher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "666a162683c474cdaff6c5cab496be27120828a1"
       },
@@ -730,7 +730,7 @@
     },
     "domnian-paperdragon" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev/1.19" : "7f74257de988fbf22bd8f80166c5d61de6af885a",
         "dev/1.19.1" : "7f74257de988fbf22bd8f80166c5d61de6af885a",
@@ -765,7 +765,7 @@
     },
     "doubledoordevelopment-itemblacklist" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cf5b1f85ac6a3b9bf0fdafa7c91b261fb390a434"
       },
@@ -773,7 +773,7 @@
     },
     "ds58-panilla" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7aca2658ca9bdd67e3615c392eb252f006c5cc52",
         "noblockentitytag" : "9984d4f7ed54258f65c56a346870579e541fce96",
@@ -870,7 +870,7 @@
     },
     "dvhaldane-bclforgelib" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f03fbd9dc0f8de02bec2181ae347ee1ab685bd2b"
       },
@@ -880,7 +880,7 @@
     },
     "dvhaldane-forgerestrictor" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c078968445740b0dfe4d96dc12c9c7b497b3bae6"
       },
@@ -890,7 +890,7 @@
     },
     "electroid-sportpaper" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "expose-entity" : "5a49b68d6b9148595cdf0d951a94eae6f0127855",
         "feat/expose-disconnect-reason" : "696bf99539432ee6f4bacf815d15a9a654f35021",
@@ -908,7 +908,7 @@
     },
     "elytra-server-elytra" : {
       "defaultBranch" : "develop",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "develop" : "d998c0ee26c948ae1352f00158ac978145875e8e",
         "feature/command-api" : "7400e95fd2f635218ccec9923b93e5d93943a055",
@@ -918,7 +918,7 @@
     },
     "evernife-forgerestrictor" : {
       "defaultBranch" : "finalcraft",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev" : "7393af72afe083287426798dcc379791a022647c",
         "finalcraft" : "0541026277e4396a0ebb1f0c2014eea300072b91",
@@ -949,7 +949,7 @@
     },
     "fabiozumbi12-pixelvip" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ea4e09e6cf33642d26d66cf5eae6e2f0322b8858"
       },
@@ -962,7 +962,7 @@
     },
     "fabiozumbi12-ultimatechat" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7c82caa85c413b3fefdd91b0eb0581e66cd33d17",
         "mvn-repo" : "b2b016c60cee722713671f204d535af825d56edf"
@@ -977,7 +977,7 @@
     },
     "fabricmc-access-widener" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "30e2d0038d2307140f122eebc2f782f440250234"
       },
@@ -985,7 +985,7 @@
     },
     "fabricmc-class-tweaker" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "6b7763f4a74d5b354767ca3502aa477331eb432b"
       },
@@ -993,7 +993,7 @@
     },
     "fabricmc-community" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "82effbf396f7a43d30c22802f5b313007aa55149",
         "mkdocs" : "95015cee87cda943a2b536e6f47aa021c734a941",
@@ -1003,7 +1003,7 @@
     },
     "fabricmc-dev-launch-injector" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4205124c29aba5c9857ab43176c600d8b3ab2901"
       },
@@ -1011,7 +1011,7 @@
     },
     "fabricmc-discord-bot" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ef3bf49022e65c08e5c482b614ce9e11b7131028"
       },
@@ -1019,7 +1019,7 @@
     },
     "fabricmc-enigma" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.12-stable" : "9408c3fd7423a7d03dbf4d35c70b48b5ff1726d3",
         "1.x" : "ad71cb3ac726fa46202facef578dfc765f1be466",
@@ -1051,7 +1051,7 @@
     },
     "fabricmc-fabric-action-scripts" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dist" : "b9e2c6a197eb351869ba682b28482673c8844f80",
         "main" : "e270173f3594e9555b63aee121ed572aa1491345"
@@ -1064,7 +1064,7 @@
     },
     "fabricmc-fabric-api" : {
       "defaultBranch" : "26.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14" : "4ea477294e573899dfc5901b05bce2d048e5591d",
         "1.15" : "c1455e80c4899e0904c4eb338331109bc2014563",
@@ -2278,7 +2278,7 @@
     },
     "fabricmc-fabric-commands" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "6b2d306941ec00bb1f3a30b3df06b2113b9d780d"
       },
@@ -2286,7 +2286,7 @@
     },
     "fabricmc-fabric-docs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "54bf660b7a0c965053c01dc60609371ebec54d35"
       },
@@ -2294,7 +2294,7 @@
     },
     "fabricmc-fabric-docs-old" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f90d594015dda31da8e8d9ce11e935eca7f81eae"
       },
@@ -2302,7 +2302,7 @@
     },
     "fabricmc-fabric-event-entity" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "34e71488412b152cfd1fc91df4403f9d8ec5a502"
       },
@@ -2310,7 +2310,7 @@
     },
     "fabricmc-fabric-example-mod" : {
       "defaultBranch" : "26.1.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14.4" : "c697dd8330b168baa8bef8d8dc44cb360deff3c8",
         "1.15" : "624081adce97a4494de74ad0a6d8a345c29788db",
@@ -2360,7 +2360,7 @@
     },
     "fabricmc-fabric-filament" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "dd5fd8bce9663f7532cfb8e71e7e417176ad5087"
       },
@@ -2368,7 +2368,7 @@
     },
     "fabricmc-fabric-installer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "l10n/master" : "33ceee6ab18794ded703c25563c524e537c44bff",
         "master" : "f1880581d2f67b5aef941733c6289ddf7917dc4b"
@@ -2377,7 +2377,7 @@
     },
     "fabricmc-fabric-installer-native-bootstrap" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "cross-platform-experiment" : "c9bfee0661fffbc8346809c696a1c7c176105b38",
         "main" : "ccf733a11eb6957218be750a074756dc83916c9f"
@@ -2386,7 +2386,7 @@
     },
     "fabricmc-fabric-installer-native-lib" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "c7e36d0ac85532b602145bc585f18734b21b6eee"
       },
@@ -2394,7 +2394,7 @@
     },
     "fabricmc-fabric-language-groovy" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14" : "c28aa8e97c9244b00a0bf8eea8adfbb33d5ff555",
         "1.15" : "a981870310601465bae14c59734628f39ab28561",
@@ -2405,7 +2405,7 @@
     },
     "fabricmc-fabric-language-kotlin" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "182823c71b83244f6e00b8d23b5731e62fb7b15c",
         "test-2.0" : "50bb0aaba0958a44af7241af9a2057b7cf47b85a",
@@ -2470,7 +2470,7 @@
     },
     "fabricmc-fabric-language-scala" : {
       "defaultBranch" : "scala3",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d9a2919851609ca50283a4f0605ff37ab85196d0",
         "scala3" : "e3c1aaee19532f04639b781f481fc5522989e9ab"
@@ -2479,7 +2479,7 @@
     },
     "fabricmc-fabric-loader" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.11.x" : "8c90e885fb97a9d19be663006832b1af164c8449",
         "0.16.x" : "075dbfa476b1259f1d04a96c2b9afc6bd8f06c4e",
@@ -2581,7 +2581,7 @@
     },
     "fabricmc-fabric-loader-sat4j" : {
       "defaultBranch" : "fabric-2.3.5",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "fabric-2.3.5" : "d7074cf37f68e46b2eef108ca69b54883c4ed37c"
       },
@@ -2589,7 +2589,7 @@
     },
     "fabricmc-fabric-loom" : {
       "defaultBranch" : "dev/1.17",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev/0.0" : "1f9e894d3cbf68970c1506bd47f95229b10d29f9",
         "dev/0.10" : "14ffadc40d86263fea462ce43223656084a8b061",
@@ -2778,7 +2778,7 @@
     },
     "fabricmc-fabric-loom-native" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "4cc0bfb4a879f3495c7d23b9aabd6e42870eb9dd"
       },
@@ -2786,7 +2786,7 @@
     },
     "fabricmc-fabric-loom-native-support" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "b22a17eaa807baaaf4d276b3e1891e02c6f0cd45"
       },
@@ -2794,7 +2794,7 @@
     },
     "fabricmc-fabric-meta" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "89494d334d23be725e0d523ae3980c59ac483600"
       },
@@ -2802,7 +2802,7 @@
     },
     "fabricmc-fabric-mixin-compile-extensions" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "legacy" : "db850f4ad2b67eb127c6f1a3fbfba0122d31afe9",
         "master" : "b2cc6b4159f7f4812d8ef56030bdf06768845966"
@@ -2811,7 +2811,7 @@
     },
     "fabricmc-fabric-network" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "831ab377b42bad77786d0806ee57752c3e5f9244"
       },
@@ -2819,7 +2819,7 @@
     },
     "fabricmc-fabric-registry" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "557bfb46398b5f5453c20c7470aa69677baa2afd"
       },
@@ -2827,7 +2827,7 @@
     },
     "fabricmc-fabric-resources" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "11914e2b88e2eeaf6e2095612ed52ed3d4bf4c76"
       },
@@ -2835,7 +2835,7 @@
     },
     "fabricmc-fabric-sandbox" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "3c23c4251d4d6dd980d74dfb901321b56c09d197"
       },
@@ -2843,7 +2843,7 @@
     },
     "fabricmc-fabric-tooling" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/enum-extensions" : "89f624e4ea3b9c57b7a64831347091c8fca2344d",
         "main" : "e364560245f3a09403ba6fc168bec3ef9372b4ed"
@@ -2852,7 +2852,7 @@
     },
     "fabricmc-fabricmc.net" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "8f4ea689defa75daeba9d260167a3c5caeff2f77",
         "static" : "e86f3302c5d9213e3c911afebb9e160877c78135"
@@ -2861,7 +2861,7 @@
     },
     "fabricmc-intermediary" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "916868752f6935dda70c4490404641a701335d81"
       },
@@ -2869,7 +2869,7 @@
     },
     "fabricmc-kotlin-fabric-discord-bot" : {
       "defaultBranch" : "rewrite",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "kord-0.7" : "48a47e0d13ee5c619c95782825f671c3d1de711c",
         "master" : "a4ef2676791a9e989a2f9567ca7e577d81426e81",
@@ -2880,7 +2880,7 @@
     },
     "fabricmc-lorenz-tiny" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "09fdfc034befd0cf54196a6d368801c3a9a19fbe"
       },
@@ -2888,7 +2888,7 @@
     },
     "fabricmc-mapping-io" : {
       "defaultBranch" : "dev",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.5" : "7e7e77ef06d155ccdf067463752e1ede702cb241",
         "0.6" : "dcf8fbd41c6d1da9a5267108b2895bf07ca0dd6f",
@@ -2898,7 +2898,7 @@
     },
     "fabricmc-mappingpoet" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "jd-taglet" : "cbd1c8eafc68b42e9ffeb9e11e3687e59520e8bf",
         "master" : "eef318f1f076c612170ad9d643ceebdf7fa2f043"
@@ -2907,7 +2907,7 @@
     },
     "fabricmc-matcher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "73db496b34b5c0f3c134730cae2e50d1fa4bbafa"
       },
@@ -2917,7 +2917,7 @@
     },
     "fabricmc-mcsrc" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "class-searching" : "ab4190444c5a2c414a8c66e65d371606a2ec737f",
         "indexer-test" : "a2e1925e6f121bae82f2aa3d12d27dbcde2932a8",
@@ -2929,7 +2929,7 @@
     },
     "fabricmc-mercury-tiny-cli" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a24af5c51be1ffb30783934f72ccb1fb757c8932"
       },
@@ -2937,7 +2937,7 @@
     },
     "fabricmc-name-proposal" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "5b9409851f956af12f5a4efd7d63ac376ee038df"
       },
@@ -2945,7 +2945,7 @@
     },
     "fabricmc-outdated-fabric-mod-template" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "484ae1de25e91bb53100e4a132ad377f4668574a"
       },
@@ -2953,7 +2953,7 @@
     },
     "fabricmc-procyon" : {
       "defaultBranch" : "hg_master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "hg_master" : "6d615e48708e8950092ccb6051f46db6af4752c1",
         "hg_master_broken0533" : "a8de6fe8054812f332183adb89ca612c5a50c37b",
@@ -2963,7 +2963,7 @@
     },
     "fabricmc-stitch" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "0abaedb727630b679224667f3cc8950428db8f7d"
       },
@@ -2971,7 +2971,7 @@
     },
     "fabricmc-tiny-mappings-parser" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "750be4e7395397fa5fc558d492e2b6c219e4d570"
       },
@@ -2979,7 +2979,7 @@
     },
     "fabricmc-tiny-remapper" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7834504ce1be97df03e99723bef456e40241c607",
         "remapbridges" : "c6eab117692d944945ce6bcd2c4d0cf78e984b76"
@@ -2988,7 +2988,7 @@
     },
     "fabricmc-weave" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c700d002901743e7ba0df0776588d107a61c423f"
       },
@@ -2996,7 +2996,7 @@
     },
     "fabricmc-yarn" : {
       "defaultBranch" : "1.21.11",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.11" : "a2e8a099fae99731e820d4980bb41f9bd1c8d67a",
         "1.12" : "32191d899aea4250df924fef936c6ea5a69e3bab",
@@ -3876,7 +3876,7 @@
     },
     "gamerforea-eventhelper" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.11.2" : "687ed0b8753e799c5febc79e0ce0d9805dad164b",
         "1.12.2" : "87697ee62a0c2f5ba47bb85f3afed9fcf0b0fab5",
@@ -3914,7 +3914,7 @@
     },
     "games647-fastlogin" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.0" : "ad815777d46e90a2cd3663b7356d11871ec0dd26",
         "confirm" : "5676e99decd3a7dfcd455618829f9bf430c91217",
@@ -4010,7 +4010,7 @@
     },
     "hallowizer-fastcraftcoderpack" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "85f01eefa275bf0e0c736b41ee0ec4e748f64994"
       },
@@ -4018,7 +4018,7 @@
     },
     "himmelt-sekka" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a2d467adba0c62b18a1d814e6af60f6cbf33449a"
       },
@@ -4026,7 +4026,7 @@
     },
     "hrudyplayz-mcinstanceloader" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.7.10" : "5d92b01870c0211f3032cc0d983238db9db0fcfe",
         "main" : "fcf58098b6916448b86753108d5b18f8c533f52f"
@@ -4046,7 +4046,7 @@
     },
     "intellectualsites-plotsquared" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "chore/flexibleEntityType" : "6c06d5f11d66b8ace496caaa44942d7cb60c4192",
         "chore/v6/two-quick-things-ig" : "16e26b910c1577681f6498d03c69e24789580760",
@@ -4217,7 +4217,7 @@
     },
     "izzelaliz-arclight" : {
       "defaultBranch" : "FeudalKings",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14" : "963cc80de368c6792f3bb34f7b242b2244a87505",
         "1.15" : "6d639e7abe3abb4688efb86e740a2cc8d6719488",
@@ -4333,7 +4333,7 @@
     },
     "juanmuscaria-tesssst" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "ccccc" : "c00e742cf070c08d682804ae65a1fc12c58fc67e",
         "master" : "7d7b5df0762c1aee67a8792baf1de692f136a4b9",
@@ -4347,7 +4347,7 @@
     },
     "kasperfranz-kaisrandomteleport" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2387e95106590183d94e933551e10b5b651dac7c"
       },
@@ -4358,7 +4358,7 @@
     },
     "kookykraftmc-betterchunkloader" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "bc783b957ad2eebb7fbd7c7945e40ad27a8109d5"
       },
@@ -4370,7 +4370,7 @@
     },
     "magitechnetwork-forgerestrictor" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev" : "7393af72afe083287426798dcc379791a022647c",
         "master" : "2f5a4b5c88391bbccd6d6303add91d23f70bd5f2",
@@ -4395,7 +4395,7 @@
     },
     "magitechnetwork-foxfixer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "69441c787b2fff38c2ad18cae6f25f49f5984e7a"
       },
@@ -4403,7 +4403,7 @@
     },
     "magitechnetwork-griefpreventionplus" : {
       "defaultBranch" : "magiedits",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev" : "ef505b5ce39b25b0c77609a22e7a931c552a0981",
         "magiedits" : "e47cdc50532fe1854fdb57f6a8a566810b8ac43b",
@@ -4437,7 +4437,7 @@
     },
     "magitechnetwork-magichat" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a253ec2061046f7b13d3d2ce4ff6337625d9fa6e"
       },
@@ -4445,7 +4445,7 @@
     },
     "magitechnetwork-magihandlers" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4225f40eebba899977436dcdffdc38dc077b4a19"
       },
@@ -4455,7 +4455,7 @@
     },
     "magitechnetwork-mytown2" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2651572832183f895dac1f9f57a7834b745771a2"
       },
@@ -4463,7 +4463,7 @@
     },
     "magitechnetwork-naughtyplayerfixer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "280cc4a50180c0b9d910fd69e378dec7f46b129d"
       },
@@ -4471,7 +4471,7 @@
     },
     "magitechnetwork-universalcoinsserver" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.7.10" : "d8bba44e7298519e3f5ea836d65122fa01776c46",
         "forge-10.13.2.1291" : "2ce0619773d2e52d24f5045eabcb4dd681da17ae",
@@ -4481,7 +4481,7 @@
     },
     "magmafoundation-magma-blog" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "cms/blog/2022-11-15-the-end-of-magma-1-16" : "101ff98b7ec7ebd2dd33ccd31d25f6f1f591557e",
         "master" : "09d37fab20f01b5f44327ff1b4e6431894ae53de"
@@ -4490,7 +4490,7 @@
     },
     "magmafoundation-magma-forge" : {
       "defaultBranch" : "1.12.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "bd235d1301fad08007dbae28da8448c7261f5c41"
       },
@@ -4711,7 +4711,7 @@
     },
     "magmafoundation-magma-neo" : {
       "defaultBranch" : "1.21.x",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.21.x" : "709546f58373c593efbb9e4834b076c595cfc0a0",
         "paper" : "0e99c06f54cddaec7063f29416b6e01619a0e08a"
@@ -4723,7 +4723,7 @@
     },
     "magmafoundation-magma-site" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "2a0171cab9ffdb1f1cd9a17e585bb060dc1b6e9f"
       },
@@ -4731,7 +4731,7 @@
     },
     "magmafoundation-magmaneogradle" : {
       "defaultBranch" : "MNG_71.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "MNG_71.0" : "31be981e061f621d828539244c32edb53aa03efd"
       },
@@ -4741,7 +4741,7 @@
     },
     "magmafoundation-spigottoneoforgelibs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "01a7b3841aef997a4ef20cea592c547ef770f417"
       },
@@ -4755,7 +4755,7 @@
     },
     "mbax-vanishnopacket" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "async_chat" : "d12e17d2184bcb30c7376900dc39a2ee50c6306c",
         "dynmapupdate" : "418f4427c8c77fab011084585744b1a40d99df1a",
@@ -4771,7 +4771,7 @@
     },
     "mcimaginarium-thermos" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.7.10-Dev" : "ac680491c47f811604fa69658359359c38421cf2",
         "1.7.10-J8" : "0e223da0537195e37b86ef54a55f2d0fa70020bd",
@@ -4785,7 +4785,7 @@
     },
     "mcmodlauncher-bootstraplauncher" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "863489e5fd99bcca018b53af8e9f8df2391c6390"
       },
@@ -4798,7 +4798,7 @@
     },
     "mcmodlauncher-mcmodlauncher.github.io" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "93f2be0a0c221b4e41f35d0dabcf29bb192dd75d"
       },
@@ -4806,7 +4806,7 @@
     },
     "mcmodlauncher-modlauncher" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dependabot/github_actions/dot-github/workflows/actions/download-artifact-4.1.7" : "4a9e3a5f2f30555f411fdb3fa076552e2d21c6e0",
         "main" : "901c6ea849ae21ee7d464cd97113e77a6101a734",
@@ -4881,7 +4881,7 @@
     },
     "mcmodlauncher-modlog4j" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9a6b21cc29d745b17cb6823a425bd2e2e78fc217"
       },
@@ -4892,7 +4892,7 @@
     },
     "mcmodlauncher-securejarhandler" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.x" : "7796f4a15ffe2453cebb932ea831789ebaec4150",
         "main" : "ab1d9f4cf60cc66b6ff648795238fd71e5448b91"
@@ -4912,7 +4912,7 @@
     },
     "mcmodlauncher-shimmy" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "157b7ebbeaf7e85e4fdd2c5ca3bad09481585aaf"
       },
@@ -4920,7 +4920,7 @@
     },
     "milkbowl-vault" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "chat" : "4c11c280317433b283eab1f6d11e8d2b76bafb5a",
         "gh-pages" : "ff37e086e52cb40b750aa1eafd78132f3ed53c87",
@@ -4934,7 +4934,7 @@
     },
     "minecraftforge-actionable" : {
       "defaultBranch" : "v1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "gh-pages" : "17b28f1706076f88e01cd3a62688c196327767b3",
         "test-pr" : "9d55c2161eff6197beeee45b120e60659cef4a0d",
@@ -4945,7 +4945,7 @@
     },
     "minecraftforge-aggregatetest" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "62c63dfd2d9b9cca4fac441a4b7151ff89f3260a"
       },
@@ -4955,7 +4955,7 @@
     },
     "minecraftforge-binarypatcher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "02f87dd12c541c96f52866d85bd4310a8e49097d"
       },
@@ -4968,7 +4968,7 @@
     },
     "minecraftforge-blog" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20.1-rb1" : "cf58dcb910ac85e7ab878206ef75df5f7da87e41",
         "gh-pages" : "be88c518d9e73386160dc67ae1e20f479754e989",
@@ -4978,7 +4978,7 @@
     },
     "minecraftforge-bootstrap" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "9c9c40158758b346b0ff03c634df089eeed684f5"
       },
@@ -4994,7 +4994,7 @@
     },
     "minecraftforge-coremods" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "8aeb3cdfe66ee1f862d17a500f06f6e0c6e0eacf"
       },
@@ -5028,7 +5028,7 @@
     },
     "minecraftforge-depigifier" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c61d6b23c174c405250c4a8248c68d4b2bbcd4d2"
       },
@@ -5038,7 +5038,7 @@
     },
     "minecraftforge-documentation" : {
       "defaultBranch" : "1.21.x",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.x" : "b080c8753d7ba6f69b159de57181fe0f4a1cb124",
         "1.13.x" : "0cefcbcf079a87e7308e5ef7dc7f68cac5698758",
@@ -5059,7 +5059,7 @@
     },
     "minecraftforge-eventbus" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.2.x" : "150ed6c0513acc61a5a7c255b45b045fa4e0fcbf",
         "6.2.x" : "05e8c12338704e30432da4510f88c5bc91e68fa1",
@@ -5111,7 +5111,7 @@
     },
     "minecraftforge-facade" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "faa10a3ff9a18dbdb801131938687165832d98b7"
       },
@@ -5121,7 +5121,7 @@
     },
     "minecraftforge-fernflower" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2f94710ea971b0d9a60bcc71d9687db7e2fa186f"
       },
@@ -5131,7 +5131,7 @@
     },
     "minecraftforge-fernflowerlegacy" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "LVTProcessing" : "36ea9a310b443b45ecdc298060e3685f8541950a",
         "ffbulktest" : "72d20673f0ae872335858e728ff81532049422f0",
@@ -5144,7 +5144,7 @@
     },
     "minecraftforge-fml" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.4" : "e6f57e5d94a17aad45e9c5b6aa0a9bd6edc6fe10",
         "1.5.1" : "aaf02ea2ac938d8cbaafdd2f59985c0604d648d7",
@@ -5197,7 +5197,7 @@
     },
     "minecraftforge-forgedevplugin" : {
       "defaultBranch" : "FD_7.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FD_7.0" : "9022512907b6a3aa9b627553062d234e852b741d"
       },
@@ -5207,7 +5207,7 @@
     },
     "minecraftforge-forgeflower" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1_0_342" : "898bdfe2f85f4c0d3ae62b846d1164adcaf7a28c",
         "legacy-1.0" : "5f407cc7fd0f8db1b0913357ca3f97b8a0bdaf69",
@@ -5233,7 +5233,7 @@
     },
     "minecraftforge-forgegradle" : {
       "defaultBranch" : "FG_7.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FG_1.0" : "6ee67a77b09a28b4efd9398bac85ea9fe9797949",
         "FG_1.1" : "3607357f5910fe80818158345515ba14eb9296e1",
@@ -5271,7 +5271,7 @@
     },
     "minecraftforge-forgesharedlibrary" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "3c1e90e3b38a451ac20699a3be942c0ccb5e67e6"
       },
@@ -5279,7 +5279,7 @@
     },
     "minecraftforge-forgespi" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "4.x" : "038e91c00c0b94c658070316ce4e918faef57e52",
         "master" : "6bfa89b694d7f5372f9fa728617289d780a36356"
@@ -5325,7 +5325,7 @@
     },
     "minecraftforge-forgeutils" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7f284b9d75a87b2dfec8b73581379e5f7f3bba8f"
       },
@@ -5333,7 +5333,7 @@
     },
     "minecraftforge-gitversion" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "dd6970d4d844f3eb8379f888f5a9f00a76ff9928"
       },
@@ -5356,7 +5356,7 @@
     },
     "minecraftforge-gradlejarsigner" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cf69a51e0366165a6937846ba02fa5bcd1ce25db"
       },
@@ -5368,7 +5368,7 @@
     },
     "minecraftforge-gradleutils" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "GU_2.6" : "a2a9f63f51f8bcb5fbc97c9b2527007705540985",
         "main" : "38bad72b896c3fabb38913a188dff0daf9c85070"
@@ -5392,7 +5392,7 @@
     },
     "minecraftforge-groovydslimprover" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9be4c266ce52cdd0e9b2150a4dd9e9b4338bb4c0"
       },
@@ -5402,7 +5402,7 @@
     },
     "minecraftforge-installer" : {
       "defaultBranch" : "2.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.0" : "516ea61b7f0de03f4b4388de9920a376efdc837c",
         "1.1" : "bd0d3faf60d9eb4d255db16d0a01dc6a7912d560",
@@ -5422,7 +5422,7 @@
     },
     "minecraftforge-installerrewriter" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "8e8d12c660f087d536ed182ffe8f22ca68ff3e57"
       },
@@ -5432,7 +5432,7 @@
     },
     "minecraftforge-installertools" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d83018ad324ba158d41c99b292d6691473421801"
       },
@@ -5446,7 +5446,7 @@
     },
     "minecraftforge-jar-stubify" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "b97526753b7d4efdc244f3ce4bc318c771d93008"
       },
@@ -5456,7 +5456,7 @@
     },
     "minecraftforge-jarcompatibilitychecker" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "19bd85b87c8f00ca8de381694db03710d0219d4a"
       },
@@ -5466,7 +5466,7 @@
     },
     "minecraftforge-jarjar" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "f003a3955ba0bee026431b1df3d1fbdda6f86c80"
       },
@@ -5481,7 +5481,7 @@
     },
     "minecraftforge-jarsplitter" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "604df9b62b536737c8118b283c11a1c1fd00306c"
       },
@@ -5492,7 +5492,7 @@
     },
     "minecraftforge-javaprovisioner" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7b786c9e97b22424267f438a343ef2cb4562111a"
       },
@@ -5503,7 +5503,7 @@
     },
     "minecraftforge-javawrapper" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "appveyor" : "94e89739c0f9a43dec8351d61fa48eff6facd566",
         "conf" : "9e79464b2bf3990fd16b8dbb816d5eb54ffdddad",
@@ -5534,7 +5534,7 @@
     },
     "minecraftforge-legacydev" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "799bbb7cfb5bf9945e0f6a2f1a7370b58738cc26"
       },
@@ -5544,7 +5544,7 @@
     },
     "minecraftforge-legacyjavafixer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "6d7b866821fe12da4778fda247c1a6af09dd254d"
       },
@@ -5554,7 +5554,7 @@
     },
     "minecraftforge-mappingverifier" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a83cb2d81cdf23094b55912a034c48ddc37c4a8c"
       },
@@ -5568,7 +5568,7 @@
     },
     "minecraftforge-mcpcleanup" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "5bf3f36c032dd71e3b81705ba21dbaf392784cc1"
       },
@@ -5579,7 +5579,7 @@
     },
     "minecraftforge-mcpconfig" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14" : "87e7ac1e2d318fefecf009c3b6671a4eb4dab113",
         "1.14-renames" : "15a11c134dc873819feebc6b9046077a8111c98b",
@@ -5590,7 +5590,7 @@
     },
     "minecraftforge-mdkexamples" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c0a20b210732654a261f9c040af9fe115d32137e"
       },
@@ -5598,7 +5598,7 @@
     },
     "minecraftforge-mercurius" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "0c4a0822c01f1c2e3f7378689e4a90b605791f03"
       },
@@ -5609,7 +5609,7 @@
     },
     "minecraftforge-mercuriusupdater" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "9b67b6c8ddfbfb4a987ccf07bcdeef0413619e18"
       },
@@ -5617,7 +5617,7 @@
     },
     "minecraftforge-mergetool" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.2.3" : "652f6af2c56703db186f5f4777dd615bc047c5ed",
         "master" : "efa06312d2a7f6b6cba270ea3d1170f528dd6b9a"
@@ -5631,7 +5631,7 @@
     },
     "minecraftforge-minecraftforge" : {
       "defaultBranch" : "26.1.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10.x" : "e4caf46cb954ea86fe338cd256402cd84f824586",
         "1.11.x" : "23410ad4d4d485927b39c56b33f479ea00628c44",
@@ -5809,7 +5809,7 @@
     },
     "minecraftforge-minecraftmavenizer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "8b0035e6d99797e5f1796e19036c9d7a4b3cc3c2",
         "readme-cleanup" : "2d554d5802f8cd929e2fdf8b697b7728f97aaaba"
@@ -5825,7 +5825,7 @@
     },
     "minecraftforge-modlauncher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "b5f35aa3d7a6369e13053b1fbb165796ab8b8bb1"
       },
@@ -5895,7 +5895,7 @@
     },
     "minecraftforge-multireleasegradle" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "3278e9899d2b560c7e4605d95f5c3b6a73f90e78"
       },
@@ -5905,7 +5905,7 @@
     },
     "minecraftforge-paulscode" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2ba608bbf69b9e82b4004cb83d24c09da8f23b3b"
       },
@@ -5913,7 +5913,7 @@
     },
     "minecraftforge-remapper" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "dc2f6114b281786b72f2465156a801050b6ef4b0"
       },
@@ -5923,7 +5923,7 @@
     },
     "minecraftforge-renamer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.x" : "d0c20709a253df9bca1ca9b065d628d7a630182a",
         "master" : "3c0990f06fa05012c0930a6813da0ce94c971fee"
@@ -5943,7 +5943,7 @@
     },
     "minecraftforge-roimfs" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "8fae5bcebb44266389b9a0218e2ab555aba4a8ec"
       },
@@ -5953,7 +5953,7 @@
     },
     "minecraftforge-scorge" : {
       "defaultBranch" : "1.19.x",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.11.2" : "25fe8b7941edf14f0389e869eec7f0ed938b94af",
         "1.12" : "3834a00f2748d7fa6b60fd9712c82f5480ddd156",
@@ -5968,7 +5968,7 @@
     },
     "minecraftforge-securemodules" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7d8f909b5aee4abba3ae418da3038821461a217a"
       },
@@ -5982,7 +5982,7 @@
     },
     "minecraftforge-sharedactions" : {
       "defaultBranch" : "v0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "fe3b28ece6042171088aa758b45b1fc55602ef04",
         "v0" : "f38a250bf1376d029e3de968e36d69183aa386ca"
@@ -5991,7 +5991,7 @@
     },
     "minecraftforge-slimelauncher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cd5c84d8f22d5e41fe42d805b6c03cec0e95e06a"
       },
@@ -6002,7 +6002,7 @@
     },
     "minecraftforge-snowblower" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "04af2670164feb16710820a9b9c8f30e61314081"
       },
@@ -6012,7 +6012,7 @@
     },
     "minecraftforge-srg2source" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "eclipse" : "68ca67f59bc76b43368c13513f453f89e6a09ed4",
         "idea" : "9e67e1f4f64181176be9d237cc502a908f4684f6",
@@ -6033,7 +6033,7 @@
     },
     "minecraftforge-srgutils" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4d4c8a6da21d089702e69abedf880e276fae3a3f"
       },
@@ -6048,7 +6048,7 @@
     },
     "minecraftforge-unsafe" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "6a992c8a2add0a964d253c3e321b9b7af4842e2a"
       },
@@ -6060,7 +6060,7 @@
     },
     "minecraftforge-utils" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a668d0437b39122b3f91e3429536be4424df921c"
       },
@@ -6088,7 +6088,7 @@
     },
     "minecraftforge-web" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "368a9e664805def20502925d2821a7a79437ef74"
       },
@@ -6096,7 +6096,7 @@
     },
     "minemine-minetickmod" : {
       "defaultBranch" : "v1.7.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "cCG2" : "6068d06b1433e12bf590dd38e3c2e0f20de52b40",
         "chunkUnloadQueue" : "e7751f23733fa8fede2f0e71365a30e7ab588a50",
@@ -6188,7 +6188,7 @@
     },
     "mithion-arsmagica2" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "6d6b68002363b2569c2f2300c8f9146ad800bbc6"
       },
@@ -6196,7 +6196,7 @@
     },
     "mohistmc-academycraft" : {
       "defaultBranch" : "1.21.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "b019b4715c1efb20f531ad0b4cb5745ac2c835b5",
         "1.21.1" : "f12fc04499ed3d5d0a87fc7992748b9a4cd19bf6"
@@ -6210,7 +6210,7 @@
     },
     "mohistmc-advancedfurnacey" : {
       "defaultBranch" : "fabric-1.20.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.21.11" : "707f940d3769c735f25b1d513260eb95ce4fa5f7",
         "26.2" : "8e9a06dbf30aad3446b76b36efa21e4382f8afa4",
@@ -6224,7 +6224,7 @@
     },
     "mohistmc-anvilauth" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "8ba02a05a7b401566dea9329689152b040f3f4c1"
       },
@@ -6232,7 +6232,7 @@
     },
     "mohistmc-bon3" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c2b075ae0baf4169e60b17db5b041125757630af"
       },
@@ -6242,7 +6242,7 @@
     },
     "mohistmc-coderule" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "aa705fd3de757759b1a15042905ffbfcf6b6a5e1"
       },
@@ -6250,7 +6250,7 @@
     },
     "mohistmc-dynamicenum" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "93ee90953ebeff83ba9068d0082400ce46881be3"
       },
@@ -6258,7 +6258,7 @@
     },
     "mohistmc-easystorage" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "5692cc733343ed75c3a71a8e976028b39b055bfa"
       },
@@ -6268,7 +6268,7 @@
     },
     "mohistmc-exoticgardenreborn" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "3a155e7f4256d155f7af87729089cb56ec8793ca"
       },
@@ -6276,7 +6276,7 @@
     },
     "mohistmc-fastasyncworldedit-1.12.2" : {
       "defaultBranch" : "1.12.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "3045accd39eb02a2d1eb090bd1d1f61b6772232e",
         "master" : "3045accd39eb02a2d1eb090bd1d1f61b6772232e",
@@ -6289,7 +6289,7 @@
     },
     "mohistmc-i18n" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "b53d571e8649c05be226ee5118e710079f6512da"
       },
@@ -6297,7 +6297,7 @@
     },
     "mohistmc-json" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "294ff24b8316ade82a84c2bef02dc748c81467f6"
       },
@@ -6305,7 +6305,7 @@
     },
     "mohistmc-librariesvault" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20.1" : "a8ec8dfc33fc46077b82d1ec31a7a17574b6c578",
         "master" : "fa4beb91a21e270567f4ac0a55f7ae1b51486be9"
@@ -6314,7 +6314,7 @@
     },
     "mohistmc-libsdisguises" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d2565d2235e01af7b704f40d95d93b79b881f241"
       },
@@ -6324,7 +6324,7 @@
     },
     "mohistmc-luyten" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cac8a5ac0b7c02a734a9d6fc7aec11db5e114c3b"
       },
@@ -6335,7 +6335,7 @@
     },
     "mohistmc-makezoomzoom" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ca56795573fc65ede407470927c1c296e14a932d"
       },
@@ -6345,7 +6345,7 @@
     },
     "mohistmc-maven" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2626d80a67ad2d249ada3c26f5785fb699527a92"
       },
@@ -6353,7 +6353,7 @@
     },
     "mohistmc-minecraftmappings" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "109af0c088ab71fdbb0a1a771497203eddcfd99f"
       },
@@ -6361,7 +6361,7 @@
     },
     "mohistmc-minecraftmetajavaapi" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "766154f0548ecfe728791c0620b7f0fc9663e1cd"
       },
@@ -6369,7 +6369,7 @@
     },
     "mohistmc-modlauncher" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "40fc820bd69dc763599e2ab02dc471c2e579a87d",
         "main-8.1.x" : "ee5cbdcad482763b19a98ecf1cca1239ac0d45ca",
@@ -6442,7 +6442,7 @@
     },
     "mohistmc-mohist" : {
       "defaultBranch" : "1.20.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "2d59d5a42bbdf64d557f891349b677617c69f63d",
         "1.16.5" : "754b578ef3e4881d854bcd1df5d299ada3fd429f",
@@ -6463,7 +6463,7 @@
     },
     "mohistmc-mohistfg" : {
       "defaultBranch" : "FG_5.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FG_1.0" : "d57f4a22c9e554b21ef8c4812c95c8ef7550336b",
         "FG_1.1" : "778e03d7c59ee11955177bf8e6652b77b3369dd3",
@@ -6496,7 +6496,7 @@
     },
     "mohistmc-mohistmc-backend" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "3dd1b86284efe9783be387847c7becc4eb65695c"
       },
@@ -6548,7 +6548,7 @@
     },
     "mohistmc-mohistmc-frontend" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "develop" : "985bf3d47b9c9228c28fbe608c9b486cadf5ccbf",
         "main" : "8ed2ab91ca7411f518fdea7cab09331cdecbabb4"
@@ -6598,7 +6598,7 @@
     },
     "mohistmc-mohistplugin" : {
       "defaultBranch" : "1.20.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "23533c359891c726e3cb67051b3314e224ebf530",
         "1.16.5" : "0d0da3b95163958b682a0a640f0996519af7ed63",
@@ -6608,7 +6608,7 @@
     },
     "mohistmc-mohistremapper" : {
       "defaultBranch" : "v3",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "v3" : "a2f9aed18904905907ca855c7d687b8b53e2aeda"
       },
@@ -6616,7 +6616,7 @@
     },
     "mohistmc-mohistwiki" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "bc8b84a3c64b6b9e70ceac4ade7997394a9238d6"
       },
@@ -6624,7 +6624,7 @@
     },
     "mohistmc-mowudecomp" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cac8a5ac0b7c02a734a9d6fc7aec11db5e114c3b"
       },
@@ -6635,7 +6635,7 @@
     },
     "mohistmc-muskyblock" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d73faa23700ba69eb2691ea5f2eade03af138720"
       },
@@ -6645,7 +6645,7 @@
     },
     "mohistmc-plotsquared" : {
       "defaultBranch" : "1.12.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.12.2" : "42e806b7787ea1e5ccd41e313d33be6d735c2430"
       },
@@ -6653,7 +6653,7 @@
     },
     "mohistmc-securejarhandler" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "6e36955fe56b3f908c6433469048a72c55e362ea"
       },
@@ -6661,7 +6661,7 @@
     },
     "mohistmc-securemodules" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4bc456dd7f3294e3272f17f402bd7da1e4ffbd7f"
       },
@@ -6669,7 +6669,7 @@
     },
     "mohistmc-silkard" : {
       "defaultBranch" : "26.3",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "26.2" : "96762d14e45d7e591d0f53a9e15a9d3480a6dcc7",
         "26.3" : "3c4d482b33c2cad196869ff59d7b801fb05a271d"
@@ -6678,7 +6678,7 @@
     },
     "mohistmc-sodionauthdiscuz" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "5b012a5376603c5db2a747011a271dff78267a69"
       },
@@ -6686,7 +6686,7 @@
     },
     "mohistmc-thor" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4bc8b38bcbcba66f758c708e7cebfa85bc35ecbc"
       },
@@ -6694,7 +6694,7 @@
     },
     "mohistmc-tools" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7550432539f4f5b2a77a964a9b978903574d555f"
       },
@@ -6702,7 +6702,7 @@
     },
     "mohistmc-worldedit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.16.5" : "5fa1e0d029de448bfd5365cc8cba74abb968daa7",
         "master" : "2d5dbadfec21b337e0cebff6b1498009ead0297b"
@@ -6714,7 +6714,7 @@
     },
     "mohistmc-yaml" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "b1aa42d196aa2be16b5ffa79d7baa49c95fba227"
       },
@@ -6722,7 +6722,7 @@
     },
     "mohistmc-yarnbone" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "882fc6014b002f71b17bcd19e973493ad731a168"
       },
@@ -6730,7 +6730,7 @@
     },
     "mohistmc-youer" : {
       "defaultBranch" : "1.21.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.21.1" : "6089f025a1babc10ed7d22003139298aefa16d80",
         "26.2" : "18aa741cda06dc576594050e0c273876d5043c41",
@@ -6754,7 +6754,7 @@
     },
     "n1nt4nd0-xenobyte" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "79351d0b2aec74a17ae7de51ab5be1a03ce8014c"
       },
@@ -6779,7 +6779,7 @@
     },
     "neoforged-accesstransformers" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.0.x" : "02b7b69ebbc9978cc9efa83158835ca7d51d9a9a",
         "10.0.x" : "3ffc89dae4a4582638465948a6f78739f693c45d",
@@ -6826,7 +6826,7 @@
     },
     "neoforged-action-jar-compatibility" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "e8aa0c3f6bfa4ca2e3b8886413bfe1c07ba93e99"
       },
@@ -6836,7 +6836,7 @@
     },
     "neoforged-action-pr-publishing" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "artifacts-size-limit" : "1a43d5d08e43e3f1b1974d9cffa25e13f4a6d225",
         "main" : "7bda391f6ae59f84d2bc806b76670dd7f7517139",
@@ -6864,7 +6864,7 @@
     },
     "neoforged-action-runner" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "2e59c0fecafb282dbad2815a41c369ce3f9f8a0e"
       },
@@ -6872,7 +6872,7 @@
     },
     "neoforged-action-tag-versioning" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dependabot/npm_and_yarn/eslint-plugin-jest-27.6.0" : "1b352ca0a1b481cc25354f27d0a9d9a483e4845e",
         "dependabot/npm_and_yarn/prettier-eslint-16.1.2" : "551965dc8ce81724fa964c4b418949f0b26f3f78",
@@ -6890,7 +6890,7 @@
     },
     "neoforged-action-webhooks" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "628798e7a3276d07949bf7de93c9b04f1fe72305"
       },
@@ -6912,7 +6912,7 @@
     },
     "neoforged-actions" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "860f1df0f7de47cde9f12ae82c2b78d8bb43308b",
         "non-headless" : "11735fe771add52e4d6a261bf23e6764fb3ae44e"
@@ -6921,7 +6921,7 @@
     },
     "neoforged-actions-modding" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "94e5926e1d404af5e32febedf038f231ecea1853"
       },
@@ -6931,7 +6931,7 @@
     },
     "neoforged-artifactural" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9ec3350c3987df6d30310a8c8ae5e3817e4b8bdc"
       },
@@ -6943,7 +6943,7 @@
     },
     "neoforged-autorenamingtool" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "0.x" : "d0c20709a253df9bca1ca9b065d628d7a630182a",
         "bump-gu" : "c884d3e3bdc112fa9cb35af930df0aed0416e218",
@@ -6960,7 +6960,7 @@
     },
     "neoforged-bus" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.2.x" : "150ed6c0513acc61a5a7c255b45b045fa4e0fcbf",
         "java-25" : "40a54ee3eb8684324540020cd39f4bf9fd5f83cb",
@@ -7012,7 +7012,7 @@
     },
     "neoforged-camelot" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "a0f299eabf4b6e9ddfc0c34cbca90391cd638921",
         "renovate/net.dv8tion-jda-6.x" : "de7d6e7e72838af79356927c2ac37d82b55e7185"
@@ -7024,7 +7024,7 @@
     },
     "neoforged-coremods" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "85df2809870746a5017e82224da998c521a3b9d5"
       },
@@ -7057,7 +7057,7 @@
     },
     "neoforged-den" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "b6bd17bf64eb5d6961f1c2c64cf2e6d20022f22a"
       },
@@ -7065,7 +7065,7 @@
     },
     "neoforged-devlaunch" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "857c97c49652a1c6b4bc4b3d9a5e65e54218d23f",
         "renderdoc" : "0b8e361eec0d06a0ac934b0ee7106365f989b134"
@@ -7076,7 +7076,7 @@
     },
     "neoforged-discordpim" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "gh-pages" : "e67a61c2826f546f1ff1ebd2e74f57c517d1c3c6",
         "main" : "5dccfc3cc30856cc23099952440b0c117d5ff075"
@@ -7125,7 +7125,7 @@
     },
     "neoforged-documentation" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "afc61558725b0114009666bea1f9f12673f296b1"
       },
@@ -7133,7 +7133,7 @@
     },
     "neoforged-dummy-testing-pr-publishing" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "backport/neo-1.21.1/14" : "f5cb5573480cddd9a00f0f1026d62d2f58440038",
         "backport/neo-1.21.1/16" : "40c56182ac8cbc7292c96ee816518da652ee8669",
@@ -7170,7 +7170,7 @@
     },
     "neoforged-eclipselaunchconfigs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "a28a529f2f709227ae3efb9e120b43676ce82f7f"
       },
@@ -7180,7 +7180,7 @@
     },
     "neoforged-fancymodloader" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20.1" : "21267b88a5d98a16437d836bd90c4f85a76fe8d6",
         "1.20.4" : "ab3d1725052516f9581134bd4259f416d4a994e8",
@@ -7222,7 +7222,7 @@
     },
     "neoforged-foxlauncher" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/ngnext" : "edfeb7727570b5852d9cbc46b965b2aac61d3a40",
         "main" : "8ff6cd21033c032957eacfe8e7263333ae1b330c"
@@ -7231,7 +7231,7 @@
     },
     "neoforged-governance" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "MaintainerPings" : "a870ac331cef2413a457d8c0678bf67050cb229c",
         "main" : "53a0354b57a8985faa220bf016a0d0d5fa0e32a6",
@@ -7241,7 +7241,7 @@
     },
     "neoforged-gradleminecraftdependencies" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "c0ad4ad30230d7023d397888081d51ad7dd84d3c",
         "old-server-jars" : "d6eed99c44713ffcfde841cb9f891da5da7ac8fa",
@@ -7252,7 +7252,7 @@
     },
     "neoforged-gradleutils" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "config-cache" : "8f8728412166c8d099695da1eda6344f55b4fe5e",
         "explicit-version-through-property" : "86bb501b7a6bfc3cc6dbd95d86602dbd3c2a82f7",
@@ -7270,7 +7270,7 @@
     },
     "neoforged-groovydslimprover" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/generic-entries" : "2dbc57ba505b2750081a23be877445f508a4018e",
         "feature/pr-publishing" : "f2a5159e84240c60011370de804aa78568bff60f",
@@ -7284,7 +7284,7 @@
     },
     "neoforged-installerrewriter" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "auto-main" : "daf617dbf0d01adfba679ef090ca5e5dd1cd7f8b",
         "main" : "e75bce1e39e803b8c2e29684f89b918e7f635f61"
@@ -7293,7 +7293,7 @@
     },
     "neoforged-installertools" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "better-patcher-api" : "ad16b26ce3d10205ab10d7f63c5e7970afcf69fb",
         "binarypatchapplier" : "ba46ed534628edebdc901df59005fc7096c96664",
@@ -7323,7 +7323,7 @@
     },
     "neoforged-jarcompatibilitychecker" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "jcc-version-fix" : "40fe0d9025a4ad4d46efc63a7cc65f76d536da47",
         "main" : "70dd272ad53e4035b44a49129a8538ccc4ad4e12"
@@ -7334,7 +7334,7 @@
     },
     "neoforged-jarjar" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "bump/slf4j" : "643666c0c42dd9b2be15054a5b0b5109be1ec579",
         "main" : "fea3df4e4d49c1c9377547390199291bf7992d31",
@@ -7350,7 +7350,7 @@
     },
     "neoforged-javadoctor" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "1c9bc5e7d617b6d6e66110ec233ca18f39534819"
       },
@@ -7361,7 +7361,7 @@
     },
     "neoforged-javasourcetransformer" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "48195bc63afaf11156a676a9e7f0bdd8aa45d524",
         "shartte-patch-1" : "c7b0d2786891252397f2814f1a14ca59e208f31f"
@@ -7373,7 +7373,7 @@
     },
     "neoforged-legacyfml" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.4" : "e6f57e5d94a17aad45e9c5b6aa0a9bd6edc6fe10",
         "1.5.1" : "aaf02ea2ac938d8cbaafdd2f59985c0604d648d7",
@@ -7426,7 +7426,7 @@
     },
     "neoforged-legacyinstaller" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.0" : "389603193163d1d9416b0b7e7affdd5c807235e6",
         "fix-fatjar-duplicate-entry-maven" : "1d8749fa1d1f9fdf0f0b97f6917209b8fbd6899b",
@@ -7445,7 +7445,7 @@
     },
     "neoforged-mappingtoy" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9d33fb0143c978e513c7a61fb188f65e168f252f",
         "master" : "4d27a72badfa5e7cd754daf06312fba6544d4015"
@@ -7457,7 +7457,7 @@
     },
     "neoforged-mcforge-archive" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10.x" : "e4caf46cb954ea86fe338cd256402cd84f824586",
         "1.11.x" : "23410ad4d4d485927b39c56b33f479ea00628c44",
@@ -7590,7 +7590,7 @@
     },
     "neoforged-mdk" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20.1-legacy" : "cba0981a47ce9756f4cbbc932484ff9f9dffe140",
         "1.20.2" : "642370c9aa6cd084003db2cf2db3d21d6bce2d58",
@@ -7615,7 +7615,7 @@
     },
     "neoforged-meetings" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "76909ee5d46e85c5e141dea5cc1eec385e31e82c"
       },
@@ -7623,7 +7623,7 @@
     },
     "neoforged-mergetool" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9bf3ac7221fe1c75d1c65f83717530b24cbf31c5",
         "split-manifest" : "44197a5f7fa24091b2a58bb29e05891436c75198"
@@ -7634,7 +7634,7 @@
     },
     "neoforged-metaapi" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "b2850a1a6cf243321cfc9d9892d541a7a5a960bd"
       },
@@ -7642,7 +7642,7 @@
     },
     "neoforged-metadepot" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "d8b4a1560839808e14e748960791fcff0bcc56e3"
       },
@@ -7650,7 +7650,7 @@
     },
     "neoforged-mod-generator" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "0f5b05c1beaf37d471d70c352b5278bc6dab3ee5"
       },
@@ -7658,7 +7658,7 @@
     },
     "neoforged-moddevgradle" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.x" : "5188702a200dd011e562dc131d9a85b825e61a38",
         "better-ij-artifacts" : "41ce51005c1ba1a742a7c99a970221a189814568",
@@ -7681,7 +7681,7 @@
     },
     "neoforged-modmail-plugin" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "2bafc65f87fc55552c34d74b455f78faf729cd4d"
       },
@@ -7689,7 +7689,7 @@
     },
     "neoforged-n8n-plugin" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "f5882af653c19350290ff6f20ba44d0a0893e247"
       },
@@ -7697,7 +7697,7 @@
     },
     "neoforged-neoforge" : {
       "defaultBranch" : "26.2.x",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10.x" : "e4caf46cb954ea86fe338cd256402cd84f824586",
         "1.11.x" : "23410ad4d4d485927b39c56b33f479ea00628c44",
@@ -7898,7 +7898,7 @@
     },
     "neoforged-neoforgespi" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "4.x" : "038e91c00c0b94c658070316ce4e918faef57e52",
         "main" : "4e180ce376b2f6fbfd0feee03550ab129c5fd790"
@@ -7944,7 +7944,7 @@
     },
     "neoforged-neoform" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.14" : "87e7ac1e2d318fefecf009c3b6671a4eb4dab113",
         "1.14-renames" : "15a11c134dc873819feebc6b9046077a8111c98b",
@@ -8029,7 +8029,7 @@
     },
     "neoforged-neoformruntime" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "binpatch-v3" : "0387eb860e42bef62826673a67055879ff1c5a76",
         "disable-emojis" : "ade5550440aa1a31f78d7e012378f44b4af3298b",
@@ -8051,7 +8051,7 @@
     },
     "neoforged-neogradle" : {
       "defaultBranch" : "NG_7.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "FG_1.0" : "d57f4a22c9e554b21ef8c4812c95c8ef7550336b",
         "FG_1.1" : "778e03d7c59ee11955177bf8e6652b77b3369dd3",
@@ -8128,7 +8128,7 @@
     },
     "neoforged-project-listing" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "6e998762bc01671466578819bd2e719ea057dd27"
       },
@@ -8136,7 +8136,7 @@
     },
     "neoforged-reactionable" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "improved-runner" : "521931f9b8cdde32d6d78e1180e07cc70d7dbb4b",
         "main" : "07710afe99f5ef8123b415a8e40c1a5a699f8245",
@@ -8146,7 +8146,7 @@
     },
     "neoforged-rendernurse" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "7ab1d416089a37fb5c689ee1910712081fe6db71"
       },
@@ -8156,7 +8156,7 @@
     },
     "neoforged-serverstarterjar" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "13bd24561d04fbf10c3b6772f487abd8d8a1f1cb"
       },
@@ -8184,7 +8184,7 @@
     },
     "neoforged-snowblower" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "47edc95ceb657c44270264f9b8e7e96b62829a72"
       },
@@ -8194,7 +8194,7 @@
     },
     "neoforged-srg2source" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9bd0163bd865c30d0f83a000d2b3f64063e70ac3"
       },
@@ -8211,7 +8211,7 @@
     },
     "neoforged-srgutils" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "3a5b7a11063a63317018b6e7b8b41e99d070076f"
       },
@@ -8226,7 +8226,7 @@
     },
     "neoforged-trainingwheels" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/default-gradle-version" : "8bd16ffb6606e535fe29e99a0a86bbff3402ebe7",
         "feature/introduce-new-environment-variable" : "91af7a0d9fe1345aa5b92ed74018f6b284beb265",
@@ -8243,7 +8243,7 @@
     },
     "neoforged-vineflowerplugins" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "a3486400e26205e8e511393f14dcda787f1cb885"
       },
@@ -8253,7 +8253,7 @@
     },
     "neoforged-vsclaunchconfigs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "a30cf799eb1320efcfb88acc8723c7e73a8b2a71"
       },
@@ -8263,7 +8263,7 @@
     },
     "neoforged-websites" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "4d38126b8b02c7aeb668bb26b2c01a25d1521728"
       },
@@ -8271,7 +8271,7 @@
     },
     "neoforged-whatamiforgingup" : {
       "defaultBranch" : "v2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "renovate/com.graphql-java-graphql-java-24.x" : "25e3fcbb149db7b006e2e63b2edfe1a380b7ce17",
         "renovate/flyway" : "45e9b6448912418fc42881d9a7282072294f5305",
@@ -8301,7 +8301,7 @@
     },
     "orionminecraft-orion" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/overhaul" : "50c8273853f2084977fc49b946c1874c95ffd081",
         "master" : "211d6a831f2f4fbc25f30ecd2d23e4c43c24391a",
@@ -8312,7 +8312,7 @@
     },
     "papermc-adventure" : {
       "defaultBranch" : "main/5",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "3.x" : "5fa726b4b2be8833f8a8e544f984ccf98ba5e438",
         "4.1.x" : "87daf9dc14da91e1c7636ec6cdc70d221b221b98",
@@ -8423,7 +8423,7 @@
     },
     "papermc-adventure-javadocs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "e117f3250b24042254c4ea94ccd5e027462c4e74"
       },
@@ -8431,7 +8431,7 @@
     },
     "papermc-adventure-platform" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "3.xx" : "bb835534dd7682e18406c36c8f8042befb29fb34",
         "feature/paper-native" : "942a306b77dd001d691194d0af6b07d1a8813aa4",
@@ -8475,7 +8475,7 @@
     },
     "papermc-adventure-platform-mod" : {
       "defaultBranch" : "mc/26.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "3.x" : "b8c4eeaa326b452bfe2911cb4150b5c9d5c9fb7d",
         "4.x" : "de61e6539626feee7fdac8b17903ff28572dba54",
@@ -8548,7 +8548,7 @@
     },
     "papermc-adventure-webui" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feat/downsample" : "7d4b1bac3454674d3519b1b6162e94c56c628d6c",
         "feat/jib" : "69a8ce340e1b7ec401b9365c6a4f1dd3fed41a83",
@@ -8563,7 +8563,7 @@
     },
     "papermc-adventurex" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "91af3f511360b4e5a4de565591c146a3c15ca1fc",
         "renovate/gradle-and-github-actions" : "9fe890e49c3c5aef805db3896ace0de784576e38"
@@ -8574,7 +8574,7 @@
     },
     "papermc-asm-utils" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/classfile-api" : "e9ea98da1f22cc12d7ce741010c40be12b263cb0",
         "main" : "606a79df0f64211cc84e3c0def708c1d19f61e86",
@@ -8596,7 +8596,7 @@
     },
     "papermc-bibliothek" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/cdn-url" : "5bd6a963f4be4a20bbc86096699cdcd3606a16d9",
         "feature/publish" : "1e710501589a8f095c7a9df890d59214eae4ac97",
@@ -8610,7 +8610,7 @@
     },
     "papermc-codebook" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "distance-names" : "fb8772333916c5cd53d37e3f207c3ce5f3988532",
         "feature/check-cast-unwraps" : "53c1b7bbc6acfeb34e044cca1838b877fbc7cee5",
@@ -8651,7 +8651,7 @@
     },
     "papermc-crossstitch" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "35a21ed5f402ce0957de5d39670e1804705f2247"
       },
@@ -8664,7 +8664,7 @@
     },
     "papermc-dataconverter" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "dcde1f1f89dd6882b56246fe60233ed6a1cb5abb",
         "ver/26.1" : "57a83a1a302276336b77b3d8ffc17cde7a3cc076"
@@ -8673,7 +8673,7 @@
     },
     "papermc-deprecated-bungeechat" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2e2e2789ed71e1933d9265ed4599ba75ed2a766c"
       },
@@ -8681,7 +8681,7 @@
     },
     "papermc-diff-viewer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "1588d5b0ff7a99a2a2c061dbfcab29a63874fbfd",
         "renovate/actions-setup-node-6.x" : "373ca1ba682cfb2f7d315523fc2ac28f394d119f",
@@ -8699,7 +8699,7 @@
     },
     "papermc-docs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feat/minimessage-format-specs" : "ac364bdaea1e6389ed3676f2a77d4afcd08d1884",
         "feat/velocity-plugin-json" : "fbc45ca8e8bf738a44912223c226abd5d7062803",
@@ -8710,7 +8710,7 @@
     },
     "papermc-docs-previews" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "95254f28b1e4fb37f6d8de19e80c92f35b4577d6"
       },
@@ -8718,7 +8718,7 @@
     },
     "papermc-fill" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "exp/kotlin" : "a22597519056062afe11166cb1f53b4de972f0ab",
         "feat/spring-4" : "cc36c03849bc919edc6903794254852f9b031d49",
@@ -8738,7 +8738,7 @@
     },
     "papermc-fill-gradle" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "copilot/fix-empty-commit-list" : "e38281ccfcc5ec367d8732da61eb26ee0b9180ac",
         "main" : "bd68989f9471060f1f26f3ee170f347e533141c1"
@@ -8760,7 +8760,7 @@
     },
     "papermc-fill-ui" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "feature/delete-button" : "71af3f8ae49281dc15e43f7dd130f2cad44953d9",
         "main" : "e6d4fb4d0fca09b762d7f6bb8da5dbab4d77e606",
@@ -8780,7 +8780,7 @@
     },
     "papermc-folia" : {
       "defaultBranch" : "ver/26.1.x",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev/1.21.1" : "2e7bc0721af95196c85500c7bb136aeea0bc12ce",
         "dev/1.21.3" : "e1601057b3e8131127788aafc8f4e80b800556c3",
@@ -8800,7 +8800,7 @@
     },
     "papermc-gradle-build-cache-worker" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "9cb6e7652c443519bdda6fa32ad879007bd270dc",
         "renovate/configure" : "9658717fe9f1c21bdf4e9bbe54709ed8fcea952e",
@@ -8810,7 +8810,7 @@
     },
     "papermc-item-converter" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "1839fafca1e8ab30d9b4b5814cd955c412656585"
       },
@@ -8818,7 +8818,7 @@
     },
     "papermc-mache" : {
       "defaultBranch" : "release/26.2",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "release/1.20.4" : "c30687ac6728381d248c1535f541c144164aaea2",
         "release/1.20.5" : "cd822708e8ddb989094bfd1db600795ea79a8ff9",
@@ -9003,7 +9003,7 @@
     },
     "papermc-multi-version-catalog" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "02fa02c438704ceecf5698a79af2103d011bf593"
       },
@@ -9011,7 +9011,7 @@
     },
     "papermc-packages-maven-mirror" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "427f58da32eb6d6885add5bed80d5b59f6d4fa62",
         "renovate/cloudflare-vitest-pool-workers-0.x" : "9545141edf52b413f17bc49cabe2bbe605a66100",
@@ -9025,7 +9025,7 @@
     },
     "papermc-paper" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "chore/checkstyle" : "58fa4761923628131a10d38aa38b673ff71f4866",
         "conf/shared-random" : "ffa4118c810de414f385208e19137caa835b6452",
@@ -9069,7 +9069,7 @@
     },
     "papermc-paper-1.7" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ab9e48b010f9658c96fdca68b711714bedb42e82",
         "ver/1.7.10" : "1cb8e8643a4ef250108096bc1e60c8c5af221ea5"
@@ -9078,7 +9078,7 @@
     },
     "papermc-paper-archive" : {
       "defaultBranch" : "ver/1.21.4",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "ver/1.10.2" : "303f32a3fe02700a598f8858c247bb994fa25b83",
         "ver/1.11.2" : "fddeb5759c71933e354cf735a3dae6fc9a492da9",
@@ -9119,7 +9119,7 @@
     },
     "papermc-paper-trail" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "259dc90b34745273664bf4fc7b3741db5ca1fab8"
       },
@@ -9130,7 +9130,7 @@
     },
     "papermc-paperclip" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "a8c1240a53d2b00d53ae7e002dacaeca9f879b6b",
         "manifest-meta" : "9aa6139dc6883a2c71e7ab7ea00c194c9a3d30a1",
@@ -9148,7 +9148,7 @@
     },
     "papermc-paperclipmavenplugin" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "4f9d91fc55ec232c89aa18ba6942b017b76c8162"
       },
@@ -9156,7 +9156,7 @@
     },
     "papermc-paperd" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c5881f5c6a5819e882b794ad8e1b285bf61e3f44"
       },
@@ -9166,7 +9166,7 @@
     },
     "papermc-paperdocs" : {
       "defaultBranch" : "hello",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "Paper/1.10" : "47e23c4c77df65621abb0a6d76ca1fe7629e3240",
         "Paper/1.11" : "699f9a98e589ef994105878a6fff415521279904",
@@ -9183,7 +9183,7 @@
     },
     "papermc-paperlib" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "df56b3062775ad74220d19ca53dab18e067beb68"
       },
@@ -9201,7 +9201,7 @@
     },
     "papermc-papermc.io" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "data" : "089a59cfd21422666bc4ed5b87c4a771b4f0cf36",
         "demon/edits" : "3849b7afd1725ff8943504e88c1bcf00b2898777",
@@ -9218,7 +9218,7 @@
     },
     "papermc-papertestserver" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "66cb9e802faae9d559dd880434c253239dd40a55",
         "ver/1.13-pre7" : "cc802b744d01c1b49c46d83f96d15f11e8a0d594"
@@ -9227,7 +9227,7 @@
     },
     "papermc-paperweight" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "check-for-nested-path" : "f99621dd657fafe47b867facee236f2333bac29c",
         "feature/importmcdev" : "210a8346a281e6e238b92164fda1715d8c4cafc8",
@@ -9344,7 +9344,7 @@
     },
     "papermc-paperweight-examples" : {
       "defaultBranch" : "v2-fork",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "8a2403ad70bf532554b0d5b4f9d0abbf523c28f5",
         "submodules" : "9c293419cbccb594d117d8abe704ffd5bfb289ac",
@@ -9355,7 +9355,7 @@
     },
     "papermc-paperweight-test-plugin" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "cfe03c9b147e630ecc49d5fc14cb811f8c98cd59",
         "multi-project" : "e62304c182bfa08d1f657881dacd950c8eba2038",
@@ -9366,7 +9366,7 @@
     },
     "papermc-parchment" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a8680a821c5a91a45aac2401085f72fa6b6686fe"
       },
@@ -9374,7 +9374,7 @@
     },
     "papermc-patch-roulette" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a0f723841d16d76643819bce14e8c8e869694000",
         "renovate/actions-setup-java-5.x" : "d89aee5d8da882a1af756ab0d73a69a87e5d013c",
@@ -9393,7 +9393,7 @@
     },
     "papermc-patched-spigot-fernflower" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f709c184a6dd15dfa8ba19c8e0cc7dbebae2640e"
       },
@@ -9401,7 +9401,7 @@
     },
     "papermc-proofreader" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "8bbe5a2b81e3525bd45fc8d16b853dab46f25f79"
       },
@@ -9409,7 +9409,7 @@
     },
     "papermc-restamp" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "db64fff9f9f89e0fd7dacf8ef791b994344dcb4b",
         "track-no-ops" : "b7639f7acb74436843a5eb54ec12bf7b5abbcd34"
@@ -9422,7 +9422,7 @@
     },
     "papermc-sculptor" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "9300764284a32bc00e0587bf0e617fa093a283d2",
         "renovate/com.gradle.publish-plugin-publish-plugin-1.x" : "ff8221044bab3c394fb582c5af8f0969861c27fe",
@@ -9458,7 +9458,7 @@
     },
     "papermc-sectortool" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2ebdb32b6f08c89a4bd39b5879f2709b23a77acf"
       },
@@ -9471,7 +9471,7 @@
     },
     "papermc-starlight" : {
       "defaultBranch" : "fabric",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "fabric" : "cca03d62da48e876ac79196bad16864e8a96bbeb",
         "forge" : "c562a3a36e8f5ec0ad25a8fa530de0d9eadcc64a",
@@ -9492,7 +9492,7 @@
     },
     "papermc-testing" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "714ae9aed5a25afc94d9f0f6c7058e36683aee1c"
       },
@@ -9503,7 +9503,7 @@
     },
     "papermc-travertine" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "64bc9df72da8859ebc57f60921124b8dceec9d3c"
       },
@@ -9511,7 +9511,7 @@
     },
     "papermc-typewriter" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "jep/module-import" : "debb705e4a79bca22a29c2e392d70502b8a79162",
         "main" : "c0897762bd62f5b3f920716b298fd21c51d8f8e8"
@@ -9523,7 +9523,7 @@
     },
     "papermc-unpick-definitions" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev" : "b6d562fba0272c13ed040518908f34f9ddf265da",
         "main" : "739fee4303b3679c36d2b025d6502353ef2ff311",
@@ -9533,7 +9533,7 @@
     },
     "papermc-update-projects-action" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "23cc2279f9cb25c0f613fac816435c2f9bffaebb"
       },
@@ -9544,7 +9544,7 @@
     },
     "papermc-velocity" : {
       "defaultBranch" : "dev/3.0.0",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "astei/packet-immutable" : "f390682e18b2cf0ecc8c7b4fecb603c3f9041bb4",
         "cat/initial-choose-server-resulted" : "dd67dfd8d0f544e9aa6de246d7442a2c3bbc6fbf",
@@ -9576,7 +9576,7 @@
     },
     "papermc-velocitypowered.com" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "i18n" : "f8c1cc14600964ff5476a80dfcfbd89469ed818f",
         "master" : "267684d24eadb18712e783de1a0ae6c6280920bf",
@@ -9588,7 +9588,7 @@
     },
     "papermc-waterfall" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "cat/updatehold" : "25328ebff88012dc1d667c1d4c2c7640aab0a7a3",
         "feature/method-handles" : "a8834f1b27131abe980f08c6743c0f1c35792267",
@@ -9602,7 +9602,7 @@
     },
     "papermc-website" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "cfg/renovate" : "b1d1be7614e29f77031d5ac8d84a76dfcb3ccbdf",
         "data" : "8fc7e7169e9c85fbdcc822f505b4feb2dd059c0c",
@@ -9627,7 +9627,7 @@
     },
     "projecttestificate-spigot-mcp" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "e3f82156c6e587b928333f982480474e38e3cf44"
       },
@@ -9635,7 +9635,7 @@
     },
     "quiltmc-access-widener" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c1fa4c1cf24ea148dcfec01e6e5d29437f19af0f"
       },
@@ -9643,7 +9643,7 @@
     },
     "quiltmc-art" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "849d6dfd9ba639895e15c7b200e06b3bb50e9c2e"
       },
@@ -9651,7 +9651,7 @@
     },
     "quiltmc-asmr-processor-prototype" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "17aaffcd1bcae96aa405147e6590881b43bcd77e"
       },
@@ -9659,7 +9659,7 @@
     },
     "quiltmc-beacon.quiltmc.org" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "60c3faab49f042cad29a056fcb002eac2129f146"
       },
@@ -9667,7 +9667,7 @@
     },
     "quiltmc-cfr" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f687381d91ae8979ac7dcfa0576054e8444f0373"
       },
@@ -9675,7 +9675,7 @@
     },
     "quiltmc-chasm" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "chassembly-specification" : "ca2a58ee7bcaa5d364ed4100e5f2dc7de80cb598",
         "fix/annotation-too-early-cast" : "a19336e22dca48bb90ebf343cce30e19bfb2844c",
@@ -9688,7 +9688,7 @@
     },
     "quiltmc-chasm-gradle-plugin" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "4995b76732c42aef1ba17b0b0626b57cbc83e84e"
       },
@@ -9696,7 +9696,7 @@
     },
     "quiltmc-cozy-automation-python" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "7498ee2b35a03dc12b86b55299d765357208d35f"
       },
@@ -9704,7 +9704,7 @@
     },
     "quiltmc-cozy-discord" : {
       "defaultBranch" : "root",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dependabot/github_actions/actions/checkout-4" : "f3272853178ff0cd5e1d07a89f22faf69c65c55c",
         "dependabot/github_actions/actions/setup-java-4" : "b99f3420c528a4a20e89f1daf09c0e7647547530",
@@ -9724,7 +9724,7 @@
     },
     "quiltmc-dev-launch-injector" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "37c08135c171e0034bab3a24dca54a7124e4c91b"
       },
@@ -9732,7 +9732,7 @@
     },
     "quiltmc-developer-wiki" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "gh-pages" : "cbc3a0f321f541d100176021148be4d148c40b36",
         "main" : "cd038ea27a286c4be0ca1f19d2cc3df0251332ff",
@@ -9742,7 +9742,7 @@
     },
     "quiltmc-enigma" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "develop/2.0" : "339f56b40925e27088f792810af691bedc67ec2c",
         "develop/2.6" : "50260c12f7feb73c2ad7abfd474fbb4818037ccf",
@@ -9760,7 +9760,7 @@
     },
     "quiltmc-forum.quiltmc.org" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "eca06ff491805ab3a74f4e29701aa9f17cfe998b"
       },
@@ -9768,7 +9768,7 @@
     },
     "quiltmc-future-gradle-plugin" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "32ad4351e70333bfac8e16d6d35255cbf2446bcd"
       },
@@ -9776,7 +9776,7 @@
     },
     "quiltmc-gradle-convention-plugins" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f037f8b91ec72ea4fec63d00641458cee0983ff0"
       },
@@ -9784,7 +9784,7 @@
     },
     "quiltmc-gson-stream" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d03a9fe26e259370a1121f2cd5ea80156ca2eb09"
       },
@@ -9792,7 +9792,7 @@
     },
     "quiltmc-infrastructure" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "36706b5d91ce237b644ca913e99ccaa035904b8c"
       },
@@ -9800,7 +9800,7 @@
     },
     "quiltmc-intermediary" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "21w16a" : "e2df6cd7975339195cd422aa0e49ca590ac23796",
         "main" : "380ca3c55c6aae3cddfa18adebe7f6b9cd91c5c8"
@@ -9809,7 +9809,7 @@
     },
     "quiltmc-javadoc-draftsman" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "63623f9ac398427f8fed914c2484d7c88ccd5ae9"
       },
@@ -9817,7 +9817,7 @@
     },
     "quiltmc-javadoc-publish" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "741c5fd2575f57846f4acd472f19ac74ec490537"
       },
@@ -9825,7 +9825,7 @@
     },
     "quiltmc-launchermeta-parser" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "a680f1b02ab93ea6403868282201740d43e4beb3"
       },
@@ -9833,7 +9833,7 @@
     },
     "quiltmc-lorenz-tiny" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "84c067749aec3f3a863514c88a8bc196bd67aa99"
       },
@@ -9841,7 +9841,7 @@
     },
     "quiltmc-mapping-poet" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "fc414f5a9f4c06a617eec9c59020318fc7a13405"
       },
@@ -9849,7 +9849,7 @@
     },
     "quiltmc-mappings-hasher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "427c93d874a3cdea8ed8064b2cdadc24c08d86d1"
       },
@@ -9859,7 +9859,7 @@
     },
     "quiltmc-matcher" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "fb53ae79669c506a0504df29e1b400ee4cf400e2"
       },
@@ -9867,7 +9867,7 @@
     },
     "quiltmc-matcher-mc" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "73db5d381050af73bc287752cb4ee8fd9fa72885"
       },
@@ -9875,7 +9875,7 @@
     },
     "quiltmc-procyon" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "264a12f8a9148a67ceeba2dfd43a884032d369a6"
       },
@@ -9883,7 +9883,7 @@
     },
     "quiltmc-qm-matcher" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20.2" : "1efb54851cb1e1f4cdf89944e40456797ca2442d",
         "master" : "9ee89f3e5620f465098551a90fc5d110c9225787"
@@ -9892,7 +9892,7 @@
     },
     "quiltmc-quilt-bulma" : {
       "defaultBranch" : "root",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "root" : "9db9604fdf5a8de06eced8f6e0ed718f0bd661a5"
       },
@@ -9925,7 +9925,7 @@
     },
     "quiltmc-quilt-config" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.3.3" : "7a27f310e80a479e1186d487427523b481f41c2a",
         "master" : "6170863cb39b87928ca696a8f7560a4daf3fc445",
@@ -9937,7 +9937,7 @@
     },
     "quiltmc-quilt-enigma-plugin" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "2.3.1" : "7d194d1881ae4d71eec6039688e1198876163682",
         "master" : "ab441f781e7674962a9e780e685df33efb202039",
@@ -9948,7 +9948,7 @@
     },
     "quiltmc-quilt-gradle-licenser" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "2b63d60778a5d8082e479613b99cabfa51a203f5"
       },
@@ -9966,7 +9966,7 @@
     },
     "quiltmc-quilt-gradle-prototype" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "2bd7287e930b8331d976992a112e269cd85acc26"
       },
@@ -9974,7 +9974,7 @@
     },
     "quiltmc-quilt-helm-charts" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "gh-pages" : "bb370bf63ef077249be5d89275167a7a70994f1e",
         "main" : "28b2812879fdbefff39da074e87f87976ebc9f54"
@@ -10032,7 +10032,7 @@
     },
     "quiltmc-quilt-installer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ff225d06ac9be5ba3bdceba117f62436e6fb7f0c"
       },
@@ -10045,7 +10045,7 @@
     },
     "quiltmc-quilt-json-schemas" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "c29d9b835c115cd195b1b479910e41f7e44c989d"
       },
@@ -10053,7 +10053,7 @@
     },
     "quiltmc-quilt-json5" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "47e8a0fd4f734c3712b2b6d4a24eea5831a4e89c"
       },
@@ -10061,7 +10061,7 @@
     },
     "quiltmc-quilt-kotlin-libraries" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.20" : "2c70f5b82579d8c86346fcbdd42a0f1d30fdfcef",
         "dev/0.18.0_loader_fix_ver_bump" : "eddf8e16f3c15e37c068c46b41909980b975c072",
@@ -10101,7 +10101,7 @@
     },
     "quiltmc-quilt-kotlin-template-mod" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.19.3" : "e578a40d4ce4c4376719d7e5ad4aa0202ec9a51f",
         "main" : "3899b5dab0d4f4e09ee9390e39bd2595f9041515"
@@ -10110,7 +10110,7 @@
     },
     "quiltmc-quilt-loader" : {
       "defaultBranch" : "develop",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "bootstrap-tests" : "e873fa4974b1257dd8ecfe00946bd1aafc5c883e",
         "class-name-mapping-fixer" : "f2d2eab7ac03da39ea332d4ce9026a673d02ea75",
@@ -10425,7 +10425,7 @@
     },
     "quiltmc-quilt-loader-bootstrap" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "32d9e30e7a354089dd66d9126122f08cba6c43be"
       },
@@ -10433,7 +10433,7 @@
     },
     "quiltmc-quilt-loader-sat4j" : {
       "defaultBranch" : "quilt-2.3.5",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "quilt-2.3.5" : "e7e39982716a3200abdfbb185cd9b4334aef74b5"
       },
@@ -10441,7 +10441,7 @@
     },
     "quiltmc-quilt-loom" : {
       "defaultBranch" : "dev/1.15",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev/0.10" : "fc67fe9dcfa3b9ecaf5fdf8f05d0f35769d0612e",
         "dev/0.13" : "c6fd18a54e134b102c4b00128f413a9218f611eb",
@@ -10486,7 +10486,7 @@
     },
     "quiltmc-quilt-mapping-tools" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "ba0ede99282ef5ad0a0379c1d7f58d472e9359bf"
       },
@@ -10494,7 +10494,7 @@
     },
     "quiltmc-quilt-mappings" : {
       "defaultBranch" : "1.21.11",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.17.1" : "e7d93bef3cad574377037719052c52722d0d358a",
         "1.18" : "e87cb6b55859127e191be355554b299e6fd8a2c5",
@@ -11040,7 +11040,7 @@
     },
     "quiltmc-quilt-mappings-on-loom" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "2a53d7f1bff545cdd5fa7a8560b3eda7d71484af",
         "release-3.1.2" : "868c9eb97a79951d742eca1ed3c8053b9b8e4694"
@@ -11049,7 +11049,7 @@
     },
     "quiltmc-quilt-meta" : {
       "defaultBranch" : "v3",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "f13ee2166c73720a95e2699f70dd5954c7718895",
         "v3" : "7b3721268ccea262599fd81888b8067b89e78532"
@@ -11058,7 +11058,7 @@
     },
     "quiltmc-quilt-mod-spec" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "30002809b7a6ab3aa749988fc95e7e2f1efec8ca"
       },
@@ -11066,7 +11066,7 @@
     },
     "quiltmc-quilt-multi-java-gen" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "5afa4ab165e445c307a0c87293467b6a024215dc"
       },
@@ -11074,7 +11074,7 @@
     },
     "quiltmc-quilt-native-installer" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "glitch-work" : "20eeb06347f6cf56c28174060fc7a6644e80a318",
         "glitch-work-2" : "87ecdf7779adb7dde648dad8f2d2a1623e038c25",
@@ -11087,7 +11087,7 @@
     },
     "quiltmc-quilt-parsers" : {
       "defaultBranch" : "trunk",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "trunk" : "3c95d1b0642096594c4bd27dcd272fc0524f4adb"
       },
@@ -11095,7 +11095,7 @@
     },
     "quiltmc-quilt-server-bootstrap" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "ece160ad13a314812dcc5923bc1897dcc9bc55e7"
       },
@@ -11103,7 +11103,7 @@
     },
     "quiltmc-quilt-standard-libraries" : {
       "defaultBranch" : "1.21.5",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.17" : "3a7c6fa1e962df66e79fdeac6d7853050803a152",
         "1.17.1" : "98615b9eca16a66d37fc5bc0022937e31338e78f",
@@ -11245,7 +11245,7 @@
     },
     "quiltmc-quilt-template-mod" : {
       "defaultBranch" : "1.20.6",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.18.2" : "77ca23a60edd177348905d9dabc3c339a1a1f2da",
         "1.19.2" : "727fde1051f4df598da6cbe6c9f6c4473f96216c",
@@ -11260,7 +11260,7 @@
     },
     "quiltmc-quiltmc.org" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "astro-6" : "ec69566f34d6b91afdc2990628a63b85c93d3bc5",
         "fix-cloudflare-pages" : "27b6f3f1c5a9ca0ed71b15e8507d7bad60378ff7",
@@ -11273,7 +11273,7 @@
     },
     "quiltmc-rfcs" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "62-call-votes-early" : "c99b4775cc7b3ae35a461ce1f835c7c6f62b4879",
         "kill-community-rfcs" : "d9aa220d34b492ce068b12081dc4e4900f9e68d0",
@@ -11283,7 +11283,7 @@
     },
     "quiltmc-sponge-mixin-compile-extensions" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "10d02785ca9ef699dc3a55e965eb02bd4d0dcf82"
       },
@@ -11291,7 +11291,7 @@
     },
     "quiltmc-stitch" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d71d0a6afbb4a59c62599adfbbcae876d004c9f6"
       },
@@ -11299,7 +11299,7 @@
     },
     "quiltmc-syntaxpain" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "b4a7125d079603b9af247d776d3306db9f7799b5"
       },
@@ -11317,7 +11317,7 @@
     },
     "quiltmc-template-repo-syncer" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "main" : "00672bdcd6550242bd77cb625bd6396f7459e022"
       },
@@ -11325,7 +11325,7 @@
     },
     "quiltmc-tiny-mappings-parser" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7a67db9ea8408b05840fa033a8bc60044ea88db7"
       },
@@ -11333,7 +11333,7 @@
     },
     "quiltmc-tiny-remapper" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "77c7f1db19b6ae023c5e6d1f38d9537b48bf8069",
         "remapbridges" : "0d76f6b7920e11292e3d27b7356e8d9a5650a0cf"
@@ -11342,7 +11342,7 @@
     },
     "quiltmc-update-quilt-meta" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "26.1-fix" : "88e660a778b69bcfa47c18baf6c085ea805a0abd",
         "main" : "cf90889394779ac7689a7b36f055695dc7893c56",
@@ -11352,7 +11352,7 @@
     },
     "quiltmc-workers" : {
       "defaultBranch" : "main",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "elections" : "65984ddeb340eef99f13736648c3ef92e76a09dd",
         "main" : "a0eee3afa31a18f6b61aecbc57d50590bd57bc65"
@@ -11361,7 +11361,7 @@
     },
     "quiltmc-yarn" : {
       "defaultBranch" : "1.17.1",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.11" : "a2e8a099fae99731e820d4980bb41f9bd1c8d67a",
         "1.12" : "32191d899aea4250df924fef936c6ea5a69e3bab",
@@ -11627,7 +11627,7 @@
     },
     "sameer-extrautilities" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "40e8594e8c4d2f6505e86270d196059b2b06a373"
       },
@@ -11635,7 +11635,7 @@
     },
     "shevchikunsupportedprojects-modfixng" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "aa8ec42296c628c23ac1a745d29d9710c69251bc"
       },
@@ -11643,7 +11643,7 @@
     },
     "sidoh-reactor_simulator" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "hillclimb" : "d7c134284308801c99e4fdf7d363355b38b46e25",
         "master" : "4acd6e2f430e006c2515b7e120b32ed35a601f57"
@@ -11652,7 +11652,7 @@
     },
     "spark108-svarka" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "d5f967c94bdd53b4363ddeafdadb50f3274cdae1"
       },
@@ -11660,7 +11660,7 @@
     },
     "starlis-emc-bukkit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "final1.7.9" : "882301e694f88b4bafc92b61bf171127ef5a1b6c",
         "master" : "d2ad1a654b35b432c5f7af733b46ff5f29ee8b01"
@@ -11734,7 +11734,7 @@
     },
     "starlis-emc-craftbukkit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "BUKKIT-4608" : "72b05498457a72b724f81233dc5491c0e6be6f44",
         "BUKKIT-5390" : "17f4d77d9833bd948b16cf5ed85be90298797784",
@@ -11812,7 +11812,7 @@
     },
     "stepan14041999-cookie" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "gh-pages" : "0f7528b5d6de49f7052f9b05d17484da435e2700",
         "master" : "e18240b0a2136b4637f8a60b6273bd0387e3ea1a"
@@ -11886,7 +11886,7 @@
     },
     "tacospigot-tacospigot" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "event/item-send" : "d4bdf38615d98ae78c3e9f0f355688f00dba6b0d",
         "master" : "f0aa1d4f210875b1c308666b452ed0c5f1033b7d",
@@ -11908,7 +11908,7 @@
     },
     "tclproject-arsmagica2-5" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.7-dev" : "ed89e167e3b3cd480c8ab1664e9ad2d8b12e24e8",
         "master" : "a0cdcb58cac0b9ceccc8283c06d28ca1d7ef025e"
@@ -11932,7 +11932,7 @@
     },
     "team-fruit-emojicord" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "api" : "928fe116949ba54bc36950fff0abde36c118fccc",
         "develop" : "a083bdecc506d7a10bb2926d341463044150aeb7",
@@ -11972,7 +11972,7 @@
     },
     "techcatother-um_bukkit" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "836ed7a890b2cb04cd7847eff2c59d7a2f6d4d7b"
       },
@@ -11980,7 +11980,7 @@
     },
     "technicpack-launcherv3" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "claude/fix-task-queue-mutations-xjMaW" : "86f2b0ec41484a4346aa3ca712e3e6134df723f4",
         "master" : "ef6a3a51ac6c745e55f29751432069bd56bd521a",
@@ -12202,7 +12202,7 @@
     },
     "terrafirmacraft-the-final-frontier-filedirector" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "c67037b96dfc67f8bf7030124f221cd193bb9e4f"
       },
@@ -12210,7 +12210,7 @@
     },
     "timtomtim7-chatmenuapi" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dependabot/maven/io.netty-netty-all-4.1.42.Final" : "b642234f9818ef7c3dcab461affd5d6506fa3680",
         "master" : "eaa4f1113acfbb0bb3cdb7d6d22d8938b8da9634"
@@ -12223,7 +12223,7 @@
     },
     "uraniummc-uranium" : {
       "defaultBranch" : "dev",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "dev" : "f73a12f22bda26b7db8bf2c80258c63767b272aa",
         "master" : "afb725091d2d68bad4e51aa40bd0baba6dc3021f"
@@ -12284,7 +12284,7 @@
     },
     "uraniummc-uraniumplus" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "7f429c7760c6b4e0f82391d337a9614dc3d22221"
       },
@@ -12295,7 +12295,7 @@
     },
     "xsun2001-applied-energistics-2-unofficial" : {
       "defaultBranch" : "rv3-1.7.10",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "1.10" : "41b8754130f0dd04a7e2d4291727f3b743b4ffc0",
         "1.8-rv3" : "2e51ea5f787b336e25ad0b235b9833f70d65e801",
@@ -12434,7 +12434,7 @@
     },
     "yamakaja-runtimetransformer" : {
       "defaultBranch" : "master",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "master" : "e0747fbe743fe1f267a8aa0835321f564a3a404a"
       },
@@ -12442,7 +12442,7 @@
     },
     "yatopiamc-yatopia" : {
       "defaultBranch" : "ver/1.16.5",
-      "lastSynced" : "2026-06-29T15:57:03.999757725Z",
+      "lastSynced" : "2026-06-29T17:22:03.042705457Z",
       "branches" : {
         "archive/1.15.2/worldParallelTick" : "1a54ef2f995f049d4fcf1f2bd084691126f10046",
         "dev/c2me-port" : "7d9597252c6c51c58aa25a105597b910337c2046",
