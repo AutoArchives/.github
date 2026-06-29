@@ -1263,6 +1263,202 @@
     "mohistmc-yaml" : {
       "upstreamName" : "MohistMC/Yaml",
       "upstreamGone" : false
+    },
+    "fabricmc-access-widener" : {
+      "upstreamName" : "FabricMC/access-widener",
+      "upstreamGone" : false
+    },
+    "fabricmc-class-tweaker" : {
+      "upstreamName" : "FabricMC/class-tweaker",
+      "upstreamGone" : false
+    },
+    "fabricmc-community" : {
+      "upstreamName" : "FabricMC/community",
+      "upstreamGone" : false
+    },
+    "fabricmc-dev-launch-injector" : {
+      "upstreamName" : "FabricMC/dev-launch-injector",
+      "upstreamGone" : false
+    },
+    "fabricmc-discord-bot" : {
+      "upstreamName" : "FabricMC/discord-bot",
+      "upstreamGone" : false
+    },
+    "fabricmc-enigma" : {
+      "upstreamName" : "FabricMC/Enigma",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-action-scripts" : {
+      "upstreamName" : "FabricMC/fabric-action-scripts",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-api" : {
+      "upstreamName" : "FabricMC/fabric-api",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-commands" : {
+      "upstreamName" : "FabricMC/fabric-commands",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-docs" : {
+      "upstreamName" : "FabricMC/fabric-docs",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-docs-old" : {
+      "upstreamName" : "FabricMC/fabric-docs-old",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-event-entity" : {
+      "upstreamName" : "FabricMC/fabric-event-entity",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-example-mod" : {
+      "upstreamName" : "FabricMC/fabric-example-mod",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-filament" : {
+      "upstreamName" : "FabricMC/fabric-filament",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-installer" : {
+      "upstreamName" : "FabricMC/fabric-installer",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-installer-native-bootstrap" : {
+      "upstreamName" : "FabricMC/fabric-installer-native-bootstrap",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-installer-native-lib" : {
+      "upstreamName" : "FabricMC/fabric-installer-native-lib",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-language-groovy" : {
+      "upstreamName" : "FabricMC/fabric-language-groovy",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-language-kotlin" : {
+      "upstreamName" : "FabricMC/fabric-language-kotlin",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-language-scala" : {
+      "upstreamName" : "FabricMC/fabric-language-scala",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-loader" : {
+      "upstreamName" : "FabricMC/fabric-loader",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-loader-sat4j" : {
+      "upstreamName" : "FabricMC/fabric-loader-sat4j",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-loom" : {
+      "upstreamName" : "FabricMC/fabric-loom",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-loom-native" : {
+      "upstreamName" : "FabricMC/fabric-loom-native",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-loom-native-support" : {
+      "upstreamName" : "FabricMC/fabric-loom-native-support",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-meta" : {
+      "upstreamName" : "FabricMC/fabric-meta",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-mixin-compile-extensions" : {
+      "upstreamName" : "FabricMC/fabric-mixin-compile-extensions",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-network" : {
+      "upstreamName" : "FabricMC/fabric-network",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-registry" : {
+      "upstreamName" : "FabricMC/fabric-registry",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-resources" : {
+      "upstreamName" : "FabricMC/fabric-resources",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-sandbox" : {
+      "upstreamName" : "FabricMC/fabric-sandbox",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabric-tooling" : {
+      "upstreamName" : "FabricMC/fabric-tooling",
+      "upstreamGone" : false
+    },
+    "fabricmc-fabricmc.net" : {
+      "upstreamName" : "FabricMC/fabricmc.net",
+      "upstreamGone" : false
+    },
+    "fabricmc-intermediary" : {
+      "upstreamName" : "FabricMC/intermediary",
+      "upstreamGone" : false
+    },
+    "fabricmc-kotlin-fabric-discord-bot" : {
+      "upstreamName" : "FabricMC/kotlin-fabric-discord-bot",
+      "upstreamGone" : false
+    },
+    "fabricmc-lorenz-tiny" : {
+      "upstreamName" : "FabricMC/lorenz-tiny",
+      "upstreamGone" : false
+    },
+    "fabricmc-mapping-io" : {
+      "upstreamName" : "FabricMC/mapping-io",
+      "upstreamGone" : false
+    },
+    "fabricmc-mappingpoet" : {
+      "upstreamName" : "FabricMC/MappingPoet",
+      "upstreamGone" : false
+    },
+    "fabricmc-matcher" : {
+      "upstreamName" : "FabricMC/Matcher",
+      "upstreamGone" : false
+    },
+    "fabricmc-mcsrc" : {
+      "upstreamName" : "FabricMC/mcsrc",
+      "upstreamGone" : false
+    },
+    "fabricmc-mercury-tiny-cli" : {
+      "upstreamName" : "FabricMC/mercury-tiny-cli",
+      "upstreamGone" : false
+    },
+    "fabricmc-name-proposal" : {
+      "upstreamName" : "FabricMC/name-proposal",
+      "upstreamGone" : false
+    },
+    "fabricmc-outdated-fabric-mod-template" : {
+      "upstreamName" : "FabricMC/outdated-fabric-mod-template",
+      "upstreamGone" : false
+    },
+    "fabricmc-procyon" : {
+      "upstreamName" : "FabricMC/procyon",
+      "upstreamGone" : false
+    },
+    "fabricmc-stitch" : {
+      "upstreamName" : "FabricMC/stitch",
+      "upstreamGone" : false
+    },
+    "fabricmc-tiny-mappings-parser" : {
+      "upstreamName" : "FabricMC/tiny-mappings-parser",
+      "upstreamGone" : false
+    },
+    "fabricmc-tiny-remapper" : {
+      "upstreamName" : "FabricMC/tiny-remapper",
+      "upstreamGone" : false
+    },
+    "fabricmc-weave" : {
+      "upstreamName" : "FabricMC/weave",
+      "upstreamGone" : false
+    },
+    "fabricmc-yarn" : {
+      "upstreamName" : "FabricMC/yarn",
+      "upstreamGone" : false
     }
   }
 }
