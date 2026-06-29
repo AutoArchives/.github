@@ -515,6 +515,14 @@
     "cardboardpowered-worldedit-adapters" : {
       "upstreamName" : "CardboardPowered/worldedit-adapters",
       "upstreamGone" : false
+    },
+    "minecraftforge-.github" : {
+      "upstreamName" : "MinecraftForge/.github",
+      "upstreamGone" : false
+    },
+    "minecraftforge-actionable" : {
+      "upstreamName" : "MinecraftForge/Actionable",
+      "upstreamGone" : false
     }
   }
 }
