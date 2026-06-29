@@ -995,6 +995,30 @@
     "neoforged-whatamiforgingup" : {
       "upstreamName" : "neoforged/WhatAmIForgingUp",
       "upstreamGone" : false
+    },
+    "mcmodlauncher-bootstraplauncher" : {
+      "upstreamName" : "McModLauncher/bootstraplauncher",
+      "upstreamGone" : false
+    },
+    "mcmodlauncher-mcmodlauncher.github.io" : {
+      "upstreamName" : "McModLauncher/mcmodlauncher.github.io",
+      "upstreamGone" : false
+    },
+    "mcmodlauncher-modlauncher" : {
+      "upstreamName" : "McModLauncher/modlauncher",
+      "upstreamGone" : false
+    },
+    "mcmodlauncher-modlog4j" : {
+      "upstreamName" : "McModLauncher/modlog4j",
+      "upstreamGone" : false
+    },
+    "mcmodlauncher-securejarhandler" : {
+      "upstreamName" : "McModLauncher/securejarhandler",
+      "upstreamGone" : false
+    },
+    "mcmodlauncher-shimmy" : {
+      "upstreamName" : "McModLauncher/shimmy",
+      "upstreamGone" : false
     }
   }
 }
