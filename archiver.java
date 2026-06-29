@@ -191,8 +191,28 @@ class archiver implements Runnable {
             && String.valueOf(e.getMessage()).contains("Empty repositories cannot be forked");
     }
 
-    // Diff upstream against the fork and decide what to do. Sorted so the action
-    // list (and therefore the change report) is deterministic.
+    // a repo taken down for legal reasons (dmca and friends) answers with a 451 and a
+    // "Repository access blocked" message, nothing we can do but skip it
+    static boolean isAccessBlocked(HttpException e) {
+        return e.getResponseCode() == 451
+            || String.valueOf(e.getMessage()).contains("Repository access blocked");
+    }
+
+    // github throttles bursts of any API call that creates resources with a 403 "was submitted too quickly"
+    // (a secondary secret rate limit) https://github.com/cli/cli/issues/4801,
+    // or a plain 429 if we somehow hit normal rate limits (though I think the github wrapper I'm using handles it).
+    // Skipping these would wrongly mark good repos as failed since the next fork hits the same wall,
+    // so bulk-add stops and lets a later run resume.
+    static boolean isRateLimited(HttpException e) {
+        var msg = String.valueOf(e.getMessage());
+        return e.getResponseCode() == 429
+            || msg.contains("was submitted too quickly")
+            || msg.contains("secondary rate limit")
+            || msg.contains("API rate limit exceeded");
+    }
+
+    // Diff upstream against the fork and decide what to do.
+    // Sorted so the action list (and therefore the change report) is deterministic.
     static List<SyncAction> classify(Map<String, String> upstreamHeads, Map<String, String> forkHeads,
                                      Map<String, String> upstreamTags, Map<String, String> forkTags) {
         var actions = new ArrayList<SyncAction>();
@@ -584,11 +604,15 @@ class archiver implements Runnable {
             var data = getData();
             int added = 0;
             int skipped = 0;
+            // Repos that genuinely blew up. We note them and carry on so one bad repo doesn't
+            // sink the whole bulk run, then report them at the end and flag the run as failed.
+            var failed = new LinkedHashMap<String, Exception>();
+            boolean rateLimited = false;
             for (String target : targets) {
                 var ghRepoId = target.toLowerCase(Locale.ROOT);
                 var newId = ghRepoId.replace('/', '-');
                 if (data.repos().containsKey(newId)) {
-                    log("@|yellow Already archived: {}}|@", newId);
+                    log("@|yellow Already archived: {}|@", newId);
                     skipped++;
                     continue;
                 }
@@ -599,58 +623,95 @@ class archiver implements Runnable {
                     continue;
                 }
 
-                logger.info("Forking {}", ghRepoId);
-                var originalGitHubRepo = github.getRepository(ghRepoId);
-                var org = github.getOrganization(orgName);
-                GHRepository fork;
                 try {
-                    // Maybe a previous run already forked it; reuse rather than duplicate.
-                    fork = github.getRepository(orgName + '/' + newId);
-                    log("@|red Found an existing fork with the same name... using it instead.|@");
-                } catch (Exception e) {
-                    // Name the fork at creation instead of forking then renaming.
-                    // The rename path makes github retire the fork's old namespace and grab a lock for it,
-                    // and against a just-forked repo that lock sometimes fails with a 422 "name retired namespace
-                    // lock could not be acquired" (hello popular repos like minecraftforge).
-                    // Forking straight to the final name skips the whole dance,
-                    // and the builder waits out the async fork for us so we can drop the old sleep/retry loop too.
+                    logger.info("Forking {}", ghRepoId);
+                    var originalGitHubRepo = github.getRepository(ghRepoId);
+                    var org = github.getOrganization(orgName);
+                    GHRepository fork;
                     try {
+                        // Maybe a previous run already forked it; reuse rather than duplicate.
+                        fork = github.getRepository(orgName + '/' + newId);
+                        log("@|red Found an existing fork with the same name... using it instead.|@");
+                    } catch (GHFileNotFoundException e) {
+                        // No fork yet. Name the fork at creation instead of forking then renaming.
+                        // The rename path makes github retire the fork's old namespace and grab a lock for it,
+                        // and against a just-forked repo that lock sometimes fails with a 422 "name retired namespace
+                        // lock could not be acquired" (hello popular repos like minecraftforge).
+                        // Forking straight to the final name skips the whole dance,
+                        // and the builder waits out the async fork for us so we can drop the old sleep/retry loop too.
+                        // Any fork failure (empty/blocked/rate-limited upstream) bubbles up to the handler below.
                         fork = originalGitHubRepo.createFork().organization(org).name(newId).create();
-                    } catch (HttpException ex) {
-                        // nothing to mirror in an empty upstream; skip it and keep the bulk run going
-                        if (isEmptyRepo(ex)) {
-                            log("@|yellow Skipping {}, upstream is empty with no content to fork.|@", ghRepoId);
-                            continue;
+                    }
+
+                    // The fork is the archive now; record it right away and save, so if a later
+                    // repo in a bulk run blows up we don't throw away the ones already forked.
+                    data.repos().put(newId, new ArchivedRepo(originalGitHubRepo.getFullName(), false));
+                    saveData(data);
+                    added++;
+
+                    if (!webhook.isBlank()) {
+                        try (var client = WebhookClient.withUrl(webhook)) {
+                            WebhookEmbed embed = new WebhookEmbedBuilder()
+                                .setColor(0xF69000) // Nice
+                                .setTitle(new WebhookEmbed.EmbedTitle("New repository archived as " + newId, fork.getHtmlUrl().toString()))
+                                .setDescription("Archived from [%s](%s)".formatted(originalGitHubRepo.getFullName(),
+                                    originalGitHubRepo.getHtmlUrl().toString()))
+                                .build();
+                            client.send(embed).get();
+                        } catch (Throwable e) {
+                            logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
                         }
-                        throw ex;
                     }
-                }
-
-                // The fork is the archive now; record it right away and save, so if a later
-                // repo in a bulk run blows up we don't throw away the ones already forked.
-                data.repos().put(newId, new ArchivedRepo(originalGitHubRepo.getFullName(), false));
-                saveData(data);
-                added++;
-
-                if (!webhook.isBlank()) {
-                    try (var client = WebhookClient.withUrl(webhook)) {
-                        WebhookEmbed embed = new WebhookEmbedBuilder()
-                            .setColor(0xF69000) // Nice
-                            .setTitle(new WebhookEmbed.EmbedTitle("New repository archived as " + newId, fork.getHtmlUrl().toString()))
-                            .setDescription("Archived from [%s](%s)".formatted(originalGitHubRepo.getFullName(),
-                                originalGitHubRepo.getHtmlUrl().toString()))
-                            .build();
-                        client.send(embed).get();
-                    } catch (Throwable e) {
-                        logger.error("Unable to send webhook, suppressing exception and exiting cleanly....", e);
+                } catch (HttpException e) {
+                    // Rate limit means every following fork hits the same error,
+                    // so don't skip (that'd wrongly burn through the list marking everything failed);
+                    // stop now and let the next run pick up from the progress we've already saved.
+                    if (isRateLimited(e)) {
+                        log("@|red Stopping: hit GitHub's rate limit. Already-forked repos are saved, run again later to grab the rest.|@");
+                        rateLimited = true;
+                        break;
                     }
+
+                    // taken down for legal reasons, nothing to fork; skip it
+                    if (isAccessBlocked(e)) {
+                        log("@|yellow Skipping {}, access blocked for legal reasons.|@", ghRepoId);
+                        skipped++;
+                        continue;
+                    }
+
+                    // nothing to mirror in an empty upstream; skip it
+                    if (isEmptyRepo(e)) {
+                        log("@|yellow Skipping {}, upstream is empty with no content to fork.|@", ghRepoId);
+                        skipped++;
+                        continue;
+                    }
+
+                    // some other fork failure; note it and move on to the next repo
+                    log("@|red Failed to fork {}, skipping.|@", ghRepoId);
+                    failed.put(ghRepoId, e);
+                } catch (Exception e) {
+                    // anything non-HTTP that went wrong on this repo; skip it but keep going
+                    log("@|red Failed to fork {}, skipping.|@", ghRepoId);
+                    failed.put(ghRepoId, e);
                 }
             }
 
             if (dryRun) {
                 log("Dry run: {} to add, {} already archived.", added, skipped);
+            } else {
+                log("Done: {} added, {} skipped, {} failed.", added, skipped, failed.size());
             }
-            return 0;
+
+            if (!failed.isEmpty()) {
+                logger.warn("Some repos couldn't be forked:");
+                for (Map.Entry<String, Exception> en : failed.entrySet()) {
+                    logger.error("Unable to fork {}", en.getKey(), en.getValue());
+                }
+            }
+
+            // flag the run so it spams my emails: either real failures, or a rate-limit stop
+            // that left part of the list unprocessed
+            return (failed.isEmpty() && !rateLimited) ? 0 : 1;
         }
 
         // List an owner's (user or org) public repos worth archiving.
