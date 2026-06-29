@@ -1235,6 +1235,34 @@
     "papermc-website" : {
       "upstreamName" : "PaperMC/website",
       "upstreamGone" : false
+    },
+    "mohistmc-advancedfurnacey" : {
+      "upstreamName" : "MohistMC/AdvancedFurnaceY",
+      "upstreamGone" : false
+    },
+    "mohistmc-anvilauth" : {
+      "upstreamName" : "MohistMC/AnvilAuth",
+      "upstreamGone" : false
+    },
+    "mohistmc-coderule" : {
+      "upstreamName" : "MohistMC/CodeRule",
+      "upstreamGone" : false
+    },
+    "mohistmc-mowudecomp" : {
+      "upstreamName" : "MohistMC/MoWuDecomp",
+      "upstreamGone" : false
+    },
+    "mohistmc-silkard" : {
+      "upstreamName" : "MohistMC/Silkard",
+      "upstreamGone" : false
+    },
+    "mohistmc-worldedit" : {
+      "upstreamName" : "MohistMC/WorldEdit",
+      "upstreamGone" : false
+    },
+    "mohistmc-yaml" : {
+      "upstreamName" : "MohistMC/Yaml",
+      "upstreamGone" : false
     }
   }
 }
