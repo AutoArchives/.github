@@ -2179,6 +2179,42 @@
     "minecraftportcentral-mcpc-mvn-repo" : {
       "upstreamName" : "MinecraftPortCentral/mcpc-mvn-repo",
       "upstreamGone" : false
+    },
+    "bukkit-bukkit" : {
+      "upstreamName" : "Bukkit/Bukkit",
+      "upstreamGone" : false
+    },
+    "bukkit-bukkit-javadoc" : {
+      "upstreamName" : "Bukkit/Bukkit-JavaDoc",
+      "upstreamGone" : false
+    },
+    "bukkit-chatbukkit" : {
+      "upstreamName" : "Bukkit/ChatBukkit",
+      "upstreamGone" : false
+    },
+    "bukkit-devbukkit" : {
+      "upstreamName" : "Bukkit/DevBukkit",
+      "upstreamGone" : false
+    },
+    "bukkit-homebukkit" : {
+      "upstreamName" : "Bukkit/HomeBukkit",
+      "upstreamGone" : false
+    },
+    "bukkit-mc-dev" : {
+      "upstreamName" : "Bukkit/mc-dev",
+      "upstreamGone" : false
+    },
+    "bukkit-sampleplugin" : {
+      "upstreamName" : "Bukkit/SamplePlugin",
+      "upstreamGone" : false
+    },
+    "bukkit-scrapbukkit" : {
+      "upstreamName" : "Bukkit/ScrapBukkit",
+      "upstreamGone" : false
+    },
+    "bukkit-structuresaver" : {
+      "upstreamName" : "Bukkit/StructureSaver",
+      "upstreamGone" : false
     }
   }
 }
