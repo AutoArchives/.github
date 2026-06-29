@@ -2375,6 +2375,10 @@
     "poweruser-minetickmod" : {
       "upstreamName" : "Poweruser/MinetickMod",
       "upstreamGone" : false
+    },
+    "techcable-cauldron-old" : {
+      "upstreamName" : "Techcable/Cauldron-Old",
+      "upstreamGone" : false
     }
   }
 }
