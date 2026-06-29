@@ -156,12 +156,17 @@ class archiver implements Runnable {
         return sha != null && sha.length() > 7 ? sha.substring(0, 7) : sha;
     }
 
-    // Keep only the repos worth mirroring and drop forks and anything private.
+    // Keep only the repos worth mirroring and drop forks, private ones and the .github meta repo.
     static List<String> selectArchivable(List<RepoCandidate> candidates) {
         return candidates.stream()
-            .filter(c -> !c.fork() && !c.privateRepo())
+            .filter(c -> !c.fork() && !c.privateRepo() && !isMetaRepo(c.fullName()))
             .map(RepoCandidate::fullName)
             .collect(Collectors.toList());
+    }
+
+    static boolean isMetaRepo(String fullName) {
+        int slash = fullName.lastIndexOf('/');
+        return fullName.substring(slash + 1).equalsIgnoreCase(".github");
     }
 
     // A ref write that 404s almost always means the token is missing the 'workflow'
@@ -177,6 +182,13 @@ class archiver implements Runnable {
                 + " commit changes .github/workflows files)";
         }
         return "";
+    }
+
+    // github answers a fork request on an empty (no commits) repo with a 403 saying it
+    // "contains no Git content", there's nothing to mirror so bulk-add just skips those
+    static boolean isEmptyRepo(HttpException e) {
+        return e.getResponseCode() == 403
+            && String.valueOf(e.getMessage()).contains("Empty repositories cannot be forked");
     }
 
     // Diff upstream against the fork and decide what to do. Sorted so the action
@@ -602,7 +614,16 @@ class archiver implements Runnable {
                     // lock could not be acquired" (hello popular repos like minecraftforge).
                     // Forking straight to the final name skips the whole dance,
                     // and the builder waits out the async fork for us so we can drop the old sleep/retry loop too.
-                    fork = originalGitHubRepo.createFork().organization(org).name(newId).create();
+                    try {
+                        fork = originalGitHubRepo.createFork().organization(org).name(newId).create();
+                    } catch (HttpException ex) {
+                        // nothing to mirror in an empty upstream; skip it and keep the bulk run going
+                        if (isEmptyRepo(ex)) {
+                            log("@|yellow Skipping {}, upstream is empty with no content to fork.|@", ghRepoId);
+                            continue;
+                        }
+                        throw ex;
+                    }
                 }
 
                 // The fork is the archive now; record it right away and save, so if a later

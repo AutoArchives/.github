@@ -36,6 +36,13 @@ public class ArchiverTest {
     }
 
     @Test
+    void dropsGithubMetaRepo() {
+        // owner/.github is the profile repo, never a bulk archive target
+        var in = List.of(new RepoCandidate("Owner/.github", false, false));
+        assertTrue(archiver.selectArchivable(in).isEmpty());
+    }
+
+    @Test
     void keepsGithubArchivedAndPreservesOrder() {
         // A GitHub-archived upstream is neither a fork nor private, so it stays.
         var in = List.of(
