@@ -2163,6 +2163,22 @@
     "spongepowered-vignette" : {
       "upstreamName" : "SpongePowered/Vignette",
       "upstreamGone" : false
+    },
+    "minecraftportcentral-cauldron-issues" : {
+      "upstreamName" : "MinecraftPortCentral/Cauldron-Issues",
+      "upstreamGone" : false
+    },
+    "minecraftportcentral-forgebukkit" : {
+      "upstreamName" : "MinecraftPortCentral/ForgeBukkit",
+      "upstreamGone" : false
+    },
+    "minecraftportcentral-griefprevention" : {
+      "upstreamName" : "MinecraftPortCentral/GriefPrevention",
+      "upstreamGone" : false
+    },
+    "minecraftportcentral-mcpc-mvn-repo" : {
+      "upstreamName" : "MinecraftPortCentral/mcpc-mvn-repo",
+      "upstreamGone" : false
     }
   }
 }
