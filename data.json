@@ -751,6 +751,250 @@
     "minecraftforge-web" : {
       "upstreamName" : "MinecraftForge/Web",
       "upstreamGone" : false
+    },
+    "neoforged-accesstransformers" : {
+      "upstreamName" : "neoforged/AccessTransformers",
+      "upstreamGone" : false
+    },
+    "neoforged-action-jar-compatibility" : {
+      "upstreamName" : "neoforged/action-jar-compatibility",
+      "upstreamGone" : false
+    },
+    "neoforged-action-pr-publishing" : {
+      "upstreamName" : "neoforged/action-pr-publishing",
+      "upstreamGone" : false
+    },
+    "neoforged-action-runner" : {
+      "upstreamName" : "neoforged/action-runner",
+      "upstreamGone" : false
+    },
+    "neoforged-action-tag-versioning" : {
+      "upstreamName" : "neoforged/action-tag-versioning",
+      "upstreamGone" : false
+    },
+    "neoforged-action-webhooks" : {
+      "upstreamName" : "neoforged/action-webhooks",
+      "upstreamGone" : false
+    },
+    "neoforged-actions" : {
+      "upstreamName" : "neoforged/actions",
+      "upstreamGone" : false
+    },
+    "neoforged-actions-modding" : {
+      "upstreamName" : "neoforged/actions-modding",
+      "upstreamGone" : false
+    },
+    "neoforged-artifactural" : {
+      "upstreamName" : "neoforged/Artifactural",
+      "upstreamGone" : false
+    },
+    "neoforged-autorenamingtool" : {
+      "upstreamName" : "neoforged/AutoRenamingTool",
+      "upstreamGone" : false
+    },
+    "neoforged-bus" : {
+      "upstreamName" : "neoforged/Bus",
+      "upstreamGone" : false
+    },
+    "neoforged-camelot" : {
+      "upstreamName" : "neoforged/Camelot",
+      "upstreamGone" : false
+    },
+    "neoforged-coremods" : {
+      "upstreamName" : "neoforged/CoreMods",
+      "upstreamGone" : false
+    },
+    "neoforged-den" : {
+      "upstreamName" : "neoforged/Den",
+      "upstreamGone" : false
+    },
+    "neoforged-devlaunch" : {
+      "upstreamName" : "neoforged/DevLaunch",
+      "upstreamGone" : false
+    },
+    "neoforged-discordpim" : {
+      "upstreamName" : "neoforged/DiscordPIM",
+      "upstreamGone" : false
+    },
+    "neoforged-documentation" : {
+      "upstreamName" : "neoforged/Documentation",
+      "upstreamGone" : false
+    },
+    "neoforged-dummy-testing-pr-publishing" : {
+      "upstreamName" : "neoforged/dummy-testing-pr-publishing",
+      "upstreamGone" : false
+    },
+    "neoforged-eclipselaunchconfigs" : {
+      "upstreamName" : "neoforged/EclipseLaunchConfigs",
+      "upstreamGone" : false
+    },
+    "neoforged-fancymodloader" : {
+      "upstreamName" : "neoforged/FancyModLoader",
+      "upstreamGone" : false
+    },
+    "neoforged-foxlauncher" : {
+      "upstreamName" : "neoforged/FoxLauncher",
+      "upstreamGone" : false
+    },
+    "neoforged-governance" : {
+      "upstreamName" : "neoforged/governance",
+      "upstreamGone" : false
+    },
+    "neoforged-gradleminecraftdependencies" : {
+      "upstreamName" : "neoforged/GradleMinecraftDependencies",
+      "upstreamGone" : false
+    },
+    "neoforged-gradleutils" : {
+      "upstreamName" : "neoforged/GradleUtils",
+      "upstreamGone" : false
+    },
+    "neoforged-groovydslimprover" : {
+      "upstreamName" : "neoforged/GroovyDSLImprover",
+      "upstreamGone" : false
+    },
+    "neoforged-installerrewriter" : {
+      "upstreamName" : "neoforged/InstallerRewriter",
+      "upstreamGone" : false
+    },
+    "neoforged-installertools" : {
+      "upstreamName" : "neoforged/InstallerTools",
+      "upstreamGone" : false
+    },
+    "neoforged-jarcompatibilitychecker" : {
+      "upstreamName" : "neoforged/JarCompatibilityChecker",
+      "upstreamGone" : false
+    },
+    "neoforged-jarjar" : {
+      "upstreamName" : "neoforged/JarJar",
+      "upstreamGone" : false
+    },
+    "neoforged-javadoctor" : {
+      "upstreamName" : "neoforged/Javadoctor",
+      "upstreamGone" : false
+    },
+    "neoforged-javasourcetransformer" : {
+      "upstreamName" : "neoforged/JavaSourceTransformer",
+      "upstreamGone" : false
+    },
+    "neoforged-legacyfml" : {
+      "upstreamName" : "neoforged/LegacyFML",
+      "upstreamGone" : false
+    },
+    "neoforged-legacyinstaller" : {
+      "upstreamName" : "neoforged/LegacyInstaller",
+      "upstreamGone" : false
+    },
+    "neoforged-mappingtoy" : {
+      "upstreamName" : "neoforged/MappingToy",
+      "upstreamGone" : false
+    },
+    "neoforged-mcforge-archive" : {
+      "upstreamName" : "neoforged/MCForge-Archive",
+      "upstreamGone" : false
+    },
+    "neoforged-mdk" : {
+      "upstreamName" : "neoforged/MDK",
+      "upstreamGone" : false
+    },
+    "neoforged-meetings" : {
+      "upstreamName" : "neoforged/Meetings",
+      "upstreamGone" : false
+    },
+    "neoforged-mergetool" : {
+      "upstreamName" : "neoforged/MergeTool",
+      "upstreamGone" : false
+    },
+    "neoforged-metaapi" : {
+      "upstreamName" : "neoforged/MetaAPI",
+      "upstreamGone" : false
+    },
+    "neoforged-metadepot" : {
+      "upstreamName" : "neoforged/MetaDepot",
+      "upstreamGone" : false
+    },
+    "neoforged-mod-generator" : {
+      "upstreamName" : "neoforged/mod-generator",
+      "upstreamGone" : false
+    },
+    "neoforged-moddevgradle" : {
+      "upstreamName" : "neoforged/ModDevGradle",
+      "upstreamGone" : false
+    },
+    "neoforged-modmail-plugin" : {
+      "upstreamName" : "neoforged/modmail-plugin",
+      "upstreamGone" : false
+    },
+    "neoforged-n8n-plugin" : {
+      "upstreamName" : "neoforged/n8n-plugin",
+      "upstreamGone" : false
+    },
+    "neoforged-neoforge" : {
+      "upstreamName" : "neoforged/NeoForge",
+      "upstreamGone" : false
+    },
+    "neoforged-neoforgespi" : {
+      "upstreamName" : "neoforged/NeoForgeSPI",
+      "upstreamGone" : false
+    },
+    "neoforged-neoform" : {
+      "upstreamName" : "neoforged/NeoForm",
+      "upstreamGone" : false
+    },
+    "neoforged-neoformruntime" : {
+      "upstreamName" : "neoforged/NeoFormRuntime",
+      "upstreamGone" : false
+    },
+    "neoforged-neogradle" : {
+      "upstreamName" : "neoforged/NeoGradle",
+      "upstreamGone" : false
+    },
+    "neoforged-project-listing" : {
+      "upstreamName" : "neoforged/project-listing",
+      "upstreamGone" : false
+    },
+    "neoforged-reactionable" : {
+      "upstreamName" : "neoforged/Reactionable",
+      "upstreamGone" : false
+    },
+    "neoforged-rendernurse" : {
+      "upstreamName" : "neoforged/RenderNurse",
+      "upstreamGone" : false
+    },
+    "neoforged-serverstarterjar" : {
+      "upstreamName" : "neoforged/ServerStarterJar",
+      "upstreamGone" : false
+    },
+    "neoforged-snowblower" : {
+      "upstreamName" : "neoforged/snowblower",
+      "upstreamGone" : false
+    },
+    "neoforged-srg2source" : {
+      "upstreamName" : "neoforged/Srg2Source",
+      "upstreamGone" : false
+    },
+    "neoforged-srgutils" : {
+      "upstreamName" : "neoforged/SRGUtils",
+      "upstreamGone" : false
+    },
+    "neoforged-trainingwheels" : {
+      "upstreamName" : "neoforged/TrainingWheels",
+      "upstreamGone" : false
+    },
+    "neoforged-vineflowerplugins" : {
+      "upstreamName" : "neoforged/VineflowerPlugins",
+      "upstreamGone" : false
+    },
+    "neoforged-vsclaunchconfigs" : {
+      "upstreamName" : "neoforged/VscLaunchConfigs",
+      "upstreamGone" : false
+    },
+    "neoforged-websites" : {
+      "upstreamName" : "neoforged/websites",
+      "upstreamGone" : false
+    },
+    "neoforged-whatamiforgingup" : {
+      "upstreamName" : "neoforged/WhatAmIForgingUp",
+      "upstreamGone" : false
     }
   }
 }
