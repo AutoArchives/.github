@@ -4,7 +4,7 @@
 //DEPS ch.qos.logback:logback-classic:1.4.8
 //DEPS info.picocli:picocli:4.6.3
 //DEPS org.fusesource.jansi:jansi:2.4.0
-//DEPS org.kohsuke:github-api:1.315
+//DEPS org.kohsuke:github-api:1.327
 //DEPS com.fasterxml.jackson.core:jackson-core:2.15.2
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.15.2
 //DEPS club.minnced:discord-webhooks:0.8.2
@@ -596,21 +596,13 @@ class archiver implements Runnable {
                     fork = github.getRepository(orgName + '/' + newId);
                     log("@|red Found an existing fork with the same name... using it instead.|@");
                 } catch (Exception e) {
-                    fork = originalGitHubRepo.forkTo(org);
-                    int attempt = 0;
-                    while (true) {
-                        try {
-                            //noinspection BusyWait
-                            Thread.sleep(1000);
-                            fork.renameTo(newId);
-                            break;
-                        } catch (Exception ex) {
-                            if (++attempt > 3) {
-                                throw ex;
-                            }
-                        }
-                    }
-                    fork = github.getRepository(orgName + '/' + newId);
+                    // Name the fork at creation instead of forking then renaming.
+                    // The rename path makes github retire the fork's old namespace and grab a lock for it,
+                    // and against a just-forked repo that lock sometimes fails with a 422 "name retired namespace
+                    // lock could not be acquired" (hello popular repos like minecraftforge).
+                    // Forking straight to the final name skips the whole dance,
+                    // and the builder waits out the async fork for us so we can drop the old sleep/retry loop too.
+                    fork = originalGitHubRepo.createFork().organization(org).name(newId).create();
                 }
 
                 // The fork is the archive now; record it right away and save, so if a later
