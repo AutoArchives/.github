@@ -2215,6 +2215,54 @@
     "bukkit-structuresaver" : {
       "upstreamName" : "Bukkit/StructureSaver",
       "upstreamGone" : false
+    },
+    "spigotmc-1.8-testing" : {
+      "upstreamName" : "SpigotMC/1.8-testing",
+      "upstreamGone" : false
+    },
+    "spigotmc-bungeecord" : {
+      "upstreamName" : "SpigotMC/BungeeCord",
+      "upstreamGone" : false
+    },
+    "spigotmc-determiner" : {
+      "upstreamName" : "SpigotMC/Determiner",
+      "upstreamGone" : false
+    },
+    "spigotmc-irc" : {
+      "upstreamName" : "SpigotMC/irc",
+      "upstreamGone" : false
+    },
+    "spigotmc-profileconverter" : {
+      "upstreamName" : "SpigotMC/ProfileConverter",
+      "upstreamGone" : false
+    },
+    "spigotmc-scriptus" : {
+      "upstreamName" : "SpigotMC/Scriptus",
+      "upstreamGone" : false
+    },
+    "spigotmc-simulare" : {
+      "upstreamName" : "SpigotMC/Simulare",
+      "upstreamGone" : false
+    },
+    "spigotmc-spigot-api" : {
+      "upstreamName" : "SpigotMC/Spigot-API",
+      "upstreamGone" : false
+    },
+    "spigotmc-spigotcraft" : {
+      "upstreamName" : "SpigotMC/SpigotCraft",
+      "upstreamGone" : false
+    },
+    "spigotmc-spigotpatcher" : {
+      "upstreamName" : "SpigotMC/SpigotPatcher",
+      "upstreamGone" : false
+    },
+    "spigotmc-xenforoapikeys" : {
+      "upstreamName" : "SpigotMC/XenforoApiKeys",
+      "upstreamGone" : false
+    },
+    "spigotmc-xenfororesourcemanagerapi" : {
+      "upstreamName" : "SpigotMC/XenforoResourceManagerAPI",
+      "upstreamGone" : false
     }
   }
 }
