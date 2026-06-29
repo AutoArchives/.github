@@ -1019,6 +1019,110 @@
     "mcmodlauncher-shimmy" : {
       "upstreamName" : "McModLauncher/shimmy",
       "upstreamGone" : false
+    },
+    "papermc-adventure" : {
+      "upstreamName" : "PaperMC/adventure",
+      "upstreamGone" : false
+    },
+    "papermc-adventure-javadocs" : {
+      "upstreamName" : "PaperMC/adventure-javadocs",
+      "upstreamGone" : false
+    },
+    "papermc-adventure-platform" : {
+      "upstreamName" : "PaperMC/adventure-platform",
+      "upstreamGone" : false
+    },
+    "papermc-adventure-platform-mod" : {
+      "upstreamName" : "PaperMC/adventure-platform-mod",
+      "upstreamGone" : false
+    },
+    "papermc-adventure-webui" : {
+      "upstreamName" : "PaperMC/adventure-webui",
+      "upstreamGone" : false
+    },
+    "papermc-adventurex" : {
+      "upstreamName" : "PaperMC/adventurex",
+      "upstreamGone" : false
+    },
+    "papermc-asm-utils" : {
+      "upstreamName" : "PaperMC/asm-utils",
+      "upstreamGone" : false
+    },
+    "papermc-bibliothek" : {
+      "upstreamName" : "PaperMC/bibliothek",
+      "upstreamGone" : false
+    },
+    "papermc-codebook" : {
+      "upstreamName" : "PaperMC/codebook",
+      "upstreamGone" : false
+    },
+    "papermc-crossstitch" : {
+      "upstreamName" : "PaperMC/CrossStitch",
+      "upstreamGone" : false
+    },
+    "papermc-dataconverter" : {
+      "upstreamName" : "PaperMC/DataConverter",
+      "upstreamGone" : false
+    },
+    "papermc-deprecated-bungeechat" : {
+      "upstreamName" : "PaperMC/deprecated-bungeechat",
+      "upstreamGone" : false
+    },
+    "papermc-diff-viewer" : {
+      "upstreamName" : "PaperMC/diff-viewer",
+      "upstreamGone" : false
+    },
+    "papermc-docs" : {
+      "upstreamName" : "PaperMC/docs",
+      "upstreamGone" : false
+    },
+    "papermc-docs-previews" : {
+      "upstreamName" : "PaperMC/docs-previews",
+      "upstreamGone" : false
+    },
+    "papermc-fill" : {
+      "upstreamName" : "PaperMC/fill",
+      "upstreamGone" : false
+    },
+    "papermc-fill-gradle" : {
+      "upstreamName" : "PaperMC/fill-gradle",
+      "upstreamGone" : false
+    },
+    "papermc-fill-ui" : {
+      "upstreamName" : "PaperMC/fill-ui",
+      "upstreamGone" : false
+    },
+    "papermc-folia" : {
+      "upstreamName" : "PaperMC/Folia",
+      "upstreamGone" : false
+    },
+    "papermc-gradle-build-cache-worker" : {
+      "upstreamName" : "PaperMC/gradle-build-cache-worker",
+      "upstreamGone" : false
+    },
+    "papermc-item-converter" : {
+      "upstreamName" : "PaperMC/item-converter",
+      "upstreamGone" : false
+    },
+    "papermc-mache" : {
+      "upstreamName" : "PaperMC/mache",
+      "upstreamGone" : false
+    },
+    "papermc-multi-version-catalog" : {
+      "upstreamName" : "PaperMC/multi-version-catalog",
+      "upstreamGone" : false
+    },
+    "papermc-packages-maven-mirror" : {
+      "upstreamName" : "PaperMC/packages-maven-mirror",
+      "upstreamGone" : false
+    },
+    "papermc-paper" : {
+      "upstreamName" : "PaperMC/Paper",
+      "upstreamGone" : false
+    },
+    "papermc-paper-1.7" : {
+      "upstreamName" : "PaperMC/Paper-1.7",
+      "upstreamGone" : false
     }
   }
 }
