@@ -1935,6 +1935,234 @@
     "spoutdev-vanilla" : {
       "upstreamName" : "spoutdev/Vanilla",
       "upstreamGone" : false
+    },
+    "spongepowered-apijavadocs" : {
+      "upstreamName" : "SpongePowered/APIJavadocs",
+      "upstreamGone" : false
+    },
+    "spongepowered-at" : {
+      "upstreamName" : "SpongePowered/at",
+      "upstreamGone" : false
+    },
+    "spongepowered-atlas" : {
+      "upstreamName" : "SpongePowered/Atlas",
+      "upstreamGone" : false
+    },
+    "spongepowered-bombe" : {
+      "upstreamName" : "SpongePowered/Bombe",
+      "upstreamGone" : false
+    },
+    "spongepowered-collections" : {
+      "upstreamName" : "SpongePowered/collections",
+      "upstreamGone" : false
+    },
+    "spongepowered-configurate" : {
+      "upstreamName" : "SpongePowered/Configurate",
+      "upstreamGone" : false
+    },
+    "spongepowered-cookbook" : {
+      "upstreamName" : "SpongePowered/Cookbook",
+      "upstreamGone" : false
+    },
+    "spongepowered-discord-configs" : {
+      "upstreamName" : "SpongePowered/discord-configs",
+      "upstreamGone" : false
+    },
+    "spongepowered-discsoad" : {
+      "upstreamName" : "SpongePowered/DiscSOAD",
+      "upstreamGone" : false
+    },
+    "spongepowered-downloadindexer" : {
+      "upstreamName" : "SpongePowered/DownloadIndexer",
+      "upstreamGone" : false
+    },
+    "spongepowered-event-impl-gen" : {
+      "upstreamName" : "SpongePowered/event-impl-gen",
+      "upstreamGone" : false
+    },
+    "spongepowered-gitpatcher" : {
+      "upstreamName" : "SpongePowered/gitpatcher",
+      "upstreamGone" : false
+    },
+    "spongepowered-launchwrappertestsuite" : {
+      "upstreamName" : "SpongePowered/LaunchWrapperTestSuite",
+      "upstreamGone" : false
+    },
+    "spongepowered-legacyspongeauth" : {
+      "upstreamName" : "SpongePowered/LegacySpongeAuth",
+      "upstreamGone" : false
+    },
+    "spongepowered-licenser" : {
+      "upstreamName" : "SpongePowered/licenser",
+      "upstreamGone" : false
+    },
+    "spongepowered-lorenz" : {
+      "upstreamName" : "SpongePowered/Lorenz",
+      "upstreamGone" : false
+    },
+    "spongepowered-math" : {
+      "upstreamName" : "SpongePowered/math",
+      "upstreamGone" : false
+    },
+    "spongepowered-mctester" : {
+      "upstreamName" : "SpongePowered/McTester",
+      "upstreamGone" : false
+    },
+    "spongepowered-mercury" : {
+      "upstreamName" : "SpongePowered/Mercury",
+      "upstreamGone" : false
+    },
+    "spongepowered-mercurymixin" : {
+      "upstreamName" : "SpongePowered/MercuryMixin",
+      "upstreamGone" : false
+    },
+    "spongepowered-metronome" : {
+      "upstreamName" : "SpongePowered/Metronome",
+      "upstreamGone" : false
+    },
+    "spongepowered-mixin" : {
+      "upstreamName" : "SpongePowered/Mixin",
+      "upstreamGone" : false
+    },
+    "spongepowered-mixingradle" : {
+      "upstreamName" : "SpongePowered/MixinGradle",
+      "upstreamGone" : false
+    },
+    "spongepowered-modlauncher-injector-junit" : {
+      "upstreamName" : "SpongePowered/modlauncher-injector-junit",
+      "upstreamGone" : false
+    },
+    "spongepowered-nbt" : {
+      "upstreamName" : "SpongePowered/nbt",
+      "upstreamGone" : false
+    },
+    "spongepowered-noise" : {
+      "upstreamName" : "SpongePowered/noise",
+      "upstreamGone" : false
+    },
+    "spongepowered-observer" : {
+      "upstreamName" : "SpongePowered/observer",
+      "upstreamGone" : false
+    },
+    "spongepowered-ore" : {
+      "upstreamName" : "SpongePowered/Ore",
+      "upstreamGone" : false
+    },
+    "spongepowered-oreplugin" : {
+      "upstreamName" : "SpongePowered/OrePlugin",
+      "upstreamGone" : false
+    },
+    "spongepowered-plugin-meta" : {
+      "upstreamName" : "SpongePowered/plugin-meta",
+      "upstreamGone" : false
+    },
+    "spongepowered-plugin-spi" : {
+      "upstreamName" : "SpongePowered/plugin-spi",
+      "upstreamGone" : false
+    },
+    "spongepowered-propatcher" : {
+      "upstreamName" : "SpongePowered/ProPatcher",
+      "upstreamGone" : false
+    },
+    "spongepowered-repoindexer" : {
+      "upstreamName" : "SpongePowered/repoindexer",
+      "upstreamGone" : false
+    },
+    "spongepowered-royale" : {
+      "upstreamName" : "SpongePowered/Royale",
+      "upstreamGone" : false
+    },
+    "spongepowered-schematic-specification" : {
+      "upstreamName" : "SpongePowered/Schematic-Specification",
+      "upstreamGone" : false
+    },
+    "spongepowered-sponge" : {
+      "upstreamName" : "SpongePowered/Sponge",
+      "upstreamGone" : false
+    },
+    "spongepowered-sponge-docs-theme" : {
+      "upstreamName" : "SpongePowered/sponge-docs-theme",
+      "upstreamGone" : false
+    },
+    "spongepowered-sponge-plugin-archetype" : {
+      "upstreamName" : "SpongePowered/sponge-plugin-archetype",
+      "upstreamGone" : false
+    },
+    "spongepowered-sponge-plugin-template" : {
+      "upstreamName" : "SpongePowered/sponge-plugin-template",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongeapi" : {
+      "upstreamName" : "SpongePowered/SpongeAPI",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongeauth" : {
+      "upstreamName" : "SpongePowered/SpongeAuth",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongedocs" : {
+      "upstreamName" : "SpongePowered/SpongeDocs",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongedownloads" : {
+      "upstreamName" : "SpongePowered/SpongeDownloads",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongeforge" : {
+      "upstreamName" : "SpongePowered/SpongeForge",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongegradle" : {
+      "upstreamName" : "SpongePowered/SpongeGradle",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongehome" : {
+      "upstreamName" : "SpongePowered/SpongeHome",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongeplay" : {
+      "upstreamName" : "SpongePowered/SpongePlay",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongevanilla" : {
+      "upstreamName" : "SpongePowered/SpongeVanilla",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongeweb" : {
+      "upstreamName" : "SpongePowered/SpongeWeb",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongewebgo" : {
+      "upstreamName" : "SpongePowered/SpongeWebGo",
+      "upstreamGone" : false
+    },
+    "spongepowered-spongie" : {
+      "upstreamName" : "SpongePowered/Spongie",
+      "upstreamGone" : false
+    },
+    "spongepowered-survey" : {
+      "upstreamName" : "SpongePowered/Survey",
+      "upstreamGone" : false
+    },
+    "spongepowered-systemofadownload" : {
+      "upstreamName" : "SpongePowered/SystemOfADownload",
+      "upstreamGone" : false
+    },
+    "spongepowered-terraform-kubernetes-lagom" : {
+      "upstreamName" : "SpongePowered/terraform-kubernetes-lagom",
+      "upstreamGone" : false
+    },
+    "spongepowered-timings" : {
+      "upstreamName" : "SpongePowered/timings",
+      "upstreamGone" : false
+    },
+    "spongepowered-vanillagradle" : {
+      "upstreamName" : "SpongePowered/VanillaGradle",
+      "upstreamGone" : false
+    },
+    "spongepowered-vignette" : {
+      "upstreamName" : "SpongePowered/Vignette",
+      "upstreamGone" : false
     }
   }
 }
