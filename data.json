@@ -1459,6 +1459,266 @@
     "fabricmc-yarn" : {
       "upstreamName" : "FabricMC/yarn",
       "upstreamGone" : false
+    },
+    "quiltmc-access-widener" : {
+      "upstreamName" : "QuiltMC/access-widener",
+      "upstreamGone" : false
+    },
+    "quiltmc-art" : {
+      "upstreamName" : "QuiltMC/art",
+      "upstreamGone" : false
+    },
+    "quiltmc-asmr-processor-prototype" : {
+      "upstreamName" : "QuiltMC/asmr-processor-prototype",
+      "upstreamGone" : false
+    },
+    "quiltmc-beacon.quiltmc.org" : {
+      "upstreamName" : "QuiltMC/beacon.quiltmc.org",
+      "upstreamGone" : false
+    },
+    "quiltmc-cfr" : {
+      "upstreamName" : "QuiltMC/cfr",
+      "upstreamGone" : false
+    },
+    "quiltmc-chasm" : {
+      "upstreamName" : "QuiltMC/chasm",
+      "upstreamGone" : false
+    },
+    "quiltmc-chasm-gradle-plugin" : {
+      "upstreamName" : "QuiltMC/chasm-gradle-plugin",
+      "upstreamGone" : false
+    },
+    "quiltmc-cozy-automation-python" : {
+      "upstreamName" : "QuiltMC/cozy-automation-python",
+      "upstreamGone" : false
+    },
+    "quiltmc-cozy-discord" : {
+      "upstreamName" : "QuiltMC/cozy-discord",
+      "upstreamGone" : false
+    },
+    "quiltmc-dev-launch-injector" : {
+      "upstreamName" : "QuiltMC/dev-launch-injector",
+      "upstreamGone" : false
+    },
+    "quiltmc-developer-wiki" : {
+      "upstreamName" : "QuiltMC/developer-wiki",
+      "upstreamGone" : false
+    },
+    "quiltmc-enigma" : {
+      "upstreamName" : "QuiltMC/enigma",
+      "upstreamGone" : false
+    },
+    "quiltmc-forum.quiltmc.org" : {
+      "upstreamName" : "QuiltMC/forum.quiltmc.org",
+      "upstreamGone" : false
+    },
+    "quiltmc-future-gradle-plugin" : {
+      "upstreamName" : "QuiltMC/future-gradle-plugin",
+      "upstreamGone" : false
+    },
+    "quiltmc-gradle-convention-plugins" : {
+      "upstreamName" : "QuiltMC/gradle-convention-plugins",
+      "upstreamGone" : false
+    },
+    "quiltmc-gson-stream" : {
+      "upstreamName" : "QuiltMC/gson-stream",
+      "upstreamGone" : false
+    },
+    "quiltmc-infrastructure" : {
+      "upstreamName" : "QuiltMC/infrastructure",
+      "upstreamGone" : false
+    },
+    "quiltmc-intermediary" : {
+      "upstreamName" : "QuiltMC/intermediary",
+      "upstreamGone" : false
+    },
+    "quiltmc-javadoc-draftsman" : {
+      "upstreamName" : "QuiltMC/javadoc-draftsman",
+      "upstreamGone" : false
+    },
+    "quiltmc-javadoc-publish" : {
+      "upstreamName" : "QuiltMC/javadoc-publish",
+      "upstreamGone" : false
+    },
+    "quiltmc-launchermeta-parser" : {
+      "upstreamName" : "QuiltMC/launchermeta-parser",
+      "upstreamGone" : false
+    },
+    "quiltmc-lorenz-tiny" : {
+      "upstreamName" : "QuiltMC/lorenz-tiny",
+      "upstreamGone" : false
+    },
+    "quiltmc-mapping-poet" : {
+      "upstreamName" : "QuiltMC/mapping-poet",
+      "upstreamGone" : false
+    },
+    "quiltmc-mappings-hasher" : {
+      "upstreamName" : "QuiltMC/mappings-hasher",
+      "upstreamGone" : false
+    },
+    "quiltmc-matcher" : {
+      "upstreamName" : "QuiltMC/matcher",
+      "upstreamGone" : false
+    },
+    "quiltmc-matcher-mc" : {
+      "upstreamName" : "QuiltMC/matcher-mc",
+      "upstreamGone" : false
+    },
+    "quiltmc-procyon" : {
+      "upstreamName" : "QuiltMC/procyon",
+      "upstreamGone" : false
+    },
+    "quiltmc-qm-matcher" : {
+      "upstreamName" : "QuiltMC/qm-matcher",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-bulma" : {
+      "upstreamName" : "QuiltMC/quilt-bulma",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-config" : {
+      "upstreamName" : "QuiltMC/quilt-config",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-enigma-plugin" : {
+      "upstreamName" : "QuiltMC/quilt-enigma-plugin",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-gradle-licenser" : {
+      "upstreamName" : "QuiltMC/quilt-gradle-licenser",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-gradle-prototype" : {
+      "upstreamName" : "QuiltMC/quilt-gradle-prototype",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-helm-charts" : {
+      "upstreamName" : "QuiltMC/quilt-helm-charts",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-installer" : {
+      "upstreamName" : "QuiltMC/quilt-installer",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-json-schemas" : {
+      "upstreamName" : "QuiltMC/quilt-json-schemas",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-json5" : {
+      "upstreamName" : "QuiltMC/quilt-json5",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-kotlin-libraries" : {
+      "upstreamName" : "QuiltMC/quilt-kotlin-libraries",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-kotlin-template-mod" : {
+      "upstreamName" : "QuiltMC/quilt-kotlin-template-mod",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-loader" : {
+      "upstreamName" : "QuiltMC/quilt-loader",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-loader-bootstrap" : {
+      "upstreamName" : "QuiltMC/quilt-loader-bootstrap",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-loader-sat4j" : {
+      "upstreamName" : "QuiltMC/quilt-loader-sat4j",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-loom" : {
+      "upstreamName" : "QuiltMC/quilt-loom",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-mapping-tools" : {
+      "upstreamName" : "QuiltMC/quilt-mapping-tools",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-mappings" : {
+      "upstreamName" : "QuiltMC/quilt-mappings",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-mappings-on-loom" : {
+      "upstreamName" : "QuiltMC/quilt-mappings-on-loom",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-meta" : {
+      "upstreamName" : "QuiltMC/quilt-meta",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-mod-spec" : {
+      "upstreamName" : "QuiltMC/quilt-mod-spec",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-multi-java-gen" : {
+      "upstreamName" : "QuiltMC/quilt-multi-java-gen",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-native-installer" : {
+      "upstreamName" : "QuiltMC/quilt-native-installer",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-parsers" : {
+      "upstreamName" : "QuiltMC/quilt-parsers",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-server-bootstrap" : {
+      "upstreamName" : "QuiltMC/quilt-server-bootstrap",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-standard-libraries" : {
+      "upstreamName" : "QuiltMC/quilt-standard-libraries",
+      "upstreamGone" : false
+    },
+    "quiltmc-quilt-template-mod" : {
+      "upstreamName" : "QuiltMC/quilt-template-mod",
+      "upstreamGone" : false
+    },
+    "quiltmc-quiltmc.org" : {
+      "upstreamName" : "QuiltMC/quiltmc.org",
+      "upstreamGone" : false
+    },
+    "quiltmc-rfcs" : {
+      "upstreamName" : "QuiltMC/rfcs",
+      "upstreamGone" : false
+    },
+    "quiltmc-sponge-mixin-compile-extensions" : {
+      "upstreamName" : "QuiltMC/sponge-mixin-compile-extensions",
+      "upstreamGone" : false
+    },
+    "quiltmc-stitch" : {
+      "upstreamName" : "QuiltMC/stitch",
+      "upstreamGone" : false
+    },
+    "quiltmc-syntaxpain" : {
+      "upstreamName" : "QuiltMC/syntaxpain",
+      "upstreamGone" : false
+    },
+    "quiltmc-template-repo-syncer" : {
+      "upstreamName" : "QuiltMC/template-repo-syncer",
+      "upstreamGone" : false
+    },
+    "quiltmc-tiny-mappings-parser" : {
+      "upstreamName" : "QuiltMC/tiny-mappings-parser",
+      "upstreamGone" : false
+    },
+    "quiltmc-tiny-remapper" : {
+      "upstreamName" : "QuiltMC/tiny-remapper",
+      "upstreamGone" : false
+    },
+    "quiltmc-update-quilt-meta" : {
+      "upstreamName" : "QuiltMC/update-quilt-meta",
+      "upstreamGone" : false
+    },
+    "quiltmc-workers" : {
+      "upstreamName" : "QuiltMC/workers",
+      "upstreamGone" : false
+    },
+    "quiltmc-yarn" : {
+      "upstreamName" : "QuiltMC/yarn",
+      "upstreamGone" : false
     }
   }
 }
