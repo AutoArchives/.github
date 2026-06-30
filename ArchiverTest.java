@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.jupiter.api.Test;
 import org.junit.platform.console.ConsoleLauncher;
@@ -95,6 +96,56 @@ public class ArchiverTest {
         assertFalse(archiver.isAccessBlocked(e));
         assertFalse(archiver.isRateLimited(e));
         assertFalse(archiver.isEmptyRepo(e));
+    }
+
+    // a 401 here, valid token, but GitHub's is being odd
+    private static HttpException badCredentials() {
+        return http(401, "{\"message\":\"Bad credentials\",\"status\":\"401\"}");
+    }
+
+    @Test
+    void retryOn401RunsOnceWhenNothingFails() throws Exception {
+        var calls = new AtomicInteger();
+        var result = archiver.retryOn401(() -> {
+            calls.incrementAndGet();
+            return "ok";
+        }, 3, 0);
+        assertEquals("ok", result);
+        assertEquals(1, calls.get(), "no failure means no retry");
+    }
+
+    @Test
+    void retryOn401RidesOutTransient401sThenSucceeds() throws Exception {
+        var calls = new AtomicInteger();
+        // first two attempts get the random 401, third one goes through
+        var result = archiver.retryOn401(() -> {
+            if (calls.incrementAndGet() < 3) throw badCredentials();
+            return "ok";
+        }, 3, 0);
+        assertEquals("ok", result);
+        assertEquals(3, calls.get());
+    }
+
+    @Test
+    void retryOn401GivesUpAndRethrowsAfterExhaustingAttempts() {
+        var calls = new AtomicInteger();
+        var e = assertThrows(HttpException.class, () -> archiver.retryOn401(() -> {
+            calls.incrementAndGet();
+            throw badCredentials();
+        }, 3, 0));
+        assertEquals(401, e.getResponseCode());
+        assertEquals(3, calls.get(), "should try exactly maxAttempts times before giving up");
+    }
+
+    @Test
+    void retryOn401DoesNotRetryOtherErrors() {
+        var calls = new AtomicInteger();
+        var e = assertThrows(HttpException.class, () -> archiver.retryOn401(() -> {
+            calls.incrementAndGet();
+            throw http(404, "{\"message\":\"Not Found\"}");
+        }, 3, 0));
+        assertEquals(404, e.getResponseCode());
+        assertEquals(1, calls.get());
     }
 
     // Boots the JUnit console launcher so `jbang run ArchiverTest.java` runs the tests and exits non-zero on failure.

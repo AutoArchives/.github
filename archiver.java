@@ -72,6 +72,12 @@ interface RefOps {
     void setDefaultBranch(String branch) throws IOException;
 }
 
+// A GitHub call that can fail with an IOException, so retryOn401 can wrap one.
+@FunctionalInterface
+interface GitHubCall<T> {
+    T call() throws IOException;
+}
+
 @Command(name = "archiver", mixinStandardHelpOptions = true, description = "Archive management system", subcommands = {
     archiver.CommandAdd.class, archiver.CommandSync.class, archiver.CommandMod.class
 })
@@ -115,19 +121,23 @@ class archiver implements Runnable {
     // Read a repo's refs of one type ("heads" or "tags") as name to sha, sorted.
     // nothing gets transferred, just the ref list
     static Map<String, String> listRefs(GHRepository repo, String refType) throws IOException {
-        var out = new TreeMap<String, String>();
         int strip = ("refs/" + refType + "/").length();
-        try {
-            for (GHRef ref : repo.getRefs(refType)) {
-                var full = ref.getRef();
-                if (full.length() > strip) {
-                    out.put(full.substring(strip), ref.getObject().getSha());
+        // the refs page in lazily, so a transient 401 lands mid-iteration;
+        // wrap the whole walk and just rebuild the map from scratch on a retry
+        return retryOn401(() -> {
+            var out = new TreeMap<String, String>();
+            try {
+                for (GHRef ref : repo.getRefs(refType)) {
+                    var full = ref.getRef();
+                    if (full.length() > strip) {
+                        out.put(full.substring(strip), ref.getObject().getSha());
+                    }
                 }
+            } catch (GHFileNotFoundException e) {
+                // repo has no refs of this type (like no tags), treat as empty
             }
-        } catch (GHFileNotFoundException e) {
-            // repo has no refs of this type (like no tags), treat as empty
-        }
-        return out;
+            return out;
+        });
     }
 
     // Project the fork's post-sync ref state from what it had plus what we just
@@ -209,6 +219,38 @@ class archiver implements Runnable {
             || msg.contains("was submitted too quickly")
             || msg.contains("secondary rate limit")
             || msg.contains("API rate limit exceeded");
+    }
+
+    // GitHub's auth path now and then turns away a perfectly good token with a 401 "Bad credentials"
+    // and accepts it again moments later, a known propagation/consistency issue (https://github.com/orgs/community/discussions/101661).
+    // A 401 is rejected before the request does anything, so retrying is always safe.
+    // Give it a few goes with a growing backoff before letting the error bubble up like it used to.
+    static final int AUTH_RETRY_ATTEMPTS = 3;
+    static final long AUTH_RETRY_BACKOFF_MS = 1000;
+
+    static <T> T retryOn401(GitHubCall<T> op) throws IOException {
+        return retryOn401(op, AUTH_RETRY_ATTEMPTS, AUTH_RETRY_BACKOFF_MS);
+    }
+
+    static <T> T retryOn401(GitHubCall<T> op, int maxAttempts, long baseBackoffMs) throws IOException {
+        for (int attempt = 1; ; attempt++) {
+            try {
+                return op.call();
+            } catch (HttpException e) {
+                if (e.getResponseCode() != 401 || attempt >= maxAttempts) {
+                    throw e; // not a transient auth issue, or we're out of tries
+                }
+                var backoff = baseBackoffMs << (attempt - 1); // 1s, 2s, 4s, ...
+                log("@|yellow GitHub returned 401 Bad credentials (attempt {}/{}); looks transient, backing off {}ms and retrying...|@",
+                    attempt, maxAttempts, backoff);
+                try {
+                    Thread.sleep(backoff);
+                } catch (InterruptedException ie) {
+                    Thread.currentThread().interrupt();
+                    throw e; // bailing out, hand back the 401 we were retrying
+                }
+            }
+        }
     }
 
     // Diff upstream against the fork and decide what to do.
@@ -473,8 +515,8 @@ class archiver implements Runnable {
 
                 log("Checking {}", id);
                 try {
-                    var upstream = github.getRepository(entry.getValue().upstreamName());
-                    var fork = github.getRepository(orgName + '/' + id);
+                    var upstream = retryOn401(() -> github.getRepository(entry.getValue().upstreamName()));
+                    var fork = retryOn401(() -> github.getRepository(orgName + '/' + id));
 
                     var upstreamHeads = listRefs(upstream, "heads");
                     var forkHeads = listRefs(fork, "heads");
@@ -758,17 +800,20 @@ final class GitHubRefOps implements RefOps {
     }
 
     public void updateBranch(String branch, String sha, boolean force) throws IOException {
-        fork.getRef("refs/heads/" + branch).updateTo(sha, force);
+        archiver.retryOn401(() -> {
+            fork.getRef("refs/heads/" + branch).updateTo(sha, force);
+            return null;
+        });
     }
 
     public void createBranch(String branch, String sha) throws IOException {
-        fork.createRef("refs/heads/" + branch, sha);
+        archiver.retryOn401(() -> fork.createRef("refs/heads/" + branch, sha));
     }
 
     public void createArchivedTag(String tagName, String commitSha, String message) throws IOException {
-        GHTagObject tag = fork.createTag(tagName, message, commitSha, "commit");
+        GHTagObject tag = archiver.retryOn401(() -> fork.createTag(tagName, message, commitSha, "commit"));
         try {
-            fork.createRef("refs/tags/" + tagName, tag.getSha());
+            archiver.retryOn401(() -> fork.createRef("refs/tags/" + tagName, tag.getSha()));
         } catch (HttpException e) {
             // 422 means the ref already exists, probably a previous run made the tag but
             // died before the force-push, the old tip is already preserved under it so we
@@ -778,14 +823,20 @@ final class GitHubRefOps implements RefOps {
     }
 
     public void createTag(String tag, String sha) throws IOException {
-        fork.createRef("refs/tags/" + tag, sha);
+        archiver.retryOn401(() -> fork.createRef("refs/tags/" + tag, sha));
     }
 
     public void deleteBranch(String branch) throws IOException {
-        fork.getRef("refs/heads/" + branch).delete();
+        archiver.retryOn401(() -> {
+            fork.getRef("refs/heads/" + branch).delete();
+            return null;
+        });
     }
 
     public void setDefaultBranch(String branch) throws IOException {
-        fork.setDefaultBranch(branch);
+        archiver.retryOn401(() -> {
+            fork.setDefaultBranch(branch);
+            return null;
+        });
     }
 }
