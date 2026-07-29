@@ -802,7 +802,7 @@
     },
     "neoforged-den" : {
       "upstreamName" : "neoforged/Den",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "neoforged-devlaunch" : {
       "upstreamName" : "neoforged/DevLaunch",
