@@ -450,7 +450,7 @@
     },
     "mohistmc-makezoomzoom" : {
       "upstreamName" : "MohistMC/MakeZoomZoom",
-      "upstreamGone" : false
+      "upstreamGone" : true
     },
     "mohistmc-sodionauthdiscuz" : {
       "upstreamName" : "MohistMC/SodionAuthDiscuz",
